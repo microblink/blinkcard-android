@@ -9,7 +9,7 @@ assignees: ''
 
 Before opening an issue, check that you are using the latest version of the BlinkCard SDK.
 
-Also, make sure your issue isn't on already covered in our documentation
+Also, make sure your issue isn't already covered in our documentation
 - [README.md](https://github.com/microblink/blinkcard-android)
 - [API documentation](https://github.com/microblink/blinkcard-android#-api-documentation)
 
