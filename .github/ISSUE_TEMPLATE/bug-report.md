@@ -9,7 +9,7 @@ assignees: ''
 
 Before opening an issue, check that you are using the latest version of the BlinkCard SDK.
 
-Also, make sure your issue isn't on [the list of common problems.](https://github.com/blinkcard/blinkcard-android#-frequently-asked-questions-and-known-problems)
+Also, make sure your issue isn't on [the list of common problems.](https://github.com/microblink/blinkcard-android#-frequently-asked-questions-and-known-problems)
 
 ---
 
@@ -31,7 +31,7 @@ Please try to provide steps to reproduce the issue, or minimal code sample. It w
 
 ### Log file
 
-Please enable logging by following instructions [here](https://github.com/blinkcard/blinkcard-android#other-problems) and attach full log file.
+Please enable logging by following instructions [here](https://github.com/microblink/blinkcard-android#other-problems) and attach full log file.
 
 ### Additional information
 
