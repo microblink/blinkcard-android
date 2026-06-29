@@ -33,7 +33,7 @@ Please try to provide steps to reproduce the issue, or minimal code sample. It w
 
 ### Log file
 
-Please enable logging by following instructions [here](https://github.com/microblink/blinkcard-android#troubleshoot) and attach full log file.
+Please enable logging by following instructions [here](https://github.com/microblink/blinkcard-android#logging) and attach full log file.
 
 ### Additional information
 

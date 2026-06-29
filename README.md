@@ -27,6 +27,7 @@ The _BlinkCard_ Android SDK enables scanning of various credit and payment cards
     * [The `BlinkCardSdk` and `BlinkCardScanningSession`](#core-api-sdk-and-session)
 * [Using SDK with Java and Views](#legacy-api)
 * [Troubleshooting](#troubleshoot)
+    * [Logging additional info](#logging)
 * [Additional info](#additional-info)
     * [BlinkCard SDK size](#sdk-size)
     * [API documentation](#api-documentation)
@@ -653,6 +654,42 @@ In case of problems with SDK integration, make sure that you have followed [inte
 * high-resolution scan/photo of the item that you are trying to read
 * information about device that you are using - we need the exact model name of the device. You can obtain that information with any app like [this one](https://play.google.com/store/apps/details?id=ru.andr7e.deviceinfohw)
 * please stress that you are reporting a problem related to the Android version of _BlinkCard_ SDK
+
+### <a name="logging"></a> Logging additional info
+If you are having problems with scanning certain cards, undesired behaviour on specific device(s), crashes inside BlinkCard or anything unmentioned, please do as follows:
+* enable logging to get the ability to see what the library is doing. To enable logging, put this line in your application:
+
+```kotlin
+com.microblink.blinkcard.core.utils.MbLog.logLevel = com.microblink.blinkcard.core.utils.MbLog.LogLevel.Verbose
+```
+After this line, the library will display as much information about its work as possible. Please save the entire log of the scanning session to a file that you will send to us. It is important to send the entire log, not just the part where the crash occurred, because crashes are sometimes caused by unexpected behaviour in the early stage of the library initialization.
+
+If you want to monitor some, but not all additional logs in your app, there are several log levels that adjust this behavior. For more info check the documentation [here](https://microblink.github.io/blinkcard-android/blinkcard-core/com.microblink.blinkcard.core.utils/-mb-log/index.html).
+
+```kotlin
+enum class LogLevel {
+    /**
+    * No logs.
+    */
+    Quiet,
+    /**
+     * Log only warnings and errors.
+     */
+    WarningsAndErrors,
+    /**
+     * Log warnings, errors and information messages.
+     */
+    Information,
+    /**
+     * Log warnings, errors, information and debug messages.
+     */
+    Debug,
+    /**
+     * Log all messages.
+     */
+    Verbose;
+}
+```
 
 # <a name="additional-info"></a> Additional info
 
