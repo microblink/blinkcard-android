@@ -341,12 +341,12 @@ As of this version, BlinkCard SDK is fully compatible with other Microblink SDKs
 
 - We've expanded the set of possible recognizer states with **StageValid**. This state is set when first side scanning completes with valid data, and second side scanning is required.
 
-- Available `BlinkCardRecognizer` [**settings**](https://microblink.github.io/blinkcard-android/com/microblink/blinkcard/entities/recognizers/blinkcard/BlinkCardRecognizer.html):
+- Available `BlinkCardRecognizer` **settings**:
 	- You can toggle mandatory **extraction** of all fields except the PAN.
 	- You can enable the **blur filter**. When blur filtering is enabled, blurred frames are discarded. Otherwise, we process the blurred frames but set the blur indicator result member.
 	- You can define required **padding** around the detected document. This ensures some empty space exists between the document and the edge of the frame.
 
-- [BlinkCardRecognizer.Result](https://microblink.github.io/blinkcard-android/com/microblink/blinkcard/entities/recognizers/blinkcard/BlinkCardRecognizer.Result.html) structure:
+- `BlinkCardRecognizer.Result` structure:
     - Contains:
         - The card issuer
         - PAN

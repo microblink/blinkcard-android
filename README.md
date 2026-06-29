@@ -408,7 +408,7 @@ data class BlinkCardScanActivitySettings(
 ) : ScanActivitySettings
 ``` 
 
-Variable `scanActivityUiColors` of type [ScanActivityColors](https://microblink.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.contract/-blink-card-scan-activity-colors/index.html) defines UI colors during the scanning session.
+Variable `scanActivityUiColors` of type [ScanActivityColors](https://microblink.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.contract/-scan-activity-colors/index.html) defines UI colors during the scanning session.
 
 Variable `scanActivityUiStrings` of type [SdkStrings](https://microblink.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.theme/-sdk-strings/index.html) allows for Strings customizations and adjustment of default translations.
 
@@ -618,7 +618,8 @@ Note that `BlinkCardScanningSession.close()`, `BlinkCardSdk.close()` and `BlinkC
 Even though BlinkCard v3000 and above uses modern Android Jetpack components like Compose and coroutines, most functionalities still work with legacy code.
 It is important to note that even without using Jetpack Compose, it is highly recommended to use Kotlin when implementing the SDK, as it not only eases the implementation process, but also allows for some new functionalities.
 
-If the client insists on using only Java (and Android Views), BlinkCard functionalities can be used through [`BlinkCardScanActivity`](https://microblink.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.activity/-blink-card-scan-activity/index.html?query=class%20BlinkCardScanActivity%20:%20AppCompatActivity).
+If the client insists on using only Java (and Android Views), BlinkCard functionalities can be used through [`BlinkCardScanActivity`](https://microblink.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.activity/-blink-card-scan-activity/index.html).
+
 A simple implementation like the following should suffice:
 
 ```java
