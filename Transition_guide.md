@@ -306,7 +306,7 @@ val blinkCardLauncher = rememberLauncherForActivityResult(
 #### Old:
 
 Old BlinkCard offered several ways of custom UI integration through resource and UI customization.
-More info can be found here [on our GitHub page](https://github.com/blinkcard/blinkcard-android/tree/v2.12.0?tab=readme-ov-file#-blinkcard-sdk-integration-levels).
+More info can be found here [on our GitHub page](https://github.com/microblink/blinkcard-android/tree/v2.12.0?tab=readme-ov-file#-blinkcard-sdk-integration-levels).
 
 #### New:
 
@@ -387,5 +387,5 @@ Any modifications to classes which do not have this exact header are not allowed
 
 ## Support and Resources
 
-- For API documentation: Visit the BlinkCard SDK [Android API](https://blinkcard.github.io/blinkid-android/index.html) docs.
+- For API documentation: Visit the BlinkCard SDK [Android API](https://microblink.github.io/blinkcard-android/index.html) docs.
 - For support: Contact technical support through the support portal

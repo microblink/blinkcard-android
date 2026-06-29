@@ -1,5 +1,5 @@
 <p align="center" >
-  <img src="https://raw.githubusercontent.com/wiki/blinkcard/blinkcard-android/images/logo-microblink.png" alt="Microblink" title="Microblink">
+  <img src="https://raw.githubusercontent.com/wiki/microblink/blinkcard-android/images/logo-microblink.png" alt="Microblink" title="Microblink">
 </p>
 
 # BlinkCard SDK for Android
@@ -128,7 +128,7 @@ data class BlinkCardScanningResult(
 )
 ```
 
-After the card scanning session is finished, the SDK returns an object of type [BlinkCardScanningResult](https://blinkcard.github.io/blinkcard-android/blinkcard-core/com.microblink.blinkcard.core.session/-blink-card-scanning-result/index.html).
+After the card scanning session is finished, the SDK returns an object of type [BlinkCardScanningResult](https://microblink.github.io/blinkcard-android/blinkcard-core/com.microblink.blinkcard.core.session/-blink-card-scanning-result/index.html).
 The object contains all the extracted data from the scanned card, as well as the results of the liveness checks performed on the card. 
 The scanning result is divided into general results and specific card account results. 
 Each card may have multiple card accounts (e.g., credit and debit), and each account has its own set of extracted data.
@@ -189,7 +189,7 @@ android {
 
 # <a name="pre-bundling-resources"></a> Pre-bundling the SDK resources into your app
 
-If you want to reduce the SDK startup time and network traffic, you have the option to pre-bundle the SDK resources as assets into your application. All required resources are located in [libs/resources/assets/microblink/blinkcard](https://github.com/BlinkCard/blinkcard-android/tree/master/libs/resources/assets/microblink/blinkcard) folder. You can bundle it to your application by including the mentioned folder into application's assets. Copy the mentioned `libs/resources/assets/microblink` directory to `src/main/assets` folder of your application module (or appropriate folder for desired app flavor).
+If you want to reduce the SDK startup time and network traffic, you have the option to pre-bundle the SDK resources as assets into your application. All required resources are located in [libs/resources/assets/microblink/blinkcard](https://github.com/microblink/blinkcard-android/tree/master/libs/resources/assets/microblink/blinkcard) folder. You can bundle it to your application by including the mentioned folder into application's assets. Copy the mentioned `libs/resources/assets/microblink` directory to `src/main/assets` folder of your application module (or appropriate folder for desired app flavor).
 
 Use `BlinkCardSdkSettings` to set the following options when instantiating the SDK:
 
@@ -238,11 +238,11 @@ When using the `BlinkCardCameraScanningScreen` composable, device rotation trigg
 Almost every UI element can be easily modified in many different ways (color, size, font, background). This chapter provides basic guides regarding each implementation method.
 
 <p align="center" >
-  <img src="https://raw.githubusercontent.com/wiki/blinkcard/blinkcard-android/images/blinkcard_v3000_customization1.png" alt="BlinkCard SDK">
+  <img src="https://raw.githubusercontent.com/wiki/microblink/blinkcard-android/images/blinkcard_v3000_customization1.png" alt="BlinkCard SDK">
 </p>
 
 <p align="center" >
-  <img src="https://raw.githubusercontent.com/wiki/blinkcard/blinkcard-android/images/blinkcard_v3000_customization2.png" alt="BlinkCard SDK">
+  <img src="https://raw.githubusercontent.com/wiki/microblink/blinkcard-android/images/blinkcard_v3000_customization2.png" alt="BlinkCard SDK">
 </p>
 
 ## <a name="simple-customizations"></a> Simple customizations
@@ -283,7 +283,7 @@ BlinkCardCameraScanningScreen(
 )
 ```
 
-For a complete reference on available customization options, see [UiSettings](https://blinkcard.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux/-ui-settings/index.html) API docs.
+For a complete reference on available customization options, see [UiSettings](https://microblink.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux/-ui-settings/index.html) API docs.
 
 ## <a name="advanced-customizations"></a> Advanced customizations
 
@@ -390,7 +390,7 @@ fun YourCameraScanningScreen(
 
 ### Customizing `BlinkCardScanActivity`
 
-Customizing pre-made SDK scanning activity is somewhat limited compared to customizing a composable but still offers many customization options. Custom colors, fonts, and text styles are provided through [ScanActivitySettings](https://blinkcard.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.contract/-scan-activity-settings/index.html) class.
+Customizing pre-made SDK scanning activity is somewhat limited compared to customizing a composable but still offers many customization options. Custom colors, fonts, and text styles are provided through [ScanActivitySettings](https://microblink.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.contract/-scan-activity-settings/index.html) class.
 
 ```kotlin
 data class BlinkCardScanActivitySettings(
@@ -408,11 +408,11 @@ data class BlinkCardScanActivitySettings(
 ) : ScanActivitySettings
 ``` 
 
-Variable `scanActivityUiColors` of type [ScanActivityColors](https://blinkcard.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.contract/-blink-card-scan-activity-colors/index.html) defines UI colors during the scanning session.
+Variable `scanActivityUiColors` of type [ScanActivityColors](https://microblink.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.contract/-blink-card-scan-activity-colors/index.html) defines UI colors during the scanning session.
 
-Variable `scanActivityUiStrings` of type [SdkStrings](https://blinkcard.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.theme/-sdk-strings/index.html) allows for Strings customizations and adjustment of default translations.
+Variable `scanActivityUiStrings` of type [SdkStrings](https://microblink.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.theme/-sdk-strings/index.html) allows for Strings customizations and adjustment of default translations.
 
-Finally, through `scanActivityTypography` of type [ParcelableUiTypography](https://blinkcard.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.utils/-parcelable-ui-typography/index.html), you can define different fonts and text styles for every text object found in the scanning screen. Due to limitations of the native `Typography` class, we created a custom solution that enables all important text customizations.
+Finally, through `scanActivityTypography` of type [ParcelableUiTypography](https://microblink.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.utils/-parcelable-ui-typography/index.html), you can define different fonts and text styles for every text object found in the scanning screen. Due to limitations of the native `Typography` class, we created a custom solution that enables all important text customizations.
 
 ### Modifying our ux libraries source code
 
@@ -452,14 +452,14 @@ You can modify strings and add another language. For more information on how loc
 
 ## <a name="using-own-string-resources"></a> Defining your own string resources for UI elements
 
-You can define string resources that will be used instead of predefined ones by using the custom [SdkStrings](https://blinkcard.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.theme/-sdk-strings/index.html) while creating the `UiSettings`.
+You can define string resources that will be used instead of predefined ones by using the custom [SdkStrings](https://microblink.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.theme/-sdk-strings/index.html) while creating the `UiSettings`.
 
 ## <a name="using-scan-activity"></a> Using SDK through `BlinkCardScanActivity`
 
 The simplest way of using _BlinkCard_ SDK is through our integrated activity.
 This eliminates the need for Compose integration and allows for quick and easy access to results. By using this integration method customization is reduced, although most UI elements can still be customized.
 
-Activity is accessed through `rememberLauncherForActivityResult` by using [MbBlinkCardScan](https://blinkcard.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.contract/-mb-blink-card-scan/index.html) contract.
+Activity is accessed through `rememberLauncherForActivityResult` by using [MbBlinkCardScan](https://microblink.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.contract/-mb-blink-card-scan/index.html) contract.
 ```kotlin
 val blinkCardLauncher = rememberLauncherForActivityResult(
     contract = MbBlinkCardScan(),
@@ -470,7 +470,7 @@ val blinkCardLauncher = rememberLauncherForActivityResult(
   }
 )
 ```
-When launching the contract, [BlinkCardScanActivitySettings](https://blinkcard.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.contract/-blink-card-scan-activity-settings/index.html) need to be defined. These settings include basic SDK information such as license key and additional settings for customizing the scanning experience.
+When launching the contract, [BlinkCardScanActivitySettings](https://microblink.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.contract/-blink-card-scan-activity-settings/index.html) need to be defined. These settings include basic SDK information such as license key and additional settings for customizing the scanning experience.
 ```kotlin
 blinkCardLauncher.launch(
   BlinkCardScanActivitySettings(
@@ -485,7 +485,7 @@ blinkCardLauncher.launch(
   )
 )
 ```
-[BlinkCardScanActivitySettings](https://blinkcard.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.contract/-blink-card-scan-activity-settings/index.html) contain the following:
+[BlinkCardScanActivitySettings](https://microblink.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.contract/-blink-card-scan-activity-settings/index.html) contain the following:
 ```kotlin
 data class BlinkCardScanActivitySettings(
     val sdkSettings: BlinkCardSdkSettings,
@@ -504,7 +504,7 @@ data class BlinkCardScanActivitySettings(
 Most customizations regarding the UI are handled in the same way as with the Composable component.
 The main difference can be found in how `Typography` is set.
 
-Customizing SDK `Typography` is still available through `scanActivityTypography` which is [ParcelableUiTypography](https://blinkcard.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.utils/-parcelable-ui-typography/index.html) type. This class offers only the most important `TextStyle` and `Font` parameters.
+Customizing SDK `Typography` is still available through `scanActivityTypography` which is [ParcelableUiTypography](https://microblink.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.utils/-parcelable-ui-typography/index.html) type. This class offers only the most important `TextStyle` and `Font` parameters.
 
 While `Colors` are fully customizable, the client needs to make sure that `Dark` and `Light` themes follow the current system state. In the Compose implementation, this is handled directly by the SDK.
 # <a name="low-level-api"></a> Completely custom UX (advanced)
@@ -537,11 +537,11 @@ dependencies {
 
 ## <a name="core-api-sdk-and-session"></a> The `BlinkCardSdk` and `BlinkCardScanningSession`
 
-[BlinkCardSdk](https://blinkcard.github.io/blinkcard-android/blinkcard-core/com.microblink.blinkcard.core/-blink-card-sdk/index.html) is a singleton that is the main entry point to the _BlinkCard_ SDK. It manages the global state of the SDK. This involves managing the main processing, unlocking the SDK, ensuring that license check is up-to-date, downloading resources, and performing all necessary synchronization for the processing operations.
+[BlinkCardSdk](https://microblink.github.io/blinkcard-android/blinkcard-core/com.microblink.blinkcard.core/-blink-card-sdk/index.html) is a singleton that is the main entry point to the _BlinkCard_ SDK. It manages the global state of the SDK. This involves managing the main processing, unlocking the SDK, ensuring that license check is up-to-date, downloading resources, and performing all necessary synchronization for the processing operations.
 
 Once you obtain an instance of the `BlinkCardSdk` class after the SDK initialization is completed, you can use it to start a card capture session.
 
-[BlinkCardScanningSession](https://blinkcard.github.io/blinkcard-android/blinkcard-core/com.microblink.blinkcard.core.session/-blink-card-scanning-session/index.html) is the main object that accepts images and camera frames, processes them and returns frame-by-frame results, and the final result when it becomes available.
+[BlinkCardScanningSession](https://microblink.github.io/blinkcard-android/blinkcard-core/com.microblink.blinkcard.core.session/-blink-card-scanning-session/index.html) is the main object that accepts images and camera frames, processes them and returns frame-by-frame results, and the final result when it becomes available.
 
 
 ### <a name="analyzing-image-stream"></a> Analyzing the stream of images
@@ -583,9 +583,9 @@ val scanningSession = blinkCardSdk.createScanningSession(BlinkCardSessionSetting
 val processResult = scanningSession.process(inputImage)
 ```
 
-There are helper methods for creating [InputImage](https://blinkcard.github.io/blinkcard-android/blinkcard-core/com.microblink.blinkcard.core.image/-input-image/index.html) from `android.media.Image`, `androidx.camera.core.ImageProxy` and standard Android Bitmap.
+There are helper methods for creating [InputImage](https://microblink.github.io/blinkcard-android/blinkcard-core/com.microblink.blinkcard.core.image/-input-image/index.html) from `android.media.Image`, `androidx.camera.core.ImageProxy` and standard Android Bitmap.
 
-Processing of the single frame returns [BlinkCardProcessResult](https://blinkcard.github.io/blinkcard-android/blinkcard-core/com.microblink.blinkcard.core.session/-blink-card-process-result/index.html) which contains:
+Processing of the single frame returns [BlinkCardProcessResult](https://microblink.github.io/blinkcard-android/blinkcard-core/com.microblink.blinkcard.core.session/-blink-card-process-result/index.html) which contains:
 
 - Detailed analysis of the input image, including various detection statuses and potential issues that should be used for frame-by-frame UX updates.
 - Completeness status of the overall process.
@@ -603,7 +603,7 @@ if (processResult.resultCompleteness.isComplete()) {
 }
 ```
 
-You will get [BlinkCardScanningResult](https://blinkcard.github.io/blinkcard-android/blinkcard-core/com.microblink.blinkcard.core.session/-blink-card-scanning-result/index.html) with extraction results.
+You will get [BlinkCardScanningResult](https://microblink.github.io/blinkcard-android/blinkcard-core/com.microblink.blinkcard.core.session/-blink-card-scanning-result/index.html) with extraction results.
 
 **After scanning is completed, it is important to terminate the scanning session**
 
@@ -618,7 +618,7 @@ Note that `BlinkCardScanningSession.close()`, `BlinkCardSdk.close()` and `BlinkC
 Even though BlinkCard v3000 and above uses modern Android Jetpack components like Compose and coroutines, most functionalities still work with legacy code.
 It is important to note that even without using Jetpack Compose, it is highly recommended to use Kotlin when implementing the SDK, as it not only eases the implementation process, but also allows for some new functionalities.
 
-If the client insists on using only Java (and Android Views), BlinkCard functionalities can be used through [`BlinkCardScanActivity`](https://blinkcard.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.activity/-blink-card-scan-activity/index.html?query=class%20BlinkCardScanActivity%20:%20AppCompatActivity).
+If the client insists on using only Java (and Android Views), BlinkCard functionalities can be used through [`BlinkCardScanActivity`](https://microblink.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.activity/-blink-card-scan-activity/index.html?query=class%20BlinkCardScanActivity%20:%20AppCompatActivity).
 A simple implementation like the following should suffice:
 
 ```java
@@ -629,7 +629,7 @@ ActivityResultLauncher<BlinkCardScanActivitySettings> resultLauncher = registerF
         }
 );
 ```
-When launching the contract, [BlinkCardScanActivitySettings](https://blinkcard.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.contract/-blink-card-scan-activity-settings/index.html) need to be defined. These settings include basic SDK information such as license key and additional settings for customizing the scanning experience.
+When launching the contract, [BlinkCardScanActivitySettings](https://microblink.github.io/blinkcard-android/blinkcard-ux/com.microblink.blinkcard.ux.contract/-blink-card-scan-activity-settings/index.html) need to be defined. These settings include basic SDK information such as license key and additional settings for customizing the scanning experience.
 ```java
 String licenseKey = "your_license_key";
 BlinkCardSdkSettings sdkSettings = new BlinkCardSdkSettings(licenseKey);
@@ -670,7 +670,7 @@ Here is the SDK size, calculated for supported ABIs:
 SDK size is calculated as application size increases when _BlinkCard_ SDK is added, with all its dependencies included.
 
 ## <a name="api-documentation"></a> API documentation
-You can find the _BlinkCard_ SDK **KDoc** documentation [here](https://blinkcard.github.io/blinkcard-android/index.html).
+You can find the _BlinkCard_ SDK **KDoc** documentation [here](https://microblink.github.io/blinkcard-android/index.html).
 
 ## <a name="contact"></a> Contact
 For any other questions, feel free to contact us at [help.microblink.com](http://help.microblink.com).
