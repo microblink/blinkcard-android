@@ -15,29 +15,30 @@ import com.microblink.blinkcard.ux.theme.BlinkCardTheme
 
 @Composable
 fun fillHelpScreensBlinkCard(): HelpScreens {
+    val helpDialogStrings = BlinkCardTheme.sdkStrings.blinkCardHelpDialogsStrings
     return HelpScreens(
         onboardingDialogPage = HelpScreenPage(
             pageImage = R.drawable.mb_blinkcard_onboarding,
-            pageTitle = BlinkCardTheme.sdkStrings.helpDialogsStrings.onboardingTitle,
-            pageMessage = BlinkCardTheme.sdkStrings.helpDialogsStrings.onboardingMessage,
+            pageTitle = helpDialogStrings.onboardingTitle,
+            pageMessage = helpDialogStrings.onboardingMessage,
         ),
         helpDialogPages = listOf(
             HelpScreenPage(
                 pageImage = R.drawable.mb_blinkcard_help_page_one,
-                pageTitle = BlinkCardTheme.sdkStrings.helpDialogsStrings.helpTitles[0],
-                pageMessage = BlinkCardTheme.sdkStrings.helpDialogsStrings.helpMessages[0]
+                pageTitle = helpDialogStrings.helpTitles[0],
+                pageMessage = helpDialogStrings.helpMessages[0]
             ), HelpScreenPage(
                 pageImage = R.drawable.mb_blinkcard_help_page_two,
-                pageTitle = BlinkCardTheme.sdkStrings.helpDialogsStrings.helpTitles[1],
-                pageMessage = BlinkCardTheme.sdkStrings.helpDialogsStrings.helpMessages[1]
+                pageTitle = helpDialogStrings.helpTitles[1],
+                pageMessage = helpDialogStrings.helpMessages[1]
             ), HelpScreenPage(
                 pageImage = R.drawable.mb_blinkcard_help_page_three,
-                pageTitle = BlinkCardTheme.sdkStrings.helpDialogsStrings.helpTitles[2],
-                pageMessage = BlinkCardTheme.sdkStrings.helpDialogsStrings.helpMessages[2]
+                pageTitle = helpDialogStrings.helpTitles[2],
+                pageMessage = helpDialogStrings.helpMessages[2]
             ), HelpScreenPage(
                 pageImage = R.drawable.mb_blinkcard_help_page_four,
-                pageTitle = BlinkCardTheme.sdkStrings.helpDialogsStrings.helpTitles[3],
-                pageMessage = BlinkCardTheme.sdkStrings.helpDialogsStrings.helpMessages[3]
+                pageTitle = helpDialogStrings.helpTitles[3],
+                pageMessage = helpDialogStrings.helpMessages[3]
             )
         )
     )

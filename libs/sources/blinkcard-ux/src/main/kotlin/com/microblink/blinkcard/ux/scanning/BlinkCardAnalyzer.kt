@@ -15,6 +15,7 @@ import com.microblink.blinkcard.core.session.BlinkCardScanningSession
 import com.microblink.blinkcard.core.session.BlinkCardSessionSettings
 import com.microblink.blinkcard.core.utils.MbLog
 import com.microblink.blinkcard.ux.camera.ImageAnalyzer
+import com.microblink.blinkcard.ux.camera.TimeoutCause
 import com.microblink.blinkcard.ux.utils.ErrorReason
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers.Default
@@ -111,10 +112,14 @@ class BlinkCardAnalyzer(
         analysisPaused = false
     }
 
-    override fun timeoutAnalysis() {
-        MbLog.e(TAG) { "processing timeout occurred" }
+    override fun timeoutAnalysis(cause: TimeoutCause) {
+        MbLog.e(TAG) { "processing timeout occurred: $cause" }
         analysisPaused = true
-        scanningDoneHandler.onError(ErrorReason.ErrorTimeoutExpired)
+        // TODO: BlinkCard currently only supports a single (step) timeout. When the distinct
+        //  step vs. inactivity timeout feature is implemented, map [TimeoutCause] to the
+        //  appropriate error reason / pinglet instead of always reporting ErrorStepTimeoutExpired.
+        // Jira ticket: https://microblink.atlassian.net/browse/MSDKS-2067
+        scanningDoneHandler.onError(ErrorReason.ErrorStepTimeoutExpired)
     }
 
     fun getSessionNumber(): Int? {

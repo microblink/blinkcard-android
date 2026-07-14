@@ -22,6 +22,7 @@ import com.microblink.blinkcard.core.utils.sendPingletsIfAllowed
 import com.microblink.blinkcard.ux.camera.CameraHardwareInfoHelper
 import com.microblink.blinkcard.ux.camera.CameraInputDetails
 import com.microblink.blinkcard.ux.camera.CameraViewModel
+import com.microblink.blinkcard.ux.camera.TimeoutCause
 import com.microblink.blinkcard.ux.components.needHelpTooltipDefaultTimeToAppearMs
 import com.microblink.blinkcard.ux.components.uiCountingWindowDurationMs
 import com.microblink.blinkcard.ux.scanning.BlinkCardAnalyzer
@@ -34,6 +35,7 @@ import com.microblink.blinkcard.ux.state.CardAnimationState
 import com.microblink.blinkcard.ux.state.CommonStatusMessage
 import com.microblink.blinkcard.ux.state.ErrorState
 import com.microblink.blinkcard.ux.state.HapticFeedbackState
+import com.microblink.blinkcard.ux.state.ScanSoundState
 import com.microblink.blinkcard.ux.state.MbTorchState
 import com.microblink.blinkcard.ux.state.ProcessingState
 import com.microblink.blinkcard.ux.state.ReticleState
@@ -130,9 +132,13 @@ internal class BlinkCardUxViewModel(
                     UxPingletTracker.UxEvent.trackAlertDisplayedEvent(
                         alertType = when (error) {
                             ErrorReason.ErrorInvalidLicense -> UxEvent.AlertType.INVALIDLICENSEKEY
-                            ErrorReason.ErrorTimeoutExpired -> UxEvent.AlertType.STEPTIMEOUT
+                            ErrorReason.ErrorStepTimeoutExpired -> UxEvent.AlertType.STEPTIMEOUT
+                            ErrorReason.ErrorInactivityTimeoutExpired -> UxEvent.AlertType.INACTIVITYTIMEOUT
                             ErrorReason.ErrorNetworkError -> UxEvent.AlertType.NETWORKERROR
                             ErrorReason.ErrorDocumentClassFiltered -> UxEvent.AlertType.DOCUMENTCLASSNOTALLOWED
+                            // TODO: add new AlertTypes
+                            ErrorReason.ErrorSettingsValidationFailed -> UxEvent.AlertType.NETWORKERROR
+                            ErrorReason.ErrorGetResultFailed -> UxEvent.AlertType.NETWORKERROR
 
                         },
                         sessionNumber = getSessionNumber()
@@ -162,7 +168,7 @@ internal class BlinkCardUxViewModel(
                                 val currentDuration =
                                     (System.nanoTime() - timestamp).toDuration(DurationUnit.NANOSECONDS)
                                 if (currentDuration > stepTimeoutDuration) {
-                                    imageAnalyzer?.timeoutAnalysis()
+                                    imageAnalyzer?.timeoutAnalysis(TimeoutCause.Step)
                                     firstImageTimestamp = null
                                 }
                             }
@@ -304,6 +310,10 @@ internal class BlinkCardUxViewModel(
 
                             else -> null
                         }
+                        val newScanSoundState = when (selectedProcessingState) {
+                            is ProcessingState.SuccessAnimation -> ScanSoundState.PlayScanBeep
+                            else -> null
+                        }
                         selectedStatusMessage?.let {
                             if (selectedProcessingState == ProcessingState.Error) {
                                 val errorType: UxEvent.ErrorMessageType? =
@@ -339,6 +349,8 @@ internal class BlinkCardUxViewModel(
                                     statusMessage = selectedStatusMessage,
                                     hapticFeedbackState = newHapticFeedbackState
                                         ?: it.hapticFeedbackState,
+                                    scanSoundState = newScanSoundState
+                                        ?: it.scanSoundState,
                                     currentSide = newCurrentSide ?: it.currentSide
                                 )
                             }
@@ -580,6 +592,14 @@ internal class BlinkCardUxViewModel(
         _uiState.update {
             it.copy(
                 hapticFeedbackState = HapticFeedbackState.VibrationOff
+            )
+        }
+    }
+
+    fun onScanSoundCompleted() {
+        _uiState.update {
+            it.copy(
+                scanSoundState = ScanSoundState.SoundOff
             )
         }
     }
