@@ -11,6 +11,8 @@ The _BlinkCard_ Android SDK enables scanning of various credit and payment cards
 * [Quick Start](#quick-start)
     * [Quick start with the sample app](#quick-sample)
     * [SDK integration](#sdk-integration)
+    * [Scanning session result](#scanning-session-result)
+    * [Configuring tilt sensitivity and redaction](#configuring-tilt-sensitivity-and-redaction)
 * [Device requirements](#device-requirements)
     * [Android version](#android-version-req)
     * [Camera](#camera-req)
@@ -68,7 +70,7 @@ Add _BlinkCard_ as a dependency in module level `build.gradle(.kts)`:
 
 ```
 dependencies {
-    implementation("com.microblink:blinkcard-ux:3000.0.1")
+    implementation("com.microblink:blinkcard-ux:3000.1.0")
 }
 ```
 
@@ -147,9 +149,34 @@ data class CardAccountResult(
     val cardCategory: String?,
     val issuerName: String?,
     val issuerCountryCode: String?,
-    val issuerCountry: String?
+    val issuerCountry: String?,
+    val binCheckResult: CheckResult
 )
 ```
+
+`binCheckResult` reports whether the card-number prefix was found in the BIN database. Its value is `CheckResult.Pass`, `CheckResult.Fail`, or `CheckResult.NotPerformed`. BIN check requires a license containing the `recognizer_blinkcard_allow_bin_check` right and is disabled by default for production licenses.
+
+### Configuring tilt sensitivity and redaction
+
+Use `tiltSensitivityLevel` to configure card-tilt analysis. Sensitive card numbers and CVVs are fully redacted by default:
+
+```kotlin
+val scanningSettings = ScanningSettings(
+    tiltSensitivityLevel = SensitivityLevel.Mid,
+    redactionSettings = RedactionSettings(
+        cardNumberRedactionSettings = CardNumberRedactionSettings(
+            mode = RedactionMode.FullResult,
+            prefixDigitsVisible = 4U,
+            suffixDigitsVisible = 4U
+        ),
+        cvvRedactionMode = RedactionMode.FullResult,
+        ibanRedactionMode = RedactionMode.None,
+        cardholderNameRedactionMode = RedactionMode.None
+    )
+)
+```
+
+If you are upgrading from BlinkCard v3000.0.x, see the [transition guide](Transition_guide.md#blinkcard-v3000-to-v300010) for renamed and removed APIs.
 
 # <a name="device-requirements"></a> Device requirements
 
@@ -532,7 +559,7 @@ Add _blinkcard-core_ library as a dependency in module level `build.gradle(.kts)
 
 ```
 dependencies {
-    implementation("com.microblink:blinkcard-core:3000.0.1")
+    implementation("com.microblink:blinkcard-core:3000.1.0")
 }
 ```
 

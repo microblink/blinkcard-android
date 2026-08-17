@@ -1,5 +1,35 @@
 # Release notes
 
+## v3000.1.0
+
+### Breaking API changes
+- Renamed `DetectionLevel` to `SensitivityLevel`.
+- Renamed `ScanningSettings.tiltDetectionLevel` to `tiltSensitivityLevel`.
+- Renamed the BlinkCard anonymization API to redaction:
+  - `AnonymizationMode` → `RedactionMode`
+  - `AnonymizationSettings` → `RedactionSettings`
+  - `CardNumberAnonymizationSettings` → `CardNumberRedactionSettings`
+  - `ScanningSettings.anonymizationSettings` → `redactionSettings`
+- Removed `AnonymizationSettings.cardNumberPrefixAnonymizationMode`. The card-number prefix now follows `CardNumberRedactionSettings.mode`.
+
+See the [transition guide](Transition_guide.md#blinkcard-v3000-to-v300010) for before-and-after examples.
+
+### Security-focused redaction defaults
+- Card-number and CVV redaction now default to `RedactionMode.FullResult`.
+- Card-number redaction leaves four prefix and four suffix digits visible by default.
+- IBAN and cardholder-name redaction continue to default to `RedactionMode.None`.
+
+Applications that need the previous unredacted behavior must explicitly configure `RedactionMode.None`. Review this choice against your data-handling requirements before changing the new defaults.
+
+### BIN check
+- Added `CardAccountResult.binCheckResult`.
+- The result is `CheckResult.Pass`, `CheckResult.Fail`, or `CheckResult.NotPerformed`.
+- BIN check requires a license containing the `recognizer_blinkcard_allow_bin_check` right and is disabled by default for production licenses.
+
+### Other improvements
+- Unified BlinkCard and BlinkID Verify initialization-error handling with the current native session error model.
+- BlinkCard SDK initialization analytics now correctly report whether Ping and Baltazar proxy routing is enabled.
+
 ## v3000.0.1
 
 ### What's new

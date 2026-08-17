@@ -1,6 +1,154 @@
-# Transition Guide: BlinkCard v2 to BlinkCard v3000
+# BlinkCard migration guides
 
-This guide will help you migrate your application from BlinkCard v2 to the new BlinkID v3000 SDK. The new BlinkCard v3 provides a modernized approach to document scanning and extraction with improved architecture and Jetpack Compose support.
+## BlinkCard v3000 to v3000.1.0
+
+BlinkCard v3000.1.0 aligns the Android API with the latest native BlinkCard terminology and makes sensitive card data redacted by default.
+
+### Rename tilt detection to tilt sensitivity
+
+Replace `DetectionLevel` and `tiltDetectionLevel` with `SensitivityLevel` and `tiltSensitivityLevel`.
+
+#### v3000
+
+```kotlin
+import com.microblink.blinkcard.core.settings.DetectionLevel
+
+val scanningSettings = ScanningSettings(
+    tiltDetectionLevel = DetectionLevel.Mid
+)
+```
+
+#### v3000.1.0
+
+```kotlin
+import com.microblink.blinkcard.core.settings.SensitivityLevel
+
+val scanningSettings = ScanningSettings(
+    tiltSensitivityLevel = SensitivityLevel.Mid
+)
+```
+
+### Rename anonymization to redaction
+
+The following public APIs were renamed:
+
+| v3000 | v3000.1.0 |
+|---|---|
+| `AnonymizationMode` | `RedactionMode` |
+| `AnonymizationSettings` | `RedactionSettings` |
+| `CardNumberAnonymizationSettings` | `CardNumberRedactionSettings` |
+| `ScanningSettings.anonymizationSettings` | `ScanningSettings.redactionSettings` |
+| `CardNumberAnonymizationSettings.anonymizationMode` | `CardNumberRedactionSettings.mode` |
+| `cvvAnonymizationMode` | `cvvRedactionMode` |
+| `ibanAnonymizationMode` | `ibanRedactionMode` |
+| `cardholderNameAnonymizationMode` | `cardholderNameRedactionMode` |
+
+#### v3000
+
+```kotlin
+val scanningSettings = ScanningSettings(
+    anonymizationSettings = AnonymizationSettings(
+        cardNumberAnonymizationSettings = CardNumberAnonymizationSettings(
+            anonymizationMode = AnonymizationMode.ImageOnly,
+            prefixDigitsVisible = 4U,
+            suffixDigitsVisible = 4U
+        ),
+        cvvAnonymizationMode = AnonymizationMode.FullResult,
+        ibanAnonymizationMode = AnonymizationMode.None,
+        cardholderNameAnonymizationMode = AnonymizationMode.None
+    )
+)
+```
+
+#### v3000.1.0
+
+```kotlin
+val scanningSettings = ScanningSettings(
+    redactionSettings = RedactionSettings(
+        cardNumberRedactionSettings = CardNumberRedactionSettings(
+            mode = RedactionMode.ImageOnly,
+            prefixDigitsVisible = 4U,
+            suffixDigitsVisible = 4U
+        ),
+        cvvRedactionMode = RedactionMode.FullResult,
+        ibanRedactionMode = RedactionMode.None,
+        cardholderNameRedactionMode = RedactionMode.None
+    )
+)
+```
+
+### Remove the card-number-prefix redaction mode
+
+`AnonymizationSettings.cardNumberPrefixAnonymizationMode` has been removed without a direct replacement. The card-number prefix now follows `CardNumberRedactionSettings.mode`.
+
+Remove the old argument when constructing settings:
+
+```kotlin
+val redactionSettings = RedactionSettings(
+    cardNumberRedactionSettings = CardNumberRedactionSettings(
+        mode = RedactionMode.FullResult
+    )
+)
+```
+
+### Review the new redaction defaults
+
+BlinkCard now protects card numbers and CVVs by default:
+
+| Field | v3000.1.0 default |
+|---|---|
+| Card number | `RedactionMode.FullResult` |
+| CVV | `RedactionMode.FullResult` |
+| IBAN | `RedactionMode.None` |
+| Cardholder name | `RedactionMode.None` |
+| Visible card-number prefix digits | `4` |
+| Visible card-number suffix digits | `4` |
+
+If your application intentionally requires the previous unredacted behavior, configure it explicitly:
+
+```kotlin
+val scanningSettings = ScanningSettings(
+    redactionSettings = RedactionSettings(
+        cardNumberRedactionSettings = CardNumberRedactionSettings(
+            mode = RedactionMode.None
+        ),
+        cvvRedactionMode = RedactionMode.None
+    )
+)
+```
+
+Before disabling redaction, verify that storing or transmitting unredacted card data complies with your security and data-handling requirements.
+
+### Read the BIN-check result
+
+Each `CardAccountResult` now contains `binCheckResult`:
+
+```kotlin
+val account = scanningResult.cardAccounts.firstOrNull()
+
+when (account?.binCheckResult) {
+    CheckResult.Pass -> {
+        // The card-number prefix was found in the BIN database.
+    }
+    CheckResult.Fail -> {
+        // The card-number prefix was not found in the BIN database.
+    }
+    CheckResult.NotPerformed -> {
+        // BIN check was not performed, for example because the license does not enable it.
+    }
+    null -> {
+        // No card account was extracted.
+    }
+}
+```
+
+BIN check requires the `recognizer_blinkcard_allow_bin_check` license right and is disabled by default for production licenses.
+
+---
+
+## BlinkCard v2 to BlinkCard v3000
+
+This guide will help you migrate your application from BlinkCard v2 to the new BlinkCard v3000 SDK. BlinkCard v3000 provides a modernized approach to card scanning and extraction with improved architecture and Jetpack Compose support.
 
 
 ## Key differences
@@ -11,7 +159,7 @@ This guide will help you migrate your application from BlinkCard v2 to the new B
 - **Modern Kotlin Features**: Written fully in Kotlin, the code is simple and easy to work with, while also supporting Java integration
 - **Jetpack Compose**: Jetpack Compose is the main driver for the UI through `blinkcard-ux` package
 - **Simplified Flow**: More straightforward API with clearer separation of concerns
-- **Updated minimum OS requirement**: BlinkID SDK now requires Android API level 24 (Android 7.0 Nougat) or newer. This update allows us to leverage modern development practices, improve stability, and streamline future updates.
+- **Updated minimum OS requirement**: BlinkCard SDK now requires Android API level 24 (Android 7.0 Nougat) or newer. This update allows us to leverage modern development practices, improve stability, and streamline future updates.
 
 ### 2. Integration methods
 
@@ -55,7 +203,7 @@ microblink-blinkcard = { module = "com.microblink:blinkcard", version.ref = "mic
 
 #### Add new dependencies:
 ```kotlin
-// for the base BlinkID SDK version, add
+// for the base BlinkCard SDK version, add
 implementation(com.microblink:blinkcard-core)
 
 // for the version that includes the scanning UX, add
