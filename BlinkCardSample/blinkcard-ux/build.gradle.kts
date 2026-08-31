@@ -1,6 +1,5 @@
 plugins {
     alias(libs.plugins.android.library)
-    alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kotlin.parcelize)
 }
@@ -38,16 +37,17 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    kotlinOptions {
-        jvmTarget = "17"
-        freeCompilerArgs += listOf(
-            // Fix for R8 StringConcatFactory issues on some toolchains.
-            "-Xstring-concat=inline"
-        )
-    }
 
     buildFeatures {
         compose = true
+    }
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
+        // Fix for R8 StringConcatFactory issues on some toolchains.
+        freeCompilerArgs.add("-Xstring-concat=inline")
     }
 }
 
