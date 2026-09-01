@@ -1,8 +1,8 @@
 # BlinkCard migration guides
 
-## BlinkCard v3000 to v3000.1.0
+## BlinkCard v3000 to v3001.0.0
 
-BlinkCard v3000.1.0 aligns the Android API with the latest native BlinkCard terminology and makes sensitive card data redacted by default.
+BlinkCard v3001.0.0 aligns the Android API with the latest native BlinkCard terminology and makes sensitive card data redacted by default.
 
 ### Rename tilt detection to tilt sensitivity
 
@@ -18,7 +18,7 @@ val scanningSettings = ScanningSettings(
 )
 ```
 
-#### v3000.1.0
+#### v3001.0.0
 
 ```kotlin
 import com.microblink.blinkcard.core.settings.SensitivityLevel
@@ -32,7 +32,7 @@ val scanningSettings = ScanningSettings(
 
 The following public APIs were renamed:
 
-| v3000 | v3000.1.0 |
+| v3000 | v3001.0.0 |
 |---|---|
 | `AnonymizationMode` | `RedactionMode` |
 | `AnonymizationSettings` | `RedactionSettings` |
@@ -60,7 +60,7 @@ val scanningSettings = ScanningSettings(
 )
 ```
 
-#### v3000.1.0
+#### v3001.0.0
 
 ```kotlin
 val scanningSettings = ScanningSettings(
@@ -95,7 +95,7 @@ val redactionSettings = RedactionSettings(
 
 BlinkCard now protects card numbers and CVVs by default:
 
-| Field | v3000.1.0 default |
+| Field | v3001.0.0 default |
 |---|---|
 | Card number | `RedactionMode.FullResult` |
 | CVV | `RedactionMode.FullResult` |
@@ -485,8 +485,10 @@ val blinkCardUiSettings = UiSettings(
 )
 
 val blinkCardUxSettings = BlinkCardUxSettings(
-   stepTimeoutDurationMs = ... // default: [Duration] 15000.milliseconds,
-   allowHapticFeedback = ... // default: [Boolean] true
+   stepTimeoutDuration = ... // default: [Duration] 60000.milliseconds,
+   inactivityTimeoutDuration = ... // default: [Duration] 10000.milliseconds,
+   allowHapticFeedback = ... // default: [Boolean] true,
+   allowScanSound = ... // default: [Boolean] true
 )
 
 val blinkCardCameraSettings = data class CameraSettings(

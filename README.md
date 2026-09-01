@@ -70,7 +70,7 @@ Add _BlinkCard_ as a dependency in module level `build.gradle(.kts)`:
 
 ```
 dependencies {
-    implementation("com.microblink:blinkcard-ux:3000.1.0")
+    implementation("com.microblink:blinkcard-ux:3001.0.0")
 }
 ```
 
@@ -176,7 +176,7 @@ val scanningSettings = ScanningSettings(
 )
 ```
 
-If you are upgrading from BlinkCard v3000.0.x, see the [transition guide](Transition_guide.md#blinkcard-v3000-to-v300010) for renamed and removed APIs.
+If you are upgrading from BlinkCard v3000.0.x, see the [transition guide](Transition_guide.md#blinkcard-v3000-to-v300100) for renamed and removed APIs.
 
 # <a name="device-requirements"></a> Device requirements
 
@@ -282,8 +282,10 @@ BlinkCardCameraScanningScreen(
     blinkCardSdk = sdkInstance,
     /* UX settings options */
     uxSettings = BlinkCardUxSettings(
-        stepTimeoutDuration = <yourTimeoutDuration>,
+        stepTimeoutDuration = <yourStepTimeoutDuration>, // 60 seconds by default; Duration.ZERO disables it
+        inactivityTimeoutDuration = <yourInactivityTimeoutDuration>, // 10 seconds by default; Duration.ZERO disables it
         allowHapticFeedback = true, // or false
+        allowScanSound = true, // or false
     ),
     /* UI settings options */
     uiSettings = UiSettings(
@@ -559,7 +561,7 @@ Add _blinkcard-core_ library as a dependency in module level `build.gradle(.kts)
 
 ```
 dependencies {
-    implementation("com.microblink:blinkcard-core:3000.1.0")
+    implementation("com.microblink:blinkcard-core:3001.0.0")
 }
 ```
 

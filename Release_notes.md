@@ -1,6 +1,6 @@
 # Release notes
 
-## v3000.1.0
+## v3001.0.0
 
 ### Breaking API changes
 - Renamed `DetectionLevel` to `SensitivityLevel`.
@@ -12,7 +12,7 @@
   - `ScanningSettings.anonymizationSettings` → `redactionSettings`
 - Removed `AnonymizationSettings.cardNumberPrefixAnonymizationMode`. The card-number prefix now follows `CardNumberRedactionSettings.mode`.
 
-See the [transition guide](Transition_guide.md#blinkcard-v3000-to-v300010) for before-and-after examples.
+See the [transition guide](Transition_guide.md#blinkcard-v3000-to-v300100) for before-and-after examples.
 
 ### Security-focused redaction defaults
 - Card-number and CVV redaction now default to `RedactionMode.FullResult`.
@@ -25,6 +25,12 @@ Applications that need the previous unredacted behavior must explicitly configur
 - Added `CardAccountResult.binCheckResult`.
 - The result is `CheckResult.Pass`, `CheckResult.Fail`, or `CheckResult.NotPerformed`.
 - BIN check requires a license containing the `recognizer_blinkcard_allow_bin_check` right and is disabled by default for production licenses.
+
+### Scanning session timeouts and feedback
+- Added `BlinkCardUxSettings.inactivityTimeoutDuration`, which triggers a timeout when scanning makes no progress. It resets whenever scanning advances, either because the UI state changes (reticle type or message) or because the card is located and being processed. Defaults to 10 seconds.
+- `BlinkCardUxSettings.stepTimeoutDuration` now covers a single scanning step: it resets on side changes and pauses while the onboarding and help dialogs are shown. **Its default changed from 15 to 60 seconds.**
+- Both timeouts can be disabled by setting them to `Duration.ZERO`.
+- Added `BlinkCardUxSettings.allowScanSound` to toggle scan success sounds. Defaults to `true`.
 
 ### Other improvements
 - Unified BlinkCard and BlinkID Verify initialization-error handling with the current native session error model.
