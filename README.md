@@ -154,7 +154,7 @@ data class CardAccountResult(
 )
 ```
 
-`binCheckResult` reports whether the card-number prefix was found in the BIN database. Its value is `CheckResult.Pass`, `CheckResult.Fail`, or `CheckResult.NotPerformed`. BIN check requires a license containing the `recognizer_blinkcard_allow_bin_check` right and is disabled by default for production licenses.
+`binCheckResult` reports whether the card-number prefix was found in the BIN database. Its value is `CheckResult.Pass`, `CheckResult.Fail`, or `CheckResult.NotAvailable`. BIN check requires a license containing the `recognizer_blinkcard_allow_bin_check` right and is disabled by default for production licenses.
 
 ### Configuring tilt sensitivity and redaction
 
