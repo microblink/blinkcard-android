@@ -133,7 +133,7 @@ when (account?.binCheckResult) {
     CheckResult.Fail -> {
         // The card-number prefix was not found in the BIN database.
     }
-    CheckResult.NotPerformed -> {
+    CheckResult.NotAvailable -> {
         // BIN check was not performed, for example because the license does not enable it.
     }
     null -> {

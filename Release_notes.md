@@ -11,6 +11,7 @@
   - `CardNumberAnonymizationSettings` → `CardNumberRedactionSettings`
   - `ScanningSettings.anonymizationSettings` → `redactionSettings`
 - Removed `AnonymizationSettings.cardNumberPrefixAnonymizationMode`. The card-number prefix now follows `CardNumberRedactionSettings.mode`.
+- Renamed `CheckResult.NotPerformed` to `CheckResult.NotAvailable`, matching the name used by the scanning core. This affects every property typed `CheckResult`: `CardLivenessCheckResult.screenCheckResult`, `photocopyCheckResult` and `cardHeldInHandCheckResult`, and `BlinkCardScanningResult.overallCardLivenessResult`. The value and its meaning are unchanged — only the name differs.
 
 See the [transition guide](Transition_guide.md#blinkcard-v3000-to-v300100) for before-and-after examples.
 
@@ -23,7 +24,7 @@ Applications that need the previous unredacted behavior must explicitly configur
 
 ### BIN check
 - Added `CardAccountResult.binCheckResult`.
-- The result is `CheckResult.Pass`, `CheckResult.Fail`, or `CheckResult.NotPerformed`.
+- The result is `CheckResult.Pass`, `CheckResult.Fail`, or `CheckResult.NotAvailable`.
 - BIN check requires a license containing the `recognizer_blinkcard_allow_bin_check` right and is disabled by default for production licenses.
 
 ### Scanning session timeouts and feedback
