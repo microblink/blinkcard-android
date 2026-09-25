@@ -731,8 +731,8 @@ Here is the SDK size, calculated for supported ABIs:
 
 | ABI | Download size | Install size |
 | --- |:-------------:|:------------:|
-| armeabi-v7a |    3.04 MB    |   3.84 MB    |
-| arm64-v8a |    3.10 MB    |   4.29 MB    |
+| armeabi-v7a |    3.42 MB    |   4.26 MB    |
+| arm64-v8a |    3.54 MB    |   4.94 MB    |
 
 SDK size is calculated as application size increases when _BlinkCard_ SDK is added, with all its dependencies included.
 
