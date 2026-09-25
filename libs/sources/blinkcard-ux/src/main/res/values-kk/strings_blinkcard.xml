@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">Карта мен телефонды қозғалтпай ұстаңыз</string>
-  <string name="mb_blinkcard_card_not_fully_visible">Картаны толықтай көрінетін етіп ұстаңыз</string>
-  <string name="mb_blinkcard_first_side_instructions">Карта нөмірін сканерлеңіз</string>
-  <string name="mb_blinkcard_flashlight_warning_message">Фонарьдың жарқылына назар аударыңыз.\nОдан құтылу үшін картаңызды ақырын жылжытыңыз.</string>
-  <string name="mb_blinkcard_help_screen_msg1">Карта нөмірі әдетте 16 таңбалы саннан тұрады және сондай-ақ 12 мен 19 сан аралығында болуы мүмкін. Ол басып шығарылуы немесе карта бойынша жоғары сандармен бедерлі болуы керек. Ол картаның алдыңғы немесе артында болуы мүмкін.</string>
-  <string name="mb_blinkcard_help_screen_msg2">Саусағыңызбен картаның кейбір бөліктерін, әсіресе төменгі жолдарын жауып қалмаңыз. Сондай-ақ, карта өрістерінің үстінен өтетін голограммалық шағылыстарға да назар аударыңыз.</string>
-  <string name="mb_blinkcard_help_screen_msg3">Тікелей және қатты жарықтан арырақ тұрыңыз, себебі ол картадан шағылысып, кейбір бөліктерін оқуға мүмкіндік бермейді. Егер картадағы деректер сізге көрінбесе, олар камераға да көрінбейді.</string>
-  <string name="mb_blinkcard_help_screen_msg4">Сканерлеу кезінде телефон мен картаны мүмкіндігінше қозғалтпай ұстаңыз. Екеуінің де қозғалысы суретті бұлыңғыр етіп, картадағы деректерді оқылмайтындай етіп жіберуі мүмкін.</string>
-  <string name="mb_blinkcard_help_screen_title1">Карта нөмірі қай жерде?</string>
-  <string name="mb_blinkcard_help_screen_title2">Барлық өрістердің көрініп тұрғанына көз жеткізіңіз</string>
-  <string name="mb_blinkcard_help_screen_title3">Тым жарық жерден әрі тұрыңыз</string>
-  <string name="mb_blinkcard_help_screen_title4">Сканерлеу кезінде қозғалмаңыз</string>
-  <string name="mb_blinkcard_keep_card_parallel">Картаны телефонға параллель етіп ұстаңыз</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">Карта нөмірі әдетте 16 таңбалы саннан тұрады. Ол басып шығарылуы немесе карта бойынша жоғары сандармен бедерлі болуы керек. Картаның жақсы жарық бар жерде орналасқанына және барлық мәліметтер көрінетініне көз жеткізіңіз.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">Алдымен карта нөмірін сканерлеңіз</string>
-  <string name="mb_blinkcard_other_side_instructions">Картаның басқа жағын сканерлеңіз</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">Картаны оқу мүмкін болмады. Әрекетті қайталаңыз.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Қайталау</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">Сканерлене алмады</string>
-  <string name="mb_blinkcard_scanning_wrong_side">Картаны айналдырыңыз</string>
+    <string name="mb_blinkcard_blur_detected">Картаны және телефонды қозғалтпай ұстаңыз</string>
+    <string name="mb_blinkcard_card_not_fully_visible">Картаны толықтай көрінетін етіп ұстаңыз</string>
+    <string name="mb_blinkcard_first_side_instructions">Карта нөмірін сканерлеңіз</string>
+    <string name="mb_blinkcard_flashlight_warning_message">Фонарьдың жарқылына назар аударыңыз.\nОдан құтылу үшін картаңызды ақырын жылжытыңыз.</string>
+    <string name="mb_blinkcard_help_screen_msg1">Карта нөмірі әдетте 16 таңбалы саннан тұрады және сондай-ақ 12 мен 19 сан аралығында болуы мүмкін. Ол басып шығарылуы немесе карта бойынша жоғары сандармен бедерлі болуы керек. Ол картаның алдыңғы немесе артында болуы мүмкін.</string>
+    <string name="mb_blinkcard_help_screen_msg2">Саусағыңызбен картаның кейбір бөліктерін, әсіресе төменгі жолдарын жауып қалмаңыз. Сондай-ақ, карта өрістерінің үстінен өтетін голограммалық шағылыстарға да назар аударыңыз.</string>
+    <string name="mb_blinkcard_help_screen_msg3">Тікелей және қатты жарықтан арырақ тұрыңыз, себебі ол картадан шағылысып, кейбір бөліктерін оқуға мүмкіндік бермейді. Егер картадағы деректер сізге көрінбесе, олар камераға да көрінбейді.</string>
+    <string name="mb_blinkcard_help_screen_msg4">Сканерлеу кезінде телефон мен картаны мүмкіндігінше қозғалтпай ұстаңыз. Екеуінің де қозғалысы суретті бұлыңғыр етіп, картадағы деректерді оқылмайтындай етіп жіберуі мүмкін.</string>
+    <string name="mb_blinkcard_help_screen_title1">Карта нөмірі қай жерде?</string>
+    <string name="mb_blinkcard_help_screen_title2">Барлық өрістердің көрініп тұрғанына көз жеткізіңіз</string>
+    <string name="mb_blinkcard_help_screen_title3">Тым жарық жерден әрі тұрыңыз</string>
+    <string name="mb_blinkcard_help_screen_title4">Сканерлеу кезінде қозғалмаңыз</string>
+    <string name="mb_blinkcard_keep_card_parallel">Картаны телефонға параллель ұстаңыз</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">Карта нөмірі әдетте 16 таңбалы саннан тұрады. Ол басып шығарылуы немесе карта бойынша жоғары сандармен бедерлі болуы керек. Картаның жақсы жарық бар жерде орналасқанына және барлық мәліметтер көрінетініне көз жеткізіңіз.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">Алдымен карта нөмірін сканерлеңіз</string>
+    <string name="mb_blinkcard_other_side_instructions">Картаның басқа жағын сканерлеңіз</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Картаның жақсы жарықтандырылғанына, толық көрінетініне және онда шағылыс жоқ екеніне көз жеткізіңіз.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Қайталау</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">Картаны оқу мүмкін болмады</string>
+    <string name="mb_blinkcard_scanning_wrong_side">Картаны айналдырыңыз</string>
 </resources>

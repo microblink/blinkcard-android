@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">Keep card and phone still</string>
-  <string name="mb_blinkcard_card_not_fully_visible">Keep the card fully visible</string>
-  <string name="mb_blinkcard_first_side_instructions">Scan the card number</string>
-  <string name="mb_blinkcard_flashlight_warning_message">Watch out for flashlight glare.\nGently move your card around to avoid it.</string>
-  <string name="mb_blinkcard_help_screen_msg1">Card number is usually a 16-digit number, although it may have between 12 and 19 digits. It should be either printed or embossed in raised numbers across the card. It can be on the front or back of your card.</string>
-  <string name="mb_blinkcard_help_screen_msg2">Make sure you aren’t covering parts of the card with a finger, including the bottom lines. Also, watch out for hologram reflections that go over the cards’ fields.</string>
-  <string name="mb_blinkcard_help_screen_msg3">Avoid direct harsh light because it reflects from the card and can make parts of the card unreadable. If you can’t read data on the card, it won’t be visible to the camera either.</string>
-  <string name="mb_blinkcard_help_screen_msg4">Try to keep the phone and card still while scanning. Moving either can blur the image and make data on the card unreadable.</string>
-  <string name="mb_blinkcard_help_screen_title1">Where’s the card number?</string>
-  <string name="mb_blinkcard_help_screen_title2">Keep all the fields visible</string>
-  <string name="mb_blinkcard_help_screen_title3">Watch out for harsh light</string>
-  <string name="mb_blinkcard_help_screen_title4">Keep still while scanning</string>
-  <string name="mb_blinkcard_keep_card_parallel">Keep card parallel to phone</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">Card number is usually a 16-digit number. It should be either printed or embossed in raised numbers across the card. Make sure that the card is well lit and all details are visible.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">Scan the card number first</string>
-  <string name="mb_blinkcard_other_side_instructions">Scan the other side of the card</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">Unable to read the card. Please try again.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Retry</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">Scan unsuccessful</string>
-  <string name="mb_blinkcard_scanning_wrong_side">Flip the card over</string>
+    <string name="mb_blinkcard_blur_detected">Keep the card and phone still</string>
+    <string name="mb_blinkcard_card_not_fully_visible">Keep the card fully visible</string>
+    <string name="mb_blinkcard_first_side_instructions">Scan the card number</string>
+    <string name="mb_blinkcard_flashlight_warning_message">Watch out for flashlight glare.\nGently move your card around to avoid it.</string>
+    <string name="mb_blinkcard_help_screen_msg1">Card number is usually a 16-digit number, although it may have between 12 and 19 digits. It should be either printed or embossed in raised numbers across the card. It can be on the front or back of your card.</string>
+    <string name="mb_blinkcard_help_screen_msg2">Make sure you aren’t covering parts of the card with a finger, including the bottom lines. Also, watch out for hologram reflections that go over the cards’ fields.</string>
+    <string name="mb_blinkcard_help_screen_msg3">Avoid direct harsh light because it reflects from the card and can make parts of the card unreadable. If you can’t read data on the card, it won’t be visible to the camera either.</string>
+    <string name="mb_blinkcard_help_screen_msg4">Try to keep the phone and card still while scanning. Moving either can blur the image and make data on the card unreadable.</string>
+    <string name="mb_blinkcard_help_screen_title1">Where’s the card number?</string>
+    <string name="mb_blinkcard_help_screen_title2">Keep all the fields visible</string>
+    <string name="mb_blinkcard_help_screen_title3">Watch out for harsh light</string>
+    <string name="mb_blinkcard_help_screen_title4">Keep still while scanning</string>
+    <string name="mb_blinkcard_keep_card_parallel">Keep the card parallel to the phone</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">Card number is usually a 16-digit number. It should be either printed or embossed in raised numbers across the card. Make sure that the card is well lit and all details are visible.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">Scan the card number first</string>
+    <string name="mb_blinkcard_other_side_instructions">Scan the other side of the card</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Make sure the card is well lit, fully visible, and free of glare.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Retry</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">Unable to read the card</string>
+    <string name="mb_blinkcard_scanning_wrong_side">Flip the card over</string>
 </resources>

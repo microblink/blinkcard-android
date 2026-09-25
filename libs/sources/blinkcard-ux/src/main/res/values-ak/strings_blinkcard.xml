@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">Ma kaade ne fon no nnyina faako</string>
-  <string name="mb_blinkcard_card_not_fully_visible">Ma kaade no nna adi pefee</string>
-  <string name="mb_blinkcard_first_side_instructions">Skaane kaade nɔma no</string>
-  <string name="mb_blinkcard_flashlight_warning_message">Hwɛ sɛ wobehu flashlight hann bi a.\nNkakrankakra no fa wo kaad no kyinkyin na antɔ so.</string>
-  <string name="mb_blinkcard_help_screen_msg1">Mpɛn pii no, kaade nɔma no taa yɛ digit 16, ɛwom sɛ ebetumi ayɛ efi digit 12 kosi 19 de. Etumi yɛ nea wɔaprinte agu so anaa wɔakurukyerɛw agu so ma aba soro, na ebetumi awɔ anim anaa kaade no akyi.</string>
-  <string name="mb_blinkcard_help_screen_msg2">Hwɛ sɛ wommfa wo nsateaa nkata kaade no fa biara, a ase hɔ ka ho. Bio nso, hwɛ sɛ hologram no remmɔ kanea nngu kaade no so nsɛm bi so.</string>
-  <string name="mb_blinkcard_help_screen_msg3">Mma kanea nhyerɛn wɔ kaade no so tee esiane sɛ ebetumi ama yenhu nsɛm a ɛwɔ so. Sɛ wuntumi nkenkan kaade no so nsɛm a, ɛrenna adi papa wɔ kamɛra no so nso.</string>
-  <string name="mb_blinkcard_help_screen_msg4">Hwɛ sɛ wobɛma fon ne kaade no aka faako. Sɛ woma emu biara wosowosow a, mfonin no ani renna hɔ na wɔrenhu nsɛm a ɛwɔ kaade no so.</string>
-  <string name="mb_blinkcard_help_screen_title1">Kaade nɔma no wɔ he?</string>
-  <string name="mb_blinkcard_help_screen_title2">Hwɛ sɛ wobehu baabiara</string>
-  <string name="mb_blinkcard_help_screen_title3">Hwɛ hann a ano yɛ den kwan</string>
-  <string name="mb_blinkcard_help_screen_title4">Gyina faako abere a woreskanee no</string>
-  <string name="mb_blinkcard_keep_card_parallel">Ma fon no ani nkyerɛ kaade no fi soro pɛɛ</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">Mpɛn pii no, kaade nɔma no taa yɛ digit 16, ɛwom sɛ ebetumi ayɛ efi digit 12 kosi 19 de. Etumi yɛ nea wɔaprinte agu so anaa wɔakurukyerɛw agu so ma aba soro. Hwɛ sɛ kanea a ɛfata da so na wotumi hu nsɛm a ɛwɔ so nyinaa.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">Di kan skaane kaade nɔma no</string>
-  <string name="mb_blinkcard_other_side_instructions">Skaane kaade no fa foforo no</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">Sɛ wontumi nkenkan kaade no so nsɛm a, san yɛ bio.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">San yɛ bio</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">Skane no ankɔ yiye</string>
-  <string name="mb_blinkcard_scanning_wrong_side">Dan kaade no ani</string>
+    <string name="mb_blinkcard_blur_detected">Ma kaad no ne fon no ntena dinn</string>
+    <string name="mb_blinkcard_card_not_fully_visible">Ma kaade no nna adi pefee</string>
+    <string name="mb_blinkcard_first_side_instructions">Skaane kaade nɔma no</string>
+    <string name="mb_blinkcard_flashlight_warning_message">Hwɛ sɛ wobehu flashlight hann bi a.\nNkakrankakra no fa wo kaad no kyinkyin na antɔ so.</string>
+    <string name="mb_blinkcard_help_screen_msg1">Mpɛn pii no, kaade nɔma no taa yɛ digit 16, ɛwom sɛ ebetumi ayɛ efi digit 12 kosi 19 de. Etumi yɛ nea wɔaprinte agu so anaa wɔakurukyerɛw agu so ma aba soro, na ebetumi awɔ anim anaa kaade no akyi.</string>
+    <string name="mb_blinkcard_help_screen_msg2">Hwɛ sɛ wommfa wo nsateaa nkata kaade no fa biara, a ase hɔ ka ho. Bio nso, hwɛ sɛ hologram no remmɔ kanea nngu kaade no so nsɛm bi so.</string>
+    <string name="mb_blinkcard_help_screen_msg3">Mma kanea nhyerɛn wɔ kaade no so tee esiane sɛ ebetumi ama yenhu nsɛm a ɛwɔ so. Sɛ wuntumi nkenkan kaade no so nsɛm a, ɛrenna adi papa wɔ kamɛra no so nso.</string>
+    <string name="mb_blinkcard_help_screen_msg4">Hwɛ sɛ wobɛma fon ne kaade no aka faako. Sɛ woma emu biara wosowosow a, mfonin no ani renna hɔ na wɔrenhu nsɛm a ɛwɔ kaade no so.</string>
+    <string name="mb_blinkcard_help_screen_title1">Kaade nɔma no wɔ he?</string>
+    <string name="mb_blinkcard_help_screen_title2">Hwɛ sɛ wobehu baabiara</string>
+    <string name="mb_blinkcard_help_screen_title3">Hwɛ hann a ano yɛ den kwan</string>
+    <string name="mb_blinkcard_help_screen_title4">Gyina faako abere a woreskanee no</string>
+    <string name="mb_blinkcard_keep_card_parallel">Ma kaad no ne fon no ntena nsɛ</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">Mpɛn pii no, kaade nɔma no taa yɛ digit 16, ɛwom sɛ ebetumi ayɛ efi digit 12 kosi 19 de. Etumi yɛ nea wɔaprinte agu so anaa wɔakurukyerɛw agu so ma aba soro. Hwɛ sɛ kanea a ɛfata da so na wotumi hu nsɛm a ɛwɔ so nyinaa.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">Di kan skaane kaade nɔma no</string>
+    <string name="mb_blinkcard_other_side_instructions">Skaane kaade no fa foforo no</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Hwɛ sɛ kaad no nya hann yiye, wohu no nyinaa, na hann mmɔ ani wɔ so.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">San yɛ bio</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">Yɛantumi ankenkan kaad no</string>
+    <string name="mb_blinkcard_scanning_wrong_side">Dan kaade no ani</string>
 </resources>

@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">Gardez la carte et le téléphone immobiles</string>
-  <string name="mb_blinkcard_card_not_fully_visible">La carte doit rester entièrement visible</string>
-  <string name="mb_blinkcard_first_side_instructions">Numériser le numéro de carte</string>
-  <string name="mb_blinkcard_flashlight_warning_message">Attention aux reflets de la lampe de poche.\nBougez doucement votre carte pour les éviter.</string>
-  <string name="mb_blinkcard_help_screen_msg1">Le numéro de carte est généralement un numéro à 16 chiffres, même s\'il peut comporter entre 12 et 19 chiffres. En général, il est imprimé ou gravé en relief sur toute la surface de la carte. Il peut figurer au recto ou au verso de votre carte.</string>
-  <string name="mb_blinkcard_help_screen_msg2">Veillez à ne pas recouvrir certaines parties de la carte avec un doigt, notamment les lignes de fond. Faites également attention aux reflets de l\'hologramme qui recouvrent les champs de la carte.</string>
-  <string name="mb_blinkcard_help_screen_msg3">Évitez toute lumière directe et vive, car elle se reflète sur la carte et peut rendre certaines parties de la carte illisibles. Si les données ne sont pas lisibles sur la carte, elles ne le seront pas non plus pour la caméra.</string>
-  <string name="mb_blinkcard_help_screen_msg4">Essayez de garder le téléphone et la cartes immobiles pendant la numérisation. Tout mouvement de l\'un ou l\'autre peut brouiller l\'image et rendre les données de la carte illisibles.</string>
-  <string name="mb_blinkcard_help_screen_title1">À quel endroit le numéro de carte figure-t-il ?</string>
-  <string name="mb_blinkcard_help_screen_title2">Gardez tous les champs visibles</string>
-  <string name="mb_blinkcard_help_screen_title3">Faites attention aux lumières trop vives</string>
-  <string name="mb_blinkcard_help_screen_title4">Restez immobile pendant la numérisation</string>
-  <string name="mb_blinkcard_keep_card_parallel">Maintenez la carte parallèle au téléphone.</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">Le numéro de carte est généralement un numéro à 16 chiffres. En général, il est imprimé ou gravé en relief sur toute la surface de la carte. Assurez-vous que la carte est suffisamment éclairée et que tous les détails sont visibles.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">Numérisez d\'abord le numéro de carte</string>
-  <string name="mb_blinkcard_other_side_instructions">Scannez l\'autre côté de la carte.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">Impossible de lire la carte. Veuillez réessayer.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Réessayez</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">Numérisation infructueuse</string>
-  <string name="mb_blinkcard_scanning_wrong_side">Retourner la carte</string>
+    <string name="mb_blinkcard_blur_detected">Gardez la carte et le téléphone immobiles</string>
+    <string name="mb_blinkcard_card_not_fully_visible">La carte doit rester entièrement visible</string>
+    <string name="mb_blinkcard_first_side_instructions">Scanner le numéro de carte</string>
+    <string name="mb_blinkcard_flashlight_warning_message">Attention aux reflets de la lampe de poche.\nBougez doucement votre carte pour les éviter.</string>
+    <string name="mb_blinkcard_help_screen_msg1">Le numéro de carte est généralement un numéro à 16 chiffres, même s\'il peut comporter entre 12 et 19 chiffres. En général, il est imprimé ou gravé en relief sur toute la surface de la carte. Il peut figurer au recto ou au verso de votre carte.</string>
+    <string name="mb_blinkcard_help_screen_msg2">Veillez à ne pas recouvrir certaines parties de la carte avec un doigt, notamment les lignes de fond. Faites également attention aux reflets de l\'hologramme qui recouvrent les champs de la carte.</string>
+    <string name="mb_blinkcard_help_screen_msg3">Évitez toute lumière directe et vive, car elle se reflète sur la carte et peut rendre certaines parties de la carte illisibles. Si les données ne sont pas lisibles sur la carte, elles ne le seront pas non plus pour la caméra.</string>
+    <string name="mb_blinkcard_help_screen_msg4">Essayez de garder le téléphone et la cartes immobiles pendant le scan. Tout mouvement de l\'un ou l\'autre peut brouiller l\'image et rendre les données de la carte illisibles.</string>
+    <string name="mb_blinkcard_help_screen_title1">À quel endroit le numéro de carte figure-t-il ?</string>
+    <string name="mb_blinkcard_help_screen_title2">Gardez tous les champs visibles</string>
+    <string name="mb_blinkcard_help_screen_title3">Faites attention aux lumières trop vives</string>
+    <string name="mb_blinkcard_help_screen_title4">Restez immobile pendant le scan</string>
+    <string name="mb_blinkcard_keep_card_parallel">Gardez la carte parallèle au téléphone</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">Le numéro de carte est généralement un numéro à 16 chiffres. En général, il est imprimé ou gravé en relief sur toute la surface de la carte. Assurez-vous que la carte est suffisamment éclairée et que tous les détails sont visibles.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">Scannez d\'abord le numéro de carte</string>
+    <string name="mb_blinkcard_other_side_instructions">Scannez l\'autre côté de la carte.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Assurez-vous que la carte est bien éclairée, entièrement visible et sans reflets.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Réessayez</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">Impossible de lire la carte</string>
+    <string name="mb_blinkcard_scanning_wrong_side">Retournez la carte</string>
 </resources>

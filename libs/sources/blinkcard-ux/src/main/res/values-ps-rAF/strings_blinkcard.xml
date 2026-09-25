@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">کارت او موبایل ثابت وساتئ</string>
-  <string name="mb_blinkcard_card_not_fully_visible">کارت په بشپړه توګه ښکاره وساتئ</string>
-  <string name="mb_blinkcard_first_side_instructions">د کارت شمېره سکن کړئ</string>
-  <string name="mb_blinkcard_flashlight_warning_message">د فلش لائټ ځلا ته پام وکړئ.\nد مخنیوي لپاره خپل کارت په نرمۍ سره شاوخوا وګرځئ.</string>
-  <string name="mb_blinkcard_help_screen_msg1">د کارت شمېره معموله 16 عدده وي، مګر کېدای شي ځینې یې له 12 تر 19 پورې ارقام ولري. دا شمېره باید په چاپي یا برجسته ډول پر کارت لیکل شوې وي. دا کېدای شي ستاسو د کارت په مخه یا شا کې وي.</string>
-  <string name="mb_blinkcard_help_screen_msg2">ډاډ حاصل کړئ چې د کارت برخې په ګوتو پټې نکړئ، د ښکته برخې د کرښو په ګډون. همدارنګه هولوګرام ته پام کوئ چې کېدای شي د کارت پر ځینو برخو راشي.</string>
-  <string name="mb_blinkcard_help_screen_msg3">مستقیم یې د څراغ وړانګو ته مه نیسئ ځکه چې وړانګې له کارت څخه منعکسې کېږي او د کارت ځینې برخې نه لوستل کېږي. که تاسو پر کارت موجود معلومات نشئ لوستلای، دا به د کامرې لپاره هم د لیدلو وړ نه وي.</string>
-  <string name="mb_blinkcard_help_screen_msg4">هڅه وکړئ د سکن کولو پر مهال تلیفون او کارت ثابت ونیسئ. که یو یې و خوځول شي، انځور تیاره کېږي او پر کارت موجود معلومات نه لوستل کېږي.</string>
-  <string name="mb_blinkcard_help_screen_title1">د کارت شمېره چېرته ده؟</string>
-  <string name="mb_blinkcard_help_screen_title2">ټول ساحې ښکاره وساتئ</string>
-  <string name="mb_blinkcard_help_screen_title3">د سختې رڼا لپاره پام وکړئ</string>
-  <string name="mb_blinkcard_help_screen_title4">د سکین کولو پرمهال ارام پاتې شئ</string>
-  <string name="mb_blinkcard_keep_card_parallel">کارت د تلیفون سره موازي وساتئ</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">د کارت شمېره معموله 16 عدده وي. دا باید په چاپي یا برجسته توګه پر کارت لیکل شوې وي. ډاډمن کړئ چې کارت ښه روښانه دی او ټول جزئیات یې د لیدلو وړ دي.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">لومړی د کارت شمېره سکن کړئ</string>
-  <string name="mb_blinkcard_other_side_instructions">د کارت بل مخ سکن کړئ</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">کارت و نه لوستل شو. مهرباني وکړئ بیا هڅه وکړئ.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">بیا هڅه وکړئ</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">سکین ناکام شو</string>
-  <string name="mb_blinkcard_scanning_wrong_side">کارت په بل مخ واړوئ</string>
+    <string name="mb_blinkcard_blur_detected">کارت او تلیفون بې‌حرکته وساتئ</string>
+    <string name="mb_blinkcard_card_not_fully_visible">کارت په بشپړه توګه ښکاره وساتئ</string>
+    <string name="mb_blinkcard_first_side_instructions">د کارت شمېره سکن کړئ</string>
+    <string name="mb_blinkcard_flashlight_warning_message">د فلش لائټ ځلا ته پام وکړئ.\nد مخنیوي لپاره خپل کارت په نرمۍ سره شاوخوا وګرځئ.</string>
+    <string name="mb_blinkcard_help_screen_msg1">د کارت شمېره معموله 16 عدده وي، مګر کېدای شي ځینې یې له 12 تر 19 پورې ارقام ولري. دا شمېره باید په چاپي یا برجسته ډول پر کارت لیکل شوې وي. دا کېدای شي ستاسو د کارت په مخه یا شا کې وي.</string>
+    <string name="mb_blinkcard_help_screen_msg2">ډاډ حاصل کړئ چې د کارت برخې په ګوتو پټې نکړئ، د ښکته برخې د کرښو په ګډون. همدارنګه هولوګرام ته پام کوئ چې کېدای شي د کارت پر ځینو برخو راشي.</string>
+    <string name="mb_blinkcard_help_screen_msg3">مستقیم یې د څراغ وړانګو ته مه نیسئ ځکه چې وړانګې له کارت څخه منعکسې کېږي او د کارت ځینې برخې نه لوستل کېږي. که تاسو پر کارت موجود معلومات نشئ لوستلای، دا به د کامرې لپاره هم د لیدلو وړ نه وي.</string>
+    <string name="mb_blinkcard_help_screen_msg4">هڅه وکړئ د سکن کولو پر مهال تلیفون او کارت ثابت ونیسئ. که یو یې و خوځول شي، انځور تیاره کېږي او پر کارت موجود معلومات نه لوستل کېږي.</string>
+    <string name="mb_blinkcard_help_screen_title1">د کارت شمېره چېرته ده؟</string>
+    <string name="mb_blinkcard_help_screen_title2">ټول ساحې ښکاره وساتئ</string>
+    <string name="mb_blinkcard_help_screen_title3">د سختې رڼا لپاره پام وکړئ</string>
+    <string name="mb_blinkcard_help_screen_title4">د سکین کولو پرمهال ارام پاتې شئ</string>
+    <string name="mb_blinkcard_keep_card_parallel">کارت له تلیفون سره موازي وساتئ</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">د کارت شمېره معموله 16 عدده وي. دا باید په چاپي یا برجسته توګه پر کارت لیکل شوې وي. ډاډمن کړئ چې کارت ښه روښانه دی او ټول جزئیات یې د لیدلو وړ دي.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">لومړی د کارت شمېره سکن کړئ</string>
+    <string name="mb_blinkcard_other_side_instructions">د کارت بل مخ سکن کړئ</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">ډاډ ترلاسه کړئ چې کارت ښه روښانه، بشپړ ښکاره او له ځلا پاک دی.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">بیا هڅه وکړئ</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">د کارت لوستل ممکن نه دي</string>
+    <string name="mb_blinkcard_scanning_wrong_side">کارت په بل مخ واړوئ</string>
 </resources>

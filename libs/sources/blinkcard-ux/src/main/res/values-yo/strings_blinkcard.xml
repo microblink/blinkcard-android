@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">Mú káàdì àti fóònù dúró</string>
-  <string name="mb_blinkcard_card_not_fully_visible">Jẹ́ kí káàdì náà hàn kedere pátápátá</string>
-  <string name="mb_blinkcard_first_side_instructions">Ṣe ẹ̀dà àwòrán nọ́mbà káàdì náà</string>
-  <string name="mb_blinkcard_flashlight_warning_message">Ṣọ́ra fún ìmọ́lẹ̀ iná mànàmáná.\nFi pẹ̀lẹ́pẹ̀lẹ́ gbé káàdì rẹ káàkiri kí o má baà ṣe é.</string>
-  <string name="mb_blinkcard_help_screen_msg1">Nọ́mbà káàdì sábà máa ń jẹ́ dígítì 16, bíótilẹ̀ jẹ́ pé ó lè ní láàárín àwọn dígítì 12 àti 19. Ó gbọdọ̀ wà ní àtẹ̀jáde tàbí kí wọ́n fín ní gbọọrọ sórí káàdì náà ní àwọn nọ́mbà tí ọwọ́ lè rí. Ó lè wà ní iwájú tàbí ẹ̀yìn káàdì náà.</string>
-  <string name="mb_blinkcard_help_screen_msg2">Rí i dájú pé ọ kò fi ìka bo apá ibì kan lórí káàdì náà, títí kan àwọn ìlà ìsàlẹ̀. Bákan náà, ṣọ́ra fún àwọn ìtànyòò hologram tí wọ́n máa ń wa ní àwọn apá kan lórí káàdì náà.</string>
-  <string name="mb_blinkcard_help_screen_msg3">Yẹra fún ìmọ́lẹ̀ tó lágbára nítorí pé ó máa ń hàn nínú káàdì náà àti pé ó lè mú kí àwọn apá kan káàdì náà má ṣe é kà. Tí ọ kò bá lè ka àwọn ìsọfúnni tó wà lórí káàdì náà, kò ní hàn sí kámẹ́rà náà.</string>
-  <string name="mb_blinkcard_help_screen_msg4">Gbìyànjú kó mú fóònù àti káàdì náà dúró nígbà ṣíṣe ẹ̀dà àwòrán. Sí sún kiri lè fa bóyá kí àwòrán náà rí bàìbàì àti kí ó mú kí àwọn ìsọfúnni orí káàdì náà má ṣe jẹ́ é kà.</string>
-  <string name="mb_blinkcard_help_screen_title1">Níbo ni nọ́mbà káàdì wà?</string>
-  <string name="mb_blinkcard_help_screen_title2">Jẹ́ kí gbogbo ààyè orí ìwé àkọsílẹ̀ náà hàn kedere</string>
-  <string name="mb_blinkcard_help_screen_title3">Ṣọ́ra fún ìmọ́lẹ̀ tó lágbára jù</string>
-  <string name="mb_blinkcard_help_screen_title4">Dúró sí ojú kan nígbà ṣíṣe ẹ̀dà àwòrán</string>
-  <string name="mb_blinkcard_keep_card_parallel">Gbé káàdì ní pẹrẹsẹ kó bára dọ́gba pẹ̀lú fóònù</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">Nọ́mbà káàdì sábà máa ń jẹ́ dígítì 16. Ó gbọdọ̀ wà ní àtẹ̀jáde tàbí kí wọ́n fín ní gbọọrọ sórí káàdì náà ní àwọn nọ́mbà tí ọwọ́ lè rí. Ríi dájú pé ìmọ́lẹ̀ tàn sí káàdì náà dáadáa àti kí gbogbo ìsọfúnni ara rẹ̀ hàn.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">Kọ́kọ́ ṣe ẹ̀dà àwòrán nọ́mbà káàdì náà</string>
-  <string name="mb_blinkcard_other_side_instructions">Ṣe ẹ̀dà àwòrán apá kejì káàdì náà</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">O kò rí káàdì náà kà. Jọ̀wọ́ tún un gbìyànjú.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Tún gbìyànjú síi</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">Ṣíṣe ẹ̀dà àwòrán kò yege</string>
-  <string name="mb_blinkcard_scanning_wrong_side">Yí káàdì padà</string>
+    <string name="mb_blinkcard_blur_detected">Jẹ́ kí káàdì àti fóònù dúró jẹ́ẹ́gẹ́</string>
+    <string name="mb_blinkcard_card_not_fully_visible">Jẹ́ kí káàdì náà hàn kedere pátápátá</string>
+    <string name="mb_blinkcard_first_side_instructions">Ṣe ẹ̀dà àwòrán nọ́mbà káàdì náà</string>
+    <string name="mb_blinkcard_flashlight_warning_message">Ṣọ́ra fún ìmọ́lẹ̀ iná mànàmáná.\nFi pẹ̀lẹ́pẹ̀lẹ́ gbé káàdì rẹ káàkiri kí o má baà ṣe é.</string>
+    <string name="mb_blinkcard_help_screen_msg1">Nọ́mbà káàdì sábà máa ń jẹ́ dígítì 16, bíótilẹ̀ jẹ́ pé ó lè ní láàárín àwọn dígítì 12 àti 19. Ó gbọdọ̀ wà ní àtẹ̀jáde tàbí kí wọ́n fín ní gbọọrọ sórí káàdì náà ní àwọn nọ́mbà tí ọwọ́ lè rí. Ó lè wà ní iwájú tàbí ẹ̀yìn káàdì náà.</string>
+    <string name="mb_blinkcard_help_screen_msg2">Rí i dájú pé ọ kò fi ìka bo apá ibì kan lórí káàdì náà, títí kan àwọn ìlà ìsàlẹ̀. Bákan náà, ṣọ́ra fún àwọn ìtànyòò hologram tí wọ́n máa ń wa ní àwọn apá kan lórí káàdì náà.</string>
+    <string name="mb_blinkcard_help_screen_msg3">Yẹra fún ìmọ́lẹ̀ tó lágbára nítorí pé ó máa ń hàn nínú káàdì náà àti pé ó lè mú kí àwọn apá kan káàdì náà má ṣe é kà. Tí ọ kò bá lè ka àwọn ìsọfúnni tó wà lórí káàdì náà, kò ní hàn sí kámẹ́rà náà.</string>
+    <string name="mb_blinkcard_help_screen_msg4">Gbìyànjú kó mú fóònù àti káàdì náà dúró nígbà ṣíṣe ẹ̀dà àwòrán. Sí sún kiri lè fa bóyá kí àwòrán náà rí bàìbàì àti kí ó mú kí àwọn ìsọfúnni orí káàdì náà má ṣe jẹ́ é kà.</string>
+    <string name="mb_blinkcard_help_screen_title1">Níbo ni nọ́mbà káàdì wà?</string>
+    <string name="mb_blinkcard_help_screen_title2">Jẹ́ kí gbogbo ààyè orí ìwé àkọsílẹ̀ náà hàn kedere</string>
+    <string name="mb_blinkcard_help_screen_title3">Ṣọ́ra fún ìmọ́lẹ̀ tó lágbára jù</string>
+    <string name="mb_blinkcard_help_screen_title4">Dúró sí ojú kan nígbà ṣíṣe ẹ̀dà àwòrán</string>
+    <string name="mb_blinkcard_keep_card_parallel">Jẹ́ kí káàdì wà ní ìbámu pẹ̀lú fóònù</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">Nọ́mbà káàdì sábà máa ń jẹ́ dígítì 16. Ó gbọdọ̀ wà ní àtẹ̀jáde tàbí kí wọ́n fín ní gbọọrọ sórí káàdì náà ní àwọn nọ́mbà tí ọwọ́ lè rí. Ríi dájú pé ìmọ́lẹ̀ tàn sí káàdì náà dáadáa àti kí gbogbo ìsọfúnni ara rẹ̀ hàn.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">Kọ́kọ́ ṣe ẹ̀dà àwòrán nọ́mbà káàdì náà</string>
+    <string name="mb_blinkcard_other_side_instructions">Ṣe ẹ̀dà àwòrán apá kejì káàdì náà</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Rí i dájú pé káàdì náà ní ìmọ́lẹ̀ tó, hàn pátápátá, kò sì ní ìtànṣán.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Tún gbìyànjú síi</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">A kò lè ka káàdì náà</string>
+    <string name="mb_blinkcard_scanning_wrong_side">Yí káàdì padà</string>
 </resources>

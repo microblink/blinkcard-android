@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">يرجى الحفاظ على ثبات البطاقة والهاتف</string>
-  <string name="mb_blinkcard_card_not_fully_visible">سهِّل الوصول إلى بيانات البطاقة لأقصى درجة</string>
-  <string name="mb_blinkcard_first_side_instructions">قم بمسح رقم البطاقة ضوئيًا</string>
-  <string name="mb_blinkcard_flashlight_warning_message">احذر وهج المصباح الضوئي.\nحرِّك بطاقتك حوله برفق لتفاديه.</string>
-  <string name="mb_blinkcard_help_screen_msg1">يتكون رقم البطاقة عادةً من 16 رقمًا، على الرغم من أنه قد يتراوح بين 12 و 19 رقمًا. يجب أن تكون مطبوعة أو منقوشة بأرقام بارزة في البطاقة. يمكن أن تكون موجودة في وجه البطاقة أو ظهرها.</string>
-  <string name="mb_blinkcard_help_screen_msg2">تأكد من أنك لا تغطي أي جزء من البطاقة بإصبعك، بما في ذلك الخطوط السفلية. واحترس أيضًا من انعكاسات الهولوغرام التي تمر عبر حقول البطاقات.</string>
-  <string name="mb_blinkcard_help_screen_msg3">تجنب الضوء الشديد المباشر لأنه ينعكس من البطاقة وقد يجعل أجزاء من البطاقة غير قابلة للقراءة. إذا لم تتمكن من قراءة البيانات الموجودة على البطاقة، فلن تكون مرئية للكاميرا أيضًا.</string>
-  <string name="mb_blinkcard_help_screen_msg4">حاول إبقاء الهاتف والبطاقة ثابتين أثناء المسح. يمكن أن يؤدي تحريك أي منهما إلى تعتيم الصورة وجعل البيانات الموجودة على البطاقة غير قابلة للقراءة.</string>
-  <string name="mb_blinkcard_help_screen_title1">أين يوجد رقم البطاقة؟</string>
-  <string name="mb_blinkcard_help_screen_title2">تأكد من وضوح جميع الخانات</string>
-  <string name="mb_blinkcard_help_screen_title3">احترس من الإضاءة الساطعة</string>
-  <string name="mb_blinkcard_help_screen_title4">حافظ على الثبات أثناء إجراء المسح</string>
-  <string name="mb_blinkcard_keep_card_parallel">ضع البطاقة موازية للهاتف</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">يتكون رقم البطاقة عادةً من 16 رقمًا. يجب أن يكون مطبوعًا أو منقوشًا بشكل بارز في البطاقة. تأكد من أن البطاقة موجودة في مكان جيد الإضاءة وأن جميع التفاصيل مرئية.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">امسح رقم البطاقة أولًا</string>
-  <string name="mb_blinkcard_other_side_instructions">امسح الجانب الآخر من البطاقة ضوئياً</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">تعذرت قراءة البطاقة. الرجاء إعادة المحاولة.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">إعادة المحاولة</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">تمت عملية المسح بنجاح</string>
-  <string name="mb_blinkcard_scanning_wrong_side">اقلب البطاقة</string>
+    <string name="mb_blinkcard_blur_detected">أبقِ البطاقة والهاتف ثابتين</string>
+    <string name="mb_blinkcard_card_not_fully_visible">سهِّل الوصول إلى بيانات البطاقة لأقصى درجة</string>
+    <string name="mb_blinkcard_first_side_instructions">قم بمسح رقم البطاقة ضوئياً</string>
+    <string name="mb_blinkcard_flashlight_warning_message">احذر وهج المصباح الضوئي.\nحرِّك بطاقتك حوله برفق لتفاديه.</string>
+    <string name="mb_blinkcard_help_screen_msg1">يتكون رقم البطاقة عادةً من 16 رقماً، على الرغم من أنه قد يتراوح بين 12 و 19 رقماً. يجب أن تكون مطبوعة أو منقوشة بأرقام بارزة في البطاقة. يمكن أن تكون موجودة في وجه البطاقة أو ظهرها.</string>
+    <string name="mb_blinkcard_help_screen_msg2">تأكد من أنك لا تغطي أي جزء من البطاقة بإصبعك، بما في ذلك الخطوط السفلية. واحترس أيضاً من انعكاسات الهولوغرام التي تمر عبر حقول البطاقات.</string>
+    <string name="mb_blinkcard_help_screen_msg3">تجنب الضوء الشديد المباشر لأنه ينعكس من البطاقة وقد يجعل أجزاء من البطاقة غير قابلة للقراءة. إذا لم تتمكن من قراءة البيانات الموجودة على البطاقة، فلن تكون مرئية للكاميرا أيضاً.</string>
+    <string name="mb_blinkcard_help_screen_msg4">حاول إبقاء الهاتف والبطاقة ثابتين أثناء المسح. يمكن أن يؤدي تحريك أي منهما إلى تعتيم الصورة وجعل البيانات الموجودة على البطاقة غير قابلة للقراءة.</string>
+    <string name="mb_blinkcard_help_screen_title1">أين يوجد رقم البطاقة؟</string>
+    <string name="mb_blinkcard_help_screen_title2">تأكد من وضوح جميع الخانات</string>
+    <string name="mb_blinkcard_help_screen_title3">احترس من الإضاءة الساطعة</string>
+    <string name="mb_blinkcard_help_screen_title4">حافظ على الثبات أثناء إجراء المسح</string>
+    <string name="mb_blinkcard_keep_card_parallel">أبقِ البطاقة موازية للهاتف</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">يتكون رقم البطاقة عادةً من 16 رقماً. يجب أن يكون مطبوعاً أو منقوشاً بشكل بارز في البطاقة. تأكد من أن البطاقة موجودة في مكان جيد الإضاءة وأن جميع التفاصيل مرئية.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">امسح رقم البطاقة أولاً</string>
+    <string name="mb_blinkcard_other_side_instructions">امسح الجانب الآخر من البطاقة ضوئياً</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">تأكد من أن البطاقة مضاءة جيدًا، ومرئية بالكامل، وخالية من الوهج.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">إعادة المحاولة</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">تعذرت قراءة البطاقة</string>
+    <string name="mb_blinkcard_scanning_wrong_side">اقلب البطاقة</string>
 </resources>

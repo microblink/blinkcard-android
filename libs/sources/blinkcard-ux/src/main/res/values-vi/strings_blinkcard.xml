@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">Giữ yên thẻ và điện thoại</string>
-  <string name="mb_blinkcard_card_not_fully_visible">Giữ cho thẻ hiển thị toàn phần</string>
-  <string name="mb_blinkcard_first_side_instructions">Quét số thẻ</string>
-  <string name="mb_blinkcard_flashlight_warning_message">Đề phòng ánh sáng của đèn flash.\nNhẹ nhàng di chuyển thẻ của bạn xung quanh để tránh nó.</string>
-  <string name="mb_blinkcard_help_screen_msg1">Số thẻ thường là số có 16 chữ số, mặc dù có thể có từ 12 đến 19 chữ số. Các số đó phải được in hoặc dập nổi trên thẻ. Số này có thể ở mặt trước hoặc mặt sau của thẻ.</string>
-  <string name="mb_blinkcard_help_screen_msg2">Đảm bảo rằng bạn không dùng ngón tay che các phần của thẻ, kể cả các dòng dưới cùng. Ngoài ra, hãy để ý các phản xạ hình ba chiều đi qua các trường của thẻ.</string>
-  <string name="mb_blinkcard_help_screen_msg3">Tránh ánh sáng gay gắt trực tiếp vì thẻ sẽ phản sáng và có thể làm cho các phần của thẻ không đọc được. Nếu bạn không thể đọc dữ liệu trên thẻ, thì dữ liệu đó cũng sẽ không hiển thị với camera.</string>
-  <string name="mb_blinkcard_help_screen_msg4">Cố gắng giữ yên điện thoại và thẻ trong khi quét. Di chuyển có thể làm mờ hình ảnh hoặc khiến dữ liệu trên thẻ không thể đọc được.</string>
-  <string name="mb_blinkcard_help_screen_title1">Số là nằm ở đâu?</string>
-  <string name="mb_blinkcard_help_screen_title2">Đảm bảo nhìn thấy rõ tất cả các trường</string>
-  <string name="mb_blinkcard_help_screen_title3">Đề phòng ánh sáng gay gắt</string>
-  <string name="mb_blinkcard_help_screen_title4">Giữ cố định trong khi quét</string>
-  <string name="mb_blinkcard_keep_card_parallel">Giữ thẻ song song với điện thoại</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">Số thẻ thường là một số gồm 16 chữ số. Các số đó phải được in hoặc dập nổi bằng các số nổi trên thẻ. Đảm bảo rằng thẻ được chiếu sáng tốt và tất cả các chi tiết đều có thể nhìn thấy được.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">Trước tiên hãy quét số thẻ</string>
-  <string name="mb_blinkcard_other_side_instructions">Quét mặt còn lại của thẻ</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">Không thể đọc thẻ. Vui lòng thử lại.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Thử lại</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">Quét không thành công</string>
-  <string name="mb_blinkcard_scanning_wrong_side">Lật thẻ lại</string>
+    <string name="mb_blinkcard_blur_detected">Giữ yên thẻ và điện thoại</string>
+    <string name="mb_blinkcard_card_not_fully_visible">Giữ cho thẻ hiển thị toàn phần</string>
+    <string name="mb_blinkcard_first_side_instructions">Quét số thẻ</string>
+    <string name="mb_blinkcard_flashlight_warning_message">Đề phòng ánh sáng của đèn flash.\nNhẹ nhàng di chuyển thẻ của bạn xung quanh để tránh nó.</string>
+    <string name="mb_blinkcard_help_screen_msg1">Số thẻ thường là số có 16 chữ số, mặc dù có thể có từ 12 đến 19 chữ số. Các số đó phải được in hoặc dập nổi trên thẻ. Số này có thể ở mặt trước hoặc mặt sau của thẻ.</string>
+    <string name="mb_blinkcard_help_screen_msg2">Đảm bảo rằng bạn không dùng ngón tay che các phần của thẻ, kể cả các dòng dưới cùng. Ngoài ra, hãy để ý các phản xạ hình ba chiều đi qua các trường của thẻ.</string>
+    <string name="mb_blinkcard_help_screen_msg3">Tránh ánh sáng gay gắt trực tiếp vì thẻ sẽ phản sáng và có thể làm cho các phần của thẻ không đọc được. Nếu bạn không thể đọc dữ liệu trên thẻ, thì dữ liệu đó cũng sẽ không hiển thị với camera.</string>
+    <string name="mb_blinkcard_help_screen_msg4">Cố gắng giữ yên điện thoại và thẻ trong khi quét. Di chuyển có thể làm mờ hình ảnh hoặc khiến dữ liệu trên thẻ không thể đọc được.</string>
+    <string name="mb_blinkcard_help_screen_title1">Số là nằm ở đâu?</string>
+    <string name="mb_blinkcard_help_screen_title2">Đảm bảo nhìn thấy rõ tất cả các trường</string>
+    <string name="mb_blinkcard_help_screen_title3">Đề phòng ánh sáng gay gắt</string>
+    <string name="mb_blinkcard_help_screen_title4">Giữ cố định trong khi quét</string>
+    <string name="mb_blinkcard_keep_card_parallel">Giữ thẻ song song với điện thoại</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">Số thẻ thường là một số gồm 16 chữ số. Các số đó phải được in hoặc dập nổi bằng các số nổi trên thẻ. Đảm bảo rằng thẻ được chiếu sáng tốt và tất cả các chi tiết đều có thể nhìn thấy được.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">Trước tiên hãy quét số thẻ</string>
+    <string name="mb_blinkcard_other_side_instructions">Quét mặt còn lại của thẻ</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Đảm bảo thẻ đủ sáng, hiển thị đầy đủ và không bị chói.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Thử lại</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">Không thể đọc thẻ</string>
+    <string name="mb_blinkcard_scanning_wrong_side">Lật thẻ lại</string>
 </resources>

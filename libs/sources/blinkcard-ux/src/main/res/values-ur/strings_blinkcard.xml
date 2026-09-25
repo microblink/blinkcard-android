@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">کارڈ اور فون کو ساکن رکھیں</string>
-  <string name="mb_blinkcard_card_not_fully_visible">کارڈ کو مکمل طور پر نمایاں رکھیں</string>
-  <string name="mb_blinkcard_first_side_instructions">کارڈ نمبر کو اسکین کریں</string>
-  <string name="mb_blinkcard_flashlight_warning_message">ٹارچ کی چکاچوند پر نگاہ رکھیں۔\nاس سے بچنے کے لیے اپنے کارڈ کو آہستہ سے ادھر ادھر گھمائیں۔</string>
-  <string name="mb_blinkcard_help_screen_msg1">کارڈ نمبر عموماً 16 ہندسوں پر مشتمل ہوتا ہے، لیکن یہ 12 سے 19 ہندسوں کے درمیان بھی ہو سکتا ہے۔ یہ نمبر یا تو پرنٹ کیا ہوا ہوتا ہے یا ابھری ہوئی شکل میں کارڈ پر موجود ہوتا ہے۔ یہ آپ کے کارڈ کے سامنے یا پچھلے حصے پر ہو سکتا ہے۔</string>
-  <string name="mb_blinkcard_help_screen_msg2">یقینی بنائیں کہ آپ اپنی انگلی سے کارڈ کے کسی حصے کو، خاص طور پر نچلی سطروں کو ڈھانپ نہیں رہے۔ اس کے علاوہ ہولوگرام کے عکس سے بھی بچیں جو کارڈ کے خانوں پر پڑ سکتا ہے۔</string>
-  <string name="mb_blinkcard_help_screen_msg3">براہِ راست تیز روشنی سے پرہیز کریں کیونکہ یہ کارڈ پر عکس ڈالتی ہے اور اس کے کچھ حصے پڑھنے کے قابل نہیں رہتے۔ اگر آپ خود کارڈ پر موجود ڈیٹا نہیں پڑھ سکتے تو یہ کیمرے پر بھی نظر نہیں آئے گا۔</string>
-  <string name="mb_blinkcard_help_screen_msg4">اسکین کرتے وقت فون اور کارڈ کو ایک جگہ رکھنے کی کوشش کریں۔ کسی کو بھی ہلانے سے تصویر دھندلی ہو سکتی ہے اور کارڈ پر موجود ڈیٹا پڑھنے کے قابل نہیں رہتا۔</string>
-  <string name="mb_blinkcard_help_screen_title1">کارڈ نمبر کہاں ہے؟</string>
-  <string name="mb_blinkcard_help_screen_title2">تمام خانے نمایاں رکھیں</string>
-  <string name="mb_blinkcard_help_screen_title3">تیز روشنی سے بچیں</string>
-  <string name="mb_blinkcard_help_screen_title4">اسکین کرتے وقت ساکن رہیں</string>
-  <string name="mb_blinkcard_keep_card_parallel">کارڈ کو فون کے متوازی رکھیں</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">کارڈ نمبر عموماً 16 ہندسوں پر مشتمل ہوتا ہے۔ یہ یا تو پرنٹ کیا ہوا ہوتا ہے یا ابھری ہوئی شکل میں کارڈ پر درج ہوتا ہے۔ یہ یقینی بنائیں کہ کارڈ پر مناسب روشنی ہے اور تمام تفصیلات صاف نظر آ رہی ہیں۔</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">سب سے پہلے کارڈ نمبر اسکین کریں</string>
-  <string name="mb_blinkcard_other_side_instructions">کارڈ کے دوسرے حصے کو اسکین کریں</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">کارڈ پڑھنے میں ناکامی۔ براہ کرم دوبارہ کوشش کریں۔</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">دوبارہ کوشش کریں</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">اسکین ناکام رہا</string>
-  <string name="mb_blinkcard_scanning_wrong_side">کارڈ کو پلٹیں</string>
+    <string name="mb_blinkcard_blur_detected">کارڈ اور فون کو ساکن رکھیں</string>
+    <string name="mb_blinkcard_card_not_fully_visible">کارڈ کو مکمل طور پر نمایاں رکھیں</string>
+    <string name="mb_blinkcard_first_side_instructions">کارڈ نمبر کو اسکین کریں</string>
+    <string name="mb_blinkcard_flashlight_warning_message">ٹارچ کی چکاچوند پر نگاہ رکھیں۔\nاس سے بچنے کے لیے اپنے کارڈ کو آہستہ سے ادھر ادھر گھمائیں۔</string>
+    <string name="mb_blinkcard_help_screen_msg1">کارڈ نمبر عموماً 16 ہندسوں پر مشتمل ہوتا ہے، لیکن یہ 12 سے 19 ہندسوں کے درمیان بھی ہو سکتا ہے۔ یہ نمبر یا تو پرنٹ کیا ہوا ہوتا ہے یا ابھری ہوئی شکل میں کارڈ پر موجود ہوتا ہے۔ یہ آپ کے کارڈ کے سامنے یا پچھلے حصے پر ہو سکتا ہے۔</string>
+    <string name="mb_blinkcard_help_screen_msg2">یقینی بنائیں کہ آپ اپنی انگلی سے کارڈ کے کسی حصے کو، خاص طور پر نچلی سطروں کو ڈھانپ نہیں رہے۔ اس کے علاوہ ہولوگرام کے عکس سے بھی بچیں جو کارڈ کے خانوں پر پڑ سکتا ہے۔</string>
+    <string name="mb_blinkcard_help_screen_msg3">براہِ راست تیز روشنی سے پرہیز کریں کیونکہ یہ کارڈ پر عکس ڈالتی ہے اور اس کے کچھ حصے پڑھنے کے قابل نہیں رہتے۔ اگر آپ خود کارڈ پر موجود ڈیٹا نہیں پڑھ سکتے تو یہ کیمرے پر بھی نظر نہیں آئے گا۔</string>
+    <string name="mb_blinkcard_help_screen_msg4">اسکین کرتے وقت فون اور کارڈ کو ایک جگہ رکھنے کی کوشش کریں۔ کسی کو بھی ہلانے سے تصویر دھندلی ہو سکتی ہے اور کارڈ پر موجود ڈیٹا پڑھنے کے قابل نہیں رہتا۔</string>
+    <string name="mb_blinkcard_help_screen_title1">کارڈ نمبر کہاں ہے؟</string>
+    <string name="mb_blinkcard_help_screen_title2">تمام خانے نمایاں رکھیں</string>
+    <string name="mb_blinkcard_help_screen_title3">تیز روشنی سے بچیں</string>
+    <string name="mb_blinkcard_help_screen_title4">اسکین کرتے وقت ساکن رہیں</string>
+    <string name="mb_blinkcard_keep_card_parallel">کارڈ کو فون کے متوازی رکھیں</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">کارڈ نمبر عموماً 16 ہندسوں پر مشتمل ہوتا ہے۔ یہ یا تو پرنٹ کیا ہوا ہوتا ہے یا ابھری ہوئی شکل میں کارڈ پر درج ہوتا ہے۔ یہ یقینی بنائیں کہ کارڈ پر مناسب روشنی ہے اور تمام تفصیلات صاف نظر آ رہی ہیں۔</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">سب سے پہلے کارڈ نمبر اسکین کریں</string>
+    <string name="mb_blinkcard_other_side_instructions">کارڈ کے دوسرے حصے کو اسکین کریں</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">یقینی بنائیں کہ کارڈ اچھی طرح روشن ہو، مکمل طور پر نظر آ رہا ہو اور اس پر چمک نہ ہو۔</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">دوبارہ کوشش کریں</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">کارڈ پڑھا نہیں جا سکا</string>
+    <string name="mb_blinkcard_scanning_wrong_side">کارڈ کو پلٹیں</string>
 </resources>

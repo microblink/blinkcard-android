@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">ካርዱን እና ስልኩን ቀጥ አድርገው ይያዙ</string>
-  <string name="mb_blinkcard_card_not_fully_visible">ካርዱን ሙሉ በሙሉ እንዲታይ ያድርጉ</string>
-  <string name="mb_blinkcard_first_side_instructions">የካርድ ቁጥሩን ይቃኙ</string>
-  <string name="mb_blinkcard_flashlight_warning_message">የባትሪ ብርሃን እንዳያበራ ይጠንቀቁ።\nካርድዎን ለማስቀረት በቀስታ ያንቀሳቅሱት።</string>
-  <string name="mb_blinkcard_help_screen_msg1">የካርድ ቁጥሩ ብዙውን ጊዜ ባለ 16 አሃዝ ቁጥር ነው፣ ቢሆንም ከ12 እስከ 19 አሃዞች ሊኖረው ይችላል። በካርዱ ላይ በተነሱ ቁጥሮች መታተም ወይም መቀረጽ አለበት። በካርድዎ ፊት ወይም ጀርባ ላይ ሊሆን ይችላል።</string>
-  <string name="mb_blinkcard_help_screen_msg2">የታችኛውን መስመሮች ጨምሮ የካርዱን ክፍሎች በጣት አለመሸፈንዎን ያረጋግጡ። እንዲሁም በካርዶች መስኮች ላይ የሚሄዱ የሆሎግራም ነጸብራቆችን ይመልከቱ።</string>
-  <string name="mb_blinkcard_help_screen_msg3">ካርዱ ላይ ስለሚያንፀባርቅ እና የካርዱን ክፍሎች እንዳይነበብ ስለሚያደርግ ቀጥተኛ ኃይለኛ ብርሃንን ያስወግዱ፣ በካርዱ ላይ ያለውን ውሂብ ማንበብ ካልቻሉ ለካሜራም የሚታይ አይሆንም።</string>
-  <string name="mb_blinkcard_help_screen_msg4">በሚቃኙበት ጊዜ ስልኩን እና ካርዱን ጸንተው ይዘው ለማቆየት ይሞክሩ። አንዱን ማንቀሳቀስ ምስሉን ሊያደበዝዝ እና በካርዱ ላይ ያለውን ውሂብ የማይነበብ እንዲሆን ያደርገዋል።</string>
-  <string name="mb_blinkcard_help_screen_title1">የካርድ ቁጥሩ የቱ ጋር ነው?</string>
-  <string name="mb_blinkcard_help_screen_title2">ሁሉንም መስኮች እንዲታዩ ያድርጉ</string>
-  <string name="mb_blinkcard_help_screen_title3">ከአደገኛ ብርሃን ይጠንቀቁ</string>
-  <string name="mb_blinkcard_help_screen_title4">በሚቃኙበት ጊዜ ሳይንቀሳቀሱ ይቆዩ</string>
-  <string name="mb_blinkcard_keep_card_parallel">ካርዱን ከስልክ ጋር ትይዩ ያድርጉት</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">የካርድ ቁጥር ብዙውን ጊዜ ባለ 16 አሃዝ ቁጥር ነው። በካርዱ ላይ ጎላ ባሉ ቁጥሮች መታተም ወይም መቀረጽ አለበት። ካርዱ በደንብ መብራቱን እና ሁሉም ዝርዝሮች የሚታዩ መሆናቸውን ያረጋግጡ።</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">መጀመሪያ የካርድ ቁጥሩን ይቃኙ</string>
-  <string name="mb_blinkcard_other_side_instructions">የካርዱን ሌላኛውን ጎን ይቃኙ</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">ካርዱን ማንበብ አልተቻለም። እባክዎ እንደገና ይሞክሩ።</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">እንደገና ይሞክሩ</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">መቃኘት አልተሳካም</string>
-  <string name="mb_blinkcard_scanning_wrong_side">ካርዱን ይገልብጡት</string>
+    <string name="mb_blinkcard_blur_detected">ካርዱን እና ስልኩን እንዳይንቀሳቀሱ ያድርጉ</string>
+    <string name="mb_blinkcard_card_not_fully_visible">ካርዱን ሙሉ በሙሉ እንዲታይ ያድርጉ</string>
+    <string name="mb_blinkcard_first_side_instructions">የካርድ ቁጥሩን ይቃኙ</string>
+    <string name="mb_blinkcard_flashlight_warning_message">የባትሪ ብርሃን እንዳያበራ ይጠንቀቁ።\nካርድዎን ለማስቀረት በቀስታ ያንቀሳቅሱት።</string>
+    <string name="mb_blinkcard_help_screen_msg1">የካርድ ቁጥሩ ብዙውን ጊዜ ባለ 16 አሃዝ ቁጥር ነው፣ ቢሆንም ከ12 እስከ 19 አሃዞች ሊኖረው ይችላል። በካርዱ ላይ በተነሱ ቁጥሮች መታተም ወይም መቀረጽ አለበት። በካርድዎ ፊት ወይም ጀርባ ላይ ሊሆን ይችላል።</string>
+    <string name="mb_blinkcard_help_screen_msg2">የታችኛውን መስመሮች ጨምሮ የካርዱን ክፍሎች በጣት አለመሸፈንዎን ያረጋግጡ። እንዲሁም በካርዶች መስኮች ላይ የሚሄዱ የሆሎግራም ነጸብራቆችን ይመልከቱ።</string>
+    <string name="mb_blinkcard_help_screen_msg3">ካርዱ ላይ ስለሚያንፀባርቅ እና የካርዱን ክፍሎች እንዳይነበብ ስለሚያደርግ ቀጥተኛ ኃይለኛ ብርሃንን ያስወግዱ፣ በካርዱ ላይ ያለውን ውሂብ ማንበብ ካልቻሉ ለካሜራም የሚታይ አይሆንም።</string>
+    <string name="mb_blinkcard_help_screen_msg4">በሚቃኙበት ጊዜ ስልኩን እና ካርዱን ጸንተው ይዘው ለማቆየት ይሞክሩ። አንዱን ማንቀሳቀስ ምስሉን ሊያደበዝዝ እና በካርዱ ላይ ያለውን ውሂብ የማይነበብ እንዲሆን ያደርገዋል።</string>
+    <string name="mb_blinkcard_help_screen_title1">የካርድ ቁጥሩ የቱ ጋር ነው?</string>
+    <string name="mb_blinkcard_help_screen_title2">ሁሉንም መስኮች እንዲታዩ ያድርጉ</string>
+    <string name="mb_blinkcard_help_screen_title3">ከአደገኛ ብርሃን ይጠንቀቁ</string>
+    <string name="mb_blinkcard_help_screen_title4">በሚቃኙበት ጊዜ ሳይንቀሳቀሱ ይቆዩ</string>
+    <string name="mb_blinkcard_keep_card_parallel">ካርዱን ከስልኩ ጋር ትይዩ ያድርጉ</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">የካርድ ቁጥር ብዙውን ጊዜ ባለ 16 አሃዝ ቁጥር ነው። በካርዱ ላይ ጎላ ባሉ ቁጥሮች መታተም ወይም መቀረጽ አለበት። ካርዱ በደንብ መብራቱን እና ሁሉም ዝርዝሮች የሚታዩ መሆናቸውን ያረጋግጡ።</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">መጀመሪያ የካርድ ቁጥሩን ይቃኙ</string>
+    <string name="mb_blinkcard_other_side_instructions">የካርዱን ሌላኛውን ጎን ይቃኙ</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">ካርዱ በደንብ የበራ፣ ሙሉ በሙሉ የሚታይ እና ነጸብራቅ የሌለበት መሆኑን ያረጋግጡ።</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">እንደገና ይሞክሩ</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">ካርዱን ማንበብ አልተቻለም</string>
+    <string name="mb_blinkcard_scanning_wrong_side">ካርዱን ይገልብጡት</string>
 </resources>

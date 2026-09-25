@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">کارت و تلفن را ثابت نگه دارید</string>
-  <string name="mb_blinkcard_card_not_fully_visible">کارت را کاملاً قابل مشاهده نگه دارید</string>
-  <string name="mb_blinkcard_first_side_instructions">شماره کارت را اسکن کنید</string>
-  <string name="mb_blinkcard_flashlight_warning_message">مراقب تابش خیره کننده چراغ قوه باشید.\nکارت خود را به آرامی حرکت دهید تا از آن جلوگیری شود.</string>
-  <string name="mb_blinkcard_help_screen_msg1">شماره کارت معمولاً یک عدد ۱۶ رقمی است، اگرچه ممکن است بین ۱۲ تا ۱۹ رقم داشته باشد. این شماره باید یا چاپ شده باشد یا به صورت اعداد برجسته در سراسر کارت حک شده باشد. می‌تواند در جلو یا پشت کارت شما باشد.</string>
-  <string name="mb_blinkcard_help_screen_msg2">مطمئن شوید که قسمت‌هایی از کارت، از جمله خطوط پایینی، را با انگشت نمی‌پوشانید. همچنین، مراقب بازتاب‌های هولوگرام باشید که از روی زمینه کارت‌ها عبور می‌کنند.</string>
-  <string name="mb_blinkcard_help_screen_msg3">از نور مستقیم و شدید پرهیز کنید زیرا از کارت منعکس می‌شود و می‌تواند بخش‌هایی از کارت را غیرقابل خواندن کند. اگر نتوانید داده‌های روی کارت را بخوانید، برای دوربین نیز قابل مشاهده نخواهد بود.</string>
-  <string name="mb_blinkcard_help_screen_msg4">سعی کنید هنگام اسکن، گوشی و کارت را ثابت نگه دارید. حرکت دادن هر دو می‌تواند تصویر را تار کند و اطلاعات روی کارت را غیرقابل خواندن کند.</string>
-  <string name="mb_blinkcard_help_screen_title1">شماره کارت کجاست؟</string>
-  <string name="mb_blinkcard_help_screen_title2">همه فیلدها را قابل مشاهده نگه دارید</string>
-  <string name="mb_blinkcard_help_screen_title3">مراقب نور شدید باشید</string>
-  <string name="mb_blinkcard_help_screen_title4">هنگام اسکن کردن بی‌حرکت بمانید</string>
-  <string name="mb_blinkcard_keep_card_parallel">کارت را موازی با تلفن نگه دارید</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">شماره کارت معمولاً یک عدد ۱۶ رقمی است. این شماره باید یا چاپ شده باشد یا به صورت اعداد برجسته روی کارت حک شده باشد. مطمئن شوید که کارت به خوبی روشن است و تمام جزئیات آن قابل مشاهده است.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">ابتدا شماره کارت را اسکن کنید</string>
-  <string name="mb_blinkcard_other_side_instructions">طرف دیگر کارت را اسکن کنید</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">قادر به خواندن کارت نیست. لطفاً دوباره امتحان کنید.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">دوباره امتحان کنید</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">اسکن ناموفق بود</string>
-  <string name="mb_blinkcard_scanning_wrong_side">کارت را برگردانید</string>
+    <string name="mb_blinkcard_blur_detected">Kart va telefon ra sabet negah darid</string>
+    <string name="mb_blinkcard_card_not_fully_visible">کارت را کاملاً قابل مشاهده نگه دارید</string>
+    <string name="mb_blinkcard_first_side_instructions">شماره کارت را اسکن کنید</string>
+    <string name="mb_blinkcard_flashlight_warning_message">مراقب تابش خیره کننده چراغ قوه باشید.\nکارت خود را به آرامی حرکت دهید تا از آن جلوگیری شود.</string>
+    <string name="mb_blinkcard_help_screen_msg1">شماره کارت معمولاً یک عدد ۱۶ رقمی است، اگرچه ممکن است بین ۱۲ تا ۱۹ رقم داشته باشد. این شماره باید یا چاپ شده باشد یا به صورت اعداد برجسته در سراسر کارت حک شده باشد. می‌تواند در جلو یا پشت کارت شما باشد.</string>
+    <string name="mb_blinkcard_help_screen_msg2">مطمئن شوید که قسمت‌هایی از کارت، از جمله خطوط پایینی، را با انگشت نمی‌پوشانید. همچنین، مراقب بازتاب‌های هولوگرام باشید که از روی زمینه کارت‌ها عبور می‌کنند.</string>
+    <string name="mb_blinkcard_help_screen_msg3">از نور مستقیم و شدید پرهیز کنید زیرا از کارت منعکس می‌شود و می‌تواند بخش‌هایی از کارت را غیرقابل خواندن کند. اگر نتوانید داده‌های روی کارت را بخوانید، برای دوربین نیز قابل مشاهده نخواهد بود.</string>
+    <string name="mb_blinkcard_help_screen_msg4">سعی کنید هنگام اسکن، گوشی و کارت را ثابت نگه دارید. حرکت دادن هر دو می‌تواند تصویر را تار کند و اطلاعات روی کارت را غیرقابل خواندن کند.</string>
+    <string name="mb_blinkcard_help_screen_title1">شماره کارت کجاست؟</string>
+    <string name="mb_blinkcard_help_screen_title2">همه فیلدها را قابل مشاهده نگه دارید</string>
+    <string name="mb_blinkcard_help_screen_title3">مراقب نور شدید باشید</string>
+    <string name="mb_blinkcard_help_screen_title4">هنگام اسکن کردن بی‌حرکت بمانید</string>
+    <string name="mb_blinkcard_keep_card_parallel">Kart ra movazi ba telefon negah darid</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">شماره کارت معمولاً یک عدد ۱۶ رقمی است. این شماره باید یا چاپ شده باشد یا به صورت اعداد برجسته روی کارت حک شده باشد. مطمئن شوید که کارت به خوبی روشن است و تمام جزئیات آن قابل مشاهده است.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">ابتدا شماره کارت را اسکن کنید</string>
+    <string name="mb_blinkcard_other_side_instructions">طرف دیگر کارت را اسکن کنید</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Motma\'en shavid kârt khub roshan, kâmel namâyân va bedûn-e tâbesh ast.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">دوباره امتحان کنید</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">Nemîtavân kârt râ khând</string>
+    <string name="mb_blinkcard_scanning_wrong_side">کارت را برگردانید</string>
 </resources>

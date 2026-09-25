@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">Håll kortet och telefonen stilla</string>
-  <string name="mb_blinkcard_card_not_fully_visible">Håll kortet helt synligt</string>
-  <string name="mb_blinkcard_first_side_instructions">Skanna kortnumret</string>
-  <string name="mb_blinkcard_flashlight_warning_message">Akta dig för reflektioner från kamerablixten.\nFlytta försiktigt på kortet för att undvika det.</string>
-  <string name="mb_blinkcard_help_screen_msg1">Kortnumret består oftast av 16 siffror, men det kan bestå av mellan 12 och 19 siffror. Numret är antingen tryckt eller präglat i upphöjda siffror på kortets fram- eller baksida.</string>
-  <string name="mb_blinkcard_help_screen_msg2">Se till att du inte täcker delar av kortet med fingret, inklusive de nedre raderna. Se också upp för hologramreflektioner som löper över kortets fält.</string>
-  <string name="mb_blinkcard_help_screen_msg3">Undvik starkt direktljus eftersom det reflekteras från kortet och kan göra delar av det oläsliga. Om du inte kan läsa informationen på kortet kommer den inte heller att synas för kameran.</string>
-  <string name="mb_blinkcard_help_screen_msg4">Försök att hålla telefonen och kortet stilla under skanningen. Om du rör någotdera kan bilden bli suddig och informationen på kortet oläslig.</string>
-  <string name="mb_blinkcard_help_screen_title1">Var finns kortnumret?</string>
-  <string name="mb_blinkcard_help_screen_title2">Håll alla fält synliga</string>
-  <string name="mb_blinkcard_help_screen_title3">Se upp för skarpt ljus</string>
-  <string name="mb_blinkcard_help_screen_title4">Håll stilla medan du skannar</string>
-  <string name="mb_blinkcard_keep_card_parallel">Håll kortet parallellt med telefonen</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">Kortnumret består oftast av 16 siffror. Det är antingen tryckt eller präglat i upphöjda siffror på kortets fram- eller baksida. Se till att kortet är ordentligt upplyst och att alla detaljer syns.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">Skanna kortnumret först</string>
-  <string name="mb_blinkcard_other_side_instructions">Läs av den andra sidan av kortet</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">Det gick inte att läsa kortet. Försök igen.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Försök igen</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">Skanningen misslyckades</string>
-  <string name="mb_blinkcard_scanning_wrong_side">Vänd på kortet</string>
+    <string name="mb_blinkcard_blur_detected">Håll kortet och telefonen stilla</string>
+    <string name="mb_blinkcard_card_not_fully_visible">Håll kortet helt synligt</string>
+    <string name="mb_blinkcard_first_side_instructions">Skanna kortnumret</string>
+    <string name="mb_blinkcard_flashlight_warning_message">Akta dig för reflektioner från kamerablixten.\nFlytta försiktigt på kortet för att undvika det.</string>
+    <string name="mb_blinkcard_help_screen_msg1">Kortnumret består oftast av 16 siffror, men det kan bestå av mellan 12 och 19 siffror. Numret är antingen tryckt eller präglat i upphöjda siffror på kortets fram- eller baksida.</string>
+    <string name="mb_blinkcard_help_screen_msg2">Se till att du inte täcker delar av kortet med fingret, inklusive de nedre raderna. Se också upp för hologramreflektioner som löper över kortets fält.</string>
+    <string name="mb_blinkcard_help_screen_msg3">Undvik starkt direktljus eftersom det reflekteras från kortet och kan göra delar av det oläsliga. Om du inte kan läsa informationen på kortet kommer den inte heller att synas för kameran.</string>
+    <string name="mb_blinkcard_help_screen_msg4">Försök att hålla telefonen och kortet stilla under skanningen. Om du rör någotdera kan bilden bli suddig och informationen på kortet oläslig.</string>
+    <string name="mb_blinkcard_help_screen_title1">Var finns kortnumret?</string>
+    <string name="mb_blinkcard_help_screen_title2">Håll alla fält synliga</string>
+    <string name="mb_blinkcard_help_screen_title3">Se upp för skarpt ljus</string>
+    <string name="mb_blinkcard_help_screen_title4">Håll stilla medan du skannar</string>
+    <string name="mb_blinkcard_keep_card_parallel">Håll kortet parallellt med telefonen</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">Kortnumret består oftast av 16 siffror. Det är antingen tryckt eller präglat i upphöjda siffror på kortets fram- eller baksida. Se till att kortet är ordentligt upplyst och att alla detaljer syns.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">Skanna kortnumret först</string>
+    <string name="mb_blinkcard_other_side_instructions">Läs av den andra sidan av kortet</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Se till att kortet är väl upplyst, syns helt och är fritt från reflexer.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Försök igen</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">Det gick inte att läsa kortet</string>
+    <string name="mb_blinkcard_scanning_wrong_side">Vänd på kortet</string>
 </resources>

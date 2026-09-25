@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">Hakikisha kadi na simu havisongi</string>
-  <string name="mb_blinkcard_card_not_fully_visible">Hakikisha kadi inaonekana kabisa</string>
-  <string name="mb_blinkcard_first_side_instructions">Skani namba ya kadi</string>
-  <string name="mb_blinkcard_flashlight_warning_message">Jihadhari na mwangaza wa tochi.\nSogeza kadi yako kwa upole ili kuiepuka.</string>
-  <string name="mb_blinkcard_help_screen_msg1">Namba ya kadi kawaida ni namba 16, ingawa inaweza kuwa na kati ya namba 12 na 19. Inapaswa kuwa imechapishwa au kuchorwa kwa namba zilizoinuka kwenye kadi. Inaweza kuwa mbele au nyuma ya kadi yako.</string>
-  <string name="mb_blinkcard_help_screen_msg2">Hakikisha hujafunika sehemu za kadi kwa kidole, ikijumuisha laini za chini. Pia, kuwa mwangalifu na mwanga unaoakisiwa na hologramu unaopita juu ya sehemu za kadi.</string>
-  <string name="mb_blinkcard_help_screen_msg3">Epuka mwanga mkali wa moja kwa moja kwa sababu huakisiwa kutoka kwenye kadi na inaweza kufanya sehemu za kadi zisiweze kusomeka. Ikiwa huwezi kusoma data kwenye kadi, vilevile haitaonekana kwenye kamera.</string>
-  <string name="mb_blinkcard_help_screen_msg4">Jaribu kuhakikisha kadi na simu havisongi unaposkani. Ukisogeza chochote picha inaweza kukosa kuonekana vizuri na kufanya data kwenye kadi isiweze kusomeka.</string>
-  <string name="mb_blinkcard_help_screen_title1">Namba ya kadi iko wapi?</string>
-  <string name="mb_blinkcard_help_screen_title2">Hakikisha sehemu zote zinaonekana</string>
-  <string name="mb_blinkcard_help_screen_title3">Kuwa mwangalifu na mwanga mkali</string>
-  <string name="mb_blinkcard_help_screen_title4">Usisonge unaposkani</string>
-  <string name="mb_blinkcard_keep_card_parallel">Weka kadi ikae sambamba na simu</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">Namba ya kadi kawaida ni namba 16. Inapaswa kuwa imechapishwa au kuchorwa kwa namba zilizoinuka kwenye kadi. Hakikisha kadi iko kwenye mwanga wa kutosha na maelezo yote yanaonekana.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">Skani namba ya kadi kwanza</string>
-  <string name="mb_blinkcard_other_side_instructions">Skani upande mwingine wa kadi</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">Imeshindwa kusoma kadi. Tafadhali jaribu tena.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Jaribu tena</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">Imeshindwa kuskani</string>
-  <string name="mb_blinkcard_scanning_wrong_side">Geuza kadi</string>
+    <string name="mb_blinkcard_blur_detected">Weka kadi na simu bila kusogeza</string>
+    <string name="mb_blinkcard_card_not_fully_visible">Hakikisha kadi inaonekana kabisa</string>
+    <string name="mb_blinkcard_first_side_instructions">Skani namba ya kadi</string>
+    <string name="mb_blinkcard_flashlight_warning_message">Jihadhari na mwangaza wa tochi.\nSogeza kadi yako kwa upole ili kuiepuka.</string>
+    <string name="mb_blinkcard_help_screen_msg1">Namba ya kadi kawaida ni namba 16, ingawa inaweza kuwa na kati ya namba 12 na 19. Inapaswa kuwa imechapishwa au kuchorwa kwa namba zilizoinuka kwenye kadi. Inaweza kuwa mbele au nyuma ya kadi yako.</string>
+    <string name="mb_blinkcard_help_screen_msg2">Hakikisha hujafunika sehemu za kadi kwa kidole, ikijumuisha laini za chini. Pia, kuwa mwangalifu na mwanga unaoakisiwa na hologramu unaopita juu ya sehemu za kadi.</string>
+    <string name="mb_blinkcard_help_screen_msg3">Epuka mwanga mkali wa moja kwa moja kwa sababu huakisiwa kutoka kwenye kadi na inaweza kufanya sehemu za kadi zisiweze kusomeka. Ikiwa huwezi kusoma data kwenye kadi, vilevile haitaonekana kwenye kamera.</string>
+    <string name="mb_blinkcard_help_screen_msg4">Jaribu kuhakikisha kadi na simu havisongi unaposkani. Ukisogeza chochote picha inaweza kukosa kuonekana vizuri na kufanya data kwenye kadi isiweze kusomeka.</string>
+    <string name="mb_blinkcard_help_screen_title1">Namba ya kadi iko wapi?</string>
+    <string name="mb_blinkcard_help_screen_title2">Hakikisha sehemu zote zinaonekana</string>
+    <string name="mb_blinkcard_help_screen_title3">Kuwa mwangalifu na mwanga mkali</string>
+    <string name="mb_blinkcard_help_screen_title4">Usisonge unaposkani</string>
+    <string name="mb_blinkcard_keep_card_parallel">Weka kadi sambamba na simu</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">Namba ya kadi kawaida ni namba 16. Inapaswa kuwa imechapishwa au kuchorwa kwa namba zilizoinuka kwenye kadi. Hakikisha kadi iko kwenye mwanga wa kutosha na maelezo yote yanaonekana.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">Skani namba ya kadi kwanza</string>
+    <string name="mb_blinkcard_other_side_instructions">Skani upande mwingine wa kadi</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Hakikisha kadi ina mwanga wa kutosha, kadi yote inaonekana, na haina mng\'ao.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Jaribu tena</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">Kadi haiwezi kusomeka</string>
+    <string name="mb_blinkcard_scanning_wrong_side">Geuza kadi</string>
 </resources>

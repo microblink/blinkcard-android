@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">ประคองบัตรและโทรศัพท์ให้นิ่งๆ</string>
-  <string name="mb_blinkcard_card_not_fully_visible">เก็บบัตรให้มองเห็นได้เต็มที่</string>
-  <string name="mb_blinkcard_first_side_instructions">สแกนหมายเลขบัตร</string>
-  <string name="mb_blinkcard_flashlight_warning_message">ระวังแสงจ้าจากไฟฉาย ค่อย ๆ ขยับบัตรไปเพื่อหลีกเลี่ยง</string>
-  <string name="mb_blinkcard_help_screen_msg1">หมายเลขบัตรมักจะเป็นตัวเลข 16 หลัก แต่อาจยาวระหว่าง 12 ถึง 19 หลักได้ และเป็นตัวเลขพิมพ์หรือปั๊มนูนพาดอยู่บนบัตร โดยอาจอยู่หน้าหรือหลังบัตรก็ได้</string>
-  <string name="mb_blinkcard_help_screen_msg2">ตรวจสอบให้แน่ใจว่านิ้วของคุณไม่ได้บังส่วนใดของบัตร รวมถึงบรรทัดล่างสุด นอกจากนี้ ระวังแสงสะท้อนของโฮโลแกรมที่จะทับส่วนต่างๆ ของบัตรด้วย</string>
-  <string name="mb_blinkcard_help_screen_msg3">หลีกเลี่ยงแสงจ้าที่ส่องตรงๆ เพราะแสงสะท้อนจากบัตรและบัตรอ่านไม่ออกบางส่วนได้ หากคุณอ่านข้อมูลบนบัตรไม่ได้ กล้องก็จะมองไม่เห็นเช่นกัน</string>
-  <string name="mb_blinkcard_help_screen_msg4">พยายามถือโทรศัพท์และวางบัตรไว้นิ่งๆ ขณะสแกน การเคลื่อนไหวอาจทำให้ภาพพร่ามัวและทำให้ข้อมูลบนบัตรอ่านไม่ออก</string>
-  <string name="mb_blinkcard_help_screen_title1">หมายเลขบัตรอยู่ที่ไหน?</string>
-  <string name="mb_blinkcard_help_screen_title2">สังเกตว่าทุกส่วนมองเห็นได้ชัด</string>
-  <string name="mb_blinkcard_help_screen_title3">ระวังแสงจ้า</string>
-  <string name="mb_blinkcard_help_screen_title4">ถือนิ่งๆ ขณะสแกน</string>
-  <string name="mb_blinkcard_keep_card_parallel">วางบัตรให้ขนานกับโทรศัพท์</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">หมายเลขบัตรมักจะเป็นตัวเลข 16 หลัก อาจเป็นตัวเลขพิมพ์หรือปั๊มนูนพาดอยู่บนบัตร ตรวจสอบให้แน่ใจว่ามีแสงสว่างที่บัตรเพียงพอและเห็นรายละเอียดทั้งหมด</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">สแกนหมายเลขบัตรก่อน</string>
-  <string name="mb_blinkcard_other_side_instructions">สแกนอีกด้านหนึ่งของบัตร</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">ไม่สามารถอ่านบัตร โปรดลองอีกครั้ง</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">ลองอีกครั้ง</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">สแกนไม่สำเร็จ</string>
-  <string name="mb_blinkcard_scanning_wrong_side">พลิกบัตร</string>
+    <string name="mb_blinkcard_blur_detected">ถือบัตรและโทรศัพท์ให้นิ่ง</string>
+    <string name="mb_blinkcard_card_not_fully_visible">เก็บบัตรให้มองเห็นได้เต็มที่</string>
+    <string name="mb_blinkcard_first_side_instructions">สแกนหมายเลขบัตร</string>
+    <string name="mb_blinkcard_flashlight_warning_message">ระวังแสงจ้าจากไฟฉาย ค่อย ๆ ขยับบัตรไปเพื่อหลีกเลี่ยง</string>
+    <string name="mb_blinkcard_help_screen_msg1">หมายเลขบัตรมักจะเป็นตัวเลข 16 หลัก แต่อาจยาวระหว่าง 12 ถึง 19 หลักได้ และเป็นตัวเลขพิมพ์หรือปั๊มนูนพาดอยู่บนบัตร โดยอาจอยู่หน้าหรือหลังบัตรก็ได้</string>
+    <string name="mb_blinkcard_help_screen_msg2">ตรวจสอบให้แน่ใจว่านิ้วของคุณไม่ได้บังส่วนใดของบัตร รวมถึงบรรทัดล่างสุด นอกจากนี้ ระวังแสงสะท้อนของโฮโลแกรมที่จะทับส่วนต่างๆ ของบัตรด้วย</string>
+    <string name="mb_blinkcard_help_screen_msg3">หลีกเลี่ยงแสงจ้าที่ส่องตรงๆ เพราะแสงสะท้อนจากบัตรและบัตรอ่านไม่ออกบางส่วนได้ หากคุณอ่านข้อมูลบนบัตรไม่ได้ กล้องก็จะมองไม่เห็นเช่นกัน</string>
+    <string name="mb_blinkcard_help_screen_msg4">พยายามถือโทรศัพท์และวางบัตรไว้นิ่งๆ ขณะสแกน การเคลื่อนไหวอาจทำให้ภาพพร่ามัวและทำให้ข้อมูลบนบัตรอ่านไม่ออก</string>
+    <string name="mb_blinkcard_help_screen_title1">หมายเลขบัตรอยู่ที่ไหน?</string>
+    <string name="mb_blinkcard_help_screen_title2">สังเกตว่าทุกส่วนมองเห็นได้ชัด</string>
+    <string name="mb_blinkcard_help_screen_title3">ระวังแสงจ้า</string>
+    <string name="mb_blinkcard_help_screen_title4">ถือนิ่งๆ ขณะสแกน</string>
+    <string name="mb_blinkcard_keep_card_parallel">ถือบัตรให้ขนานกับโทรศัพท์</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">หมายเลขบัตรมักจะเป็นตัวเลข 16 หลัก อาจเป็นตัวเลขพิมพ์หรือปั๊มนูนพาดอยู่บนบัตร ตรวจสอบให้แน่ใจว่ามีแสงสว่างที่บัตรเพียงพอและเห็นรายละเอียดทั้งหมด</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">สแกนหมายเลขบัตรก่อน</string>
+    <string name="mb_blinkcard_other_side_instructions">สแกนอีกด้านหนึ่งของบัตร</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">ตรวจสอบให้แน่ใจว่าบัตรมีแสงสว่างเพียงพอ มองเห็นได้ครบทั้งใบ และไม่มีแสงสะท้อน</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">ลองอีกครั้ง</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">ไม่สามารถอ่านบัตรได้</string>
+    <string name="mb_blinkcard_scanning_wrong_side">พลิกบัตร</string>
 </resources>

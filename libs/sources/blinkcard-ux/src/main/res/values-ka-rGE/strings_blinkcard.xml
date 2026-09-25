@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">არ გაამოძრაოთ ბარათი და ტელეფონი</string>
-  <string name="mb_blinkcard_card_not_fully_visible">ბარათი სრულად უნდა ჩანდეს</string>
-  <string name="mb_blinkcard_first_side_instructions">დაასკანერეთ ბარათის ნომერი</string>
-  <string name="mb_blinkcard_flashlight_warning_message">მოერიდეთ ბლიცის მკვეთრ ნათებას.\nამის თავიდან ასაცილებლად, ფრთხილად გადაადგილეთ საკრედიტო ბარათი.</string>
-  <string name="mb_blinkcard_help_screen_msg1">ბარათის ნომერი, როგორც წესი, 16 ციფრისგან შედგება, თუმცა მასში შეიძლება იყოს 12-დან 19 ციფრამდე. ეს ნომერი ან დაბეჭდილი უნდა იყოს, ან ამოტვიფრული ამობურცული ციფრებით ბარათზე. ის შეიძლება თქვენი ბარათის წინა ან უკანა მხარეს იყოს დატანილი.</string>
-  <string name="mb_blinkcard_help_screen_msg2">დარწმუნდით, რომ თითით ბარათის ნაწილებს არ ფარავთ, მათ შორის ქვედა ხაზებსაც. ასევე, ფრთხილად იყავით ჰოლოგრამულ ანარეკლებთანაც, რომლებიც ბარათის ველებზე გადადის.</string>
-  <string name="mb_blinkcard_help_screen_msg3">მოერიდეთ პირდაპირ მკვეთრ განათებას, რადგან ის ბარათზე ანარეკლს აჩენს და ბარათის ნაწილები შესაძლოა გარჩევადი აღარ იყოს. თუ ბარათზე მოცემულ მონაცემებს ვერ კითხულობთ, მას ვერც კამერა დააფიქსირებს.</string>
-  <string name="mb_blinkcard_help_screen_msg4">დასკანერებისას ეცადეთ არ გაამოძრაოთ ტელეფონი და ბარათი. გამოძრავების შემთხვევაში ფოტო შეიძლება დაიბუროს და ბარათზე ასახული მონაცემები გარჩევადი არ იყოს.</string>
-  <string name="mb_blinkcard_help_screen_title1">სად არის დატანილი ბარათის ნომერი?</string>
-  <string name="mb_blinkcard_help_screen_title2">ყველა ველი უნდა ჩანდეს</string>
-  <string name="mb_blinkcard_help_screen_title3">მოერიდეთ მკვეთრ განათებას</string>
-  <string name="mb_blinkcard_help_screen_title4">არ იმოძრაოთ დასკანერებისას</string>
-  <string name="mb_blinkcard_keep_card_parallel">ბარათი ტელეფონის პარალელურად დაიჭირეთ</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">ბარათის ნომერი, როგორც წესი, 16 ციფრისგან შედგება. ეს ნომერი ან დაბეჭდილი უნდა იყოს, ან ამოტვიფრული ამობურცული ციფრებით ბარათზე. დარწმუნდით, რომ ბარათი კარგადაა განათებული და ყველა დეტალი ჩანს.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">ჯერ ბარათის ნომერი დაასკანერეთ</string>
-  <string name="mb_blinkcard_other_side_instructions">დაასკანერეთ ბარათის მეორე მხარე</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">ბარათის წაკითხვა ვერ ხერხდება. ხელახლა სცადეთ.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">ხელახლა ცდა</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">სკანირება წარუმატებელია</string>
-  <string name="mb_blinkcard_scanning_wrong_side">ამოატრიალეთ ბარათი</string>
+    <string name="mb_blinkcard_blur_detected">ბარათი და ტელეფონი უძრავად დაიჭირეთ</string>
+    <string name="mb_blinkcard_card_not_fully_visible">ბარათი სრულად უნდა ჩანდეს</string>
+    <string name="mb_blinkcard_first_side_instructions">დაასკანერეთ ბარათის ნომერი</string>
+    <string name="mb_blinkcard_flashlight_warning_message">მოერიდეთ ბლიცის მკვეთრ ნათებას.\nამის თავიდან ასაცილებლად, ფრთხილად გადაადგილეთ საკრედიტო ბარათი.</string>
+    <string name="mb_blinkcard_help_screen_msg1">ბარათის ნომერი, როგორც წესი, 16 ციფრისგან შედგება, თუმცა მასში შეიძლება იყოს 12-დან 19 ციფრამდე. ეს ნომერი ან დაბეჭდილი უნდა იყოს, ან ამოტვიფრული ამობურცული ციფრებით ბარათზე. ის შეიძლება თქვენი ბარათის წინა ან უკანა მხარეს იყოს დატანილი.</string>
+    <string name="mb_blinkcard_help_screen_msg2">დარწმუნდით, რომ თითით ბარათის ნაწილებს არ ფარავთ, მათ შორის ქვედა ხაზებსაც. ასევე, ფრთხილად იყავით ჰოლოგრამულ ანარეკლებთანაც, რომლებიც ბარათის ველებზე გადადის.</string>
+    <string name="mb_blinkcard_help_screen_msg3">მოერიდეთ პირდაპირ მკვეთრ განათებას, რადგან ის ბარათზე ანარეკლს აჩენს და ბარათის ნაწილები შესაძლოა გარჩევადი აღარ იყოს. თუ ბარათზე მოცემულ მონაცემებს ვერ კითხულობთ, მას ვერც კამერა დააფიქსირებს.</string>
+    <string name="mb_blinkcard_help_screen_msg4">დასკანერებისას ეცადეთ არ გაამოძრაოთ ტელეფონი და ბარათი. გამოძრავების შემთხვევაში ფოტო შეიძლება დაიბუროს და ბარათზე ასახული მონაცემები გარჩევადი არ იყოს.</string>
+    <string name="mb_blinkcard_help_screen_title1">სად არის დატანილი ბარათის ნომერი?</string>
+    <string name="mb_blinkcard_help_screen_title2">ყველა ველი უნდა ჩანდეს</string>
+    <string name="mb_blinkcard_help_screen_title3">მოერიდეთ მკვეთრ განათებას</string>
+    <string name="mb_blinkcard_help_screen_title4">არ იმოძრაოთ დასკანერებისას</string>
+    <string name="mb_blinkcard_keep_card_parallel">ბარათი ტელეფონის პარალელურად დაიჭირეთ</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">ბარათის ნომერი, როგორც წესი, 16 ციფრისგან შედგება. ეს ნომერი ან დაბეჭდილი უნდა იყოს, ან ამოტვიფრული ამობურცული ციფრებით ბარათზე. დარწმუნდით, რომ ბარათი კარგადაა განათებული და ყველა დეტალი ჩანს.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">ჯერ ბარათის ნომერი დაასკანერეთ</string>
+    <string name="mb_blinkcard_other_side_instructions">დაასკანერეთ ბარათის მეორე მხარე</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">დარწმუნდით, რომ ბარათი კარგად არის განათებული, სრულად ჩანს და არ ირეკლავს სინათლეს.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">ხელახლა ცდა</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">ბარათის წაკითხვა ვერ მოხერხდა</string>
+    <string name="mb_blinkcard_scanning_wrong_side">ამოატრიალეთ ბარათი</string>
 </resources>

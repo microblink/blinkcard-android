@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">Držte kartu a telefón v pokoji</string>
-  <string name="mb_blinkcard_card_not_fully_visible">Kartu majte vždy plne viditeľnú</string>
-  <string name="mb_blinkcard_first_side_instructions">Nasnímajte číslo karty</string>
-  <string name="mb_blinkcard_flashlight_warning_message">Pozor na oslnenie bleskom.\nJemne pohnite kartou, aby ste tomu zabránili.</string>
-  <string name="mb_blinkcard_help_screen_msg1">Číslo karty je zvyčajne 16-miestne číslo, hoci môže mať 12 až 19 číslic. Malo by byť vytlačené alebo vyrazené vo forme vyvýšených čísel naprieč kartou. Môže byť na prednej alebo zadnej strane karty.</string>
-  <string name="mb_blinkcard_help_screen_msg2">Uistite sa, že nezakrývate časti karty prstom, vrátane spodných čiar. Dávajte si tiež pozor na hologramové odrazy, ktoré prechádzajú cez polia kariet.</string>
-  <string name="mb_blinkcard_help_screen_msg3">Vyhnite sa priamemu ostrému svetlu, pretože sa odráža od karty a môže spôsobiť, že časti karty budú nečitateľné. Ak vy nedokážete čítať údaje na karte, nebude ich vidieť ani kamera.</string>
-  <string name="mb_blinkcard_help_screen_msg4">Skúste počas snímania ponechať telefón a kartu v pokoji bez pohybu. Pohyb môže rozmazať obraz a spôsobiť nečitateľnosť údajov na karte.</string>
-  <string name="mb_blinkcard_help_screen_title1">Kde je číslo karty?</string>
-  <string name="mb_blinkcard_help_screen_title2">Udržujte všetky polia viditeľné</string>
-  <string name="mb_blinkcard_help_screen_title3">Pozor na ostré svetlo</string>
-  <string name="mb_blinkcard_help_screen_title4">Počas snímania zostaňte v pokoji</string>
-  <string name="mb_blinkcard_keep_card_parallel">Držte kartu rovnobežne s telefónom</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">Číslo karty je zvyčajne 16-miestne číslo. Malo by byť vytlačené alebo vyrazené vo forme vyvýšených čísel naprieč kartou. Uistite sa, že karta je dobre osvetlená a všetky detaily sú viditeľné.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">Najskôr nasnímajte číslo karty</string>
-  <string name="mb_blinkcard_other_side_instructions">Nasnímajte druhú stranu karty</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">Kartu sa nepodarilo prečítať. Skúste to znova.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Skúsiť znova</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">Skenovanie neúspešné</string>
-  <string name="mb_blinkcard_scanning_wrong_side">Otočte kartu</string>
+    <string name="mb_blinkcard_blur_detected">Držte kartu a telefón nehybne</string>
+    <string name="mb_blinkcard_card_not_fully_visible">Kartu majte vždy plne viditeľnú</string>
+    <string name="mb_blinkcard_first_side_instructions">Nasnímajte číslo karty</string>
+    <string name="mb_blinkcard_flashlight_warning_message">Pozor na oslnenie bleskom.\nJemne pohnite kartou, aby ste tomu zabránili.</string>
+    <string name="mb_blinkcard_help_screen_msg1">Číslo karty je zvyčajne 16-miestne číslo, hoci môže mať 12 až 19 číslic. Malo by byť vytlačené alebo vyrazené vo forme vyvýšených čísel naprieč kartou. Môže byť na prednej alebo zadnej strane karty.</string>
+    <string name="mb_blinkcard_help_screen_msg2">Uistite sa, že nezakrývate časti karty prstom, vrátane spodných čiar. Dávajte si tiež pozor na hologramové odrazy, ktoré prechádzajú cez polia kariet.</string>
+    <string name="mb_blinkcard_help_screen_msg3">Vyhnite sa priamemu ostrému svetlu, pretože sa odráža od karty a môže spôsobiť, že časti karty budú nečitateľné. Ak vy nedokážete čítať údaje na karte, nebude ich vidieť ani kamera.</string>
+    <string name="mb_blinkcard_help_screen_msg4">Skúste počas snímania ponechať telefón a kartu v pokoji bez pohybu. Pohyb môže rozmazať obraz a spôsobiť nečitateľnosť údajov na karte.</string>
+    <string name="mb_blinkcard_help_screen_title1">Kde je číslo karty?</string>
+    <string name="mb_blinkcard_help_screen_title2">Udržujte všetky polia viditeľné</string>
+    <string name="mb_blinkcard_help_screen_title3">Pozor na ostré svetlo</string>
+    <string name="mb_blinkcard_help_screen_title4">Počas snímania zostaňte v pokoji</string>
+    <string name="mb_blinkcard_keep_card_parallel">Držte kartu rovnobežne s telefónom</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">Číslo karty je zvyčajne 16-miestne číslo. Malo by byť vytlačené alebo vyrazené vo forme vyvýšených čísel naprieč kartou. Uistite sa, že karta je dobre osvetlená a všetky detaily sú viditeľné.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">Najskôr nasnímajte číslo karty</string>
+    <string name="mb_blinkcard_other_side_instructions">Nasnímajte druhú stranu karty</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Uistite sa, že karta je dobre osvetlená, celá viditeľná a bez odleskov.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Skúsiť znova</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">Kartu sa nepodarilo načítať</string>
+    <string name="mb_blinkcard_scanning_wrong_side">Otočte kartu</string>
 </resources>

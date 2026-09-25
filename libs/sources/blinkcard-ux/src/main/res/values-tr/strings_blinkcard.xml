@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">Kartı ve telefonu sabit tutun.</string>
-  <string name="mb_blinkcard_card_not_fully_visible">Kartın tamamını görünür şekilde tutun.</string>
-  <string name="mb_blinkcard_first_side_instructions">Kart numarasını tara</string>
-  <string name="mb_blinkcard_flashlight_warning_message">El fenerinin parlamasına dikkat edin.\nKartınızı hafifçe hareket ettirerek çarpmayı önleyin.</string>
-  <string name="mb_blinkcard_help_screen_msg1">Kart numarası, genellikle 16 haneli, ancak kimi zaman 12 ila 19 haneli de olabilen bir sayıdır. Kartın üzerinde kabartmalı rakamlarla basılı veya kabartmalı olmalıdır. Kartınızın ön veya arka yüzünde bulunabilir.</string>
-  <string name="mb_blinkcard_help_screen_msg2">Alt satırlar da dâhil olmak üzere, kartın hiçbir bölümünü parmağınla kapatmadığından emin ol. Ayrıca, kart alanlarının üzerini kapatan hologram yansımalarına da dikkat et.</string>
-  <string name="mb_blinkcard_help_screen_msg3">Doğrudan gelen sert ışık karttan yansıyarak kartın bazı kısımlarını okunmaz hâle getirebileceği için bu tür ışık kullanmaktan kaçın. Karttaki verileri okuyamıyorsan bu veriler kamerada da görünmeyecektir.</string>
-  <string name="mb_blinkcard_help_screen_msg4">Tarama sırasında telefonu ve kartı sabit tutmaya çalış. Telefon veya kartın hareket etmesi görüntüyü bulanıklaştırabilir ve karttaki verileri okunmaz hâle getirebilir.</string>
-  <string name="mb_blinkcard_help_screen_title1">Kart numarası nerede?</string>
-  <string name="mb_blinkcard_help_screen_title2">Tüm alanları görünür hâlde tut</string>
-  <string name="mb_blinkcard_help_screen_title3">Sert ışığa dikkat et</string>
-  <string name="mb_blinkcard_help_screen_title4">Tarama sırasında hareketsiz kal</string>
-  <string name="mb_blinkcard_keep_card_parallel">Kartı telefonla paralel tutun.</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">Kart numarası, genellikle 16 haneli bir sayıdır. Kartın üzerinde kabartmalı rakamlarla basılı veya kabartmalı olmalıdır. Kartın iyi aydınlatılmış ve tüm bilgilerin görünür olduğundan emin ol.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">Önce kart numarasını tara</string>
-  <string name="mb_blinkcard_other_side_instructions">Kartın diğer tarafını tarayın</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">Kart okunamadı. Lütfen tekrar deneyin.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Tekrar dene</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">Tarama başarısız</string>
-  <string name="mb_blinkcard_scanning_wrong_side">Kartı ters çevir</string>
+    <string name="mb_blinkcard_blur_detected">Kartı ve telefonu sabit tutun</string>
+    <string name="mb_blinkcard_card_not_fully_visible">Kartın tamamını görünür şekilde tutun.</string>
+    <string name="mb_blinkcard_first_side_instructions">Kart numarasını tara</string>
+    <string name="mb_blinkcard_flashlight_warning_message">El fenerinin parlamasına dikkat edin.\nKartınızı hafifçe hareket ettirerek çarpmayı önleyin.</string>
+    <string name="mb_blinkcard_help_screen_msg1">Kart numarası, genellikle 16 haneli, ancak kimi zaman 12 ila 19 haneli de olabilen bir sayıdır. Kartın üzerinde kabartmalı rakamlarla basılı veya kabartmalı olmalıdır. Kartınızın ön veya arka yüzünde bulunabilir.</string>
+    <string name="mb_blinkcard_help_screen_msg2">Alt satırlar da dâhil olmak üzere, kartın hiçbir bölümünü parmağınla kapatmadığından emin ol. Ayrıca, kart alanlarının üzerini kapatan hologram yansımalarına da dikkat et.</string>
+    <string name="mb_blinkcard_help_screen_msg3">Doğrudan gelen sert ışık karttan yansıyarak kartın bazı kısımlarını okunmaz hâle getirebileceği için bu tür ışık kullanmaktan kaçın. Karttaki verileri okuyamıyorsan bu veriler kamerada da görünmeyecektir.</string>
+    <string name="mb_blinkcard_help_screen_msg4">Tarama sırasında telefonu ve kartı sabit tutmaya çalış. Telefon veya kartın hareket etmesi görüntüyü bulanıklaştırabilir ve karttaki verileri okunmaz hâle getirebilir.</string>
+    <string name="mb_blinkcard_help_screen_title1">Kart numarası nerede?</string>
+    <string name="mb_blinkcard_help_screen_title2">Tüm alanları görünür hâlde tut</string>
+    <string name="mb_blinkcard_help_screen_title3">Sert ışığa dikkat et</string>
+    <string name="mb_blinkcard_help_screen_title4">Tarama sırasında hareketsiz kal</string>
+    <string name="mb_blinkcard_keep_card_parallel">Kartı telefona paralel tutun</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">Kart numarası, genellikle 16 haneli bir sayıdır. Kartın üzerinde kabartmalı rakamlarla basılı veya kabartmalı olmalıdır. Kartın iyi aydınlatılmış ve tüm bilgilerin görünür olduğundan emin ol.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">Önce kart numarasını tara</string>
+    <string name="mb_blinkcard_other_side_instructions">Kartın diğer tarafını tarayın</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Kartın iyi aydınlatıldığından, tamamen görünür olduğundan ve yansıma olmadığından emin olun.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Tekrar dene</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">Kart okunamadı</string>
+    <string name="mb_blinkcard_scanning_wrong_side">Kartı ters çevir</string>
 </resources>

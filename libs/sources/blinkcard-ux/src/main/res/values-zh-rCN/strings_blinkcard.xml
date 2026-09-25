@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">保持卡片和手机静止</string>
-  <string name="mb_blinkcard_card_not_fully_visible">保持卡片完全可见</string>
-  <string name="mb_blinkcard_first_side_instructions">扫描卡号</string>
-  <string name="mb_blinkcard_flashlight_warning_message">当心闪光灯眩光。\n请轻轻移动您的身份证件，避免产生眩光。</string>
-  <string name="mb_blinkcard_help_screen_msg1">卡号通常是 16 位数，不过也可能是 12 到 19 位数。卡号应该是卡中打印或凸印的数字。可能位于卡的正面或背面。</string>
-  <string name="mb_blinkcard_help_screen_msg2">确保您没有用手指遮盖卡的一部分，包括底部线条。此外，请留意卡的字段上的全息图反射。</string>
-  <string name="mb_blinkcard_help_screen_msg3">避免直接强光，因为它会从卡上反射，并可能使卡的一些部分不可读。如果您无法阅读卡上的数据，摄像头也无法识别。</string>
-  <string name="mb_blinkcard_help_screen_msg4">在扫描时尽量让手机和卡保持静止。移动任一项都可能让图像变模糊，使卡上的数据不可读。</string>
-  <string name="mb_blinkcard_help_screen_title1">卡号在哪里？</string>
-  <string name="mb_blinkcard_help_screen_title2">保持所有字段可见</string>
-  <string name="mb_blinkcard_help_screen_title3">注意强光直射</string>
-  <string name="mb_blinkcard_help_screen_title4">扫描时保持不动</string>
-  <string name="mb_blinkcard_keep_card_parallel">请将卡片与手机保持平行。</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">卡号通常是 16 位数。卡号应该是卡中打印或凸印的数字。确保卡的光照良好，所有细节清晰可见。</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">首先扫描卡号</string>
-  <string name="mb_blinkcard_other_side_instructions">扫描卡片的另一面</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">无法读取卡片，请重试。</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">重试</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">扫描失败</string>
-  <string name="mb_blinkcard_scanning_wrong_side">将卡片翻面</string>
+    <string name="mb_blinkcard_blur_detected">请保持卡片和手机静止</string>
+    <string name="mb_blinkcard_card_not_fully_visible">保持卡片完全可见</string>
+    <string name="mb_blinkcard_first_side_instructions">扫描卡号</string>
+    <string name="mb_blinkcard_flashlight_warning_message">当心闪光灯眩光。\n请轻轻移动您的身份证件，避免产生眩光。</string>
+    <string name="mb_blinkcard_help_screen_msg1">卡号通常是 16 位数，不过也可能是 12 到 19 位数。卡号应该是卡中打印或凸印的数字。可能位于卡的正面或背面。</string>
+    <string name="mb_blinkcard_help_screen_msg2">确保您没有用手指遮盖卡的一部分，包括底部线条。此外，请留意卡的字段上的全息图反射。</string>
+    <string name="mb_blinkcard_help_screen_msg3">避免直接强光，因为它会从卡上反射，并可能使卡的一些部分不可读。如果您无法阅读卡上的数据，摄像头也无法识别。</string>
+    <string name="mb_blinkcard_help_screen_msg4">在扫描时尽量让手机和卡保持静止。移动任一项都可能让图像变模糊，使卡上的数据不可读。</string>
+    <string name="mb_blinkcard_help_screen_title1">卡号在哪里？</string>
+    <string name="mb_blinkcard_help_screen_title2">保持所有字段可见</string>
+    <string name="mb_blinkcard_help_screen_title3">注意强光直射</string>
+    <string name="mb_blinkcard_help_screen_title4">扫描时保持不动</string>
+    <string name="mb_blinkcard_keep_card_parallel">请使卡片与手机保持平行</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">卡号通常是 16 位数。卡号应该是卡中打印或凸印的数字。确保卡的光照良好，所有细节清晰可见。</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">首先扫描卡号</string>
+    <string name="mb_blinkcard_other_side_instructions">扫描卡片的另一面</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">请确保卡片光线充足、完全可见且无反光。</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">重试</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">无法读取卡片</string>
+    <string name="mb_blinkcard_scanning_wrong_side">将卡片翻面</string>
 </resources>
