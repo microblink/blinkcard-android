@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">יש לדאוג שהכרטיס והטלפון לא יזוזו</string>
-  <string name="mb_blinkcard_card_not_fully_visible">שמור על הכרטיס גלוי לחלוטין</string>
-  <string name="mb_blinkcard_first_side_instructions">סרוק את מספר הכרטיס</string>
-  <string name="mb_blinkcard_flashlight_warning_message">היזהרו מפני סנוור הפנס.\nהזיזו בעדינות את הכרטיס שלכם בכדי להימנע מהדבר.</string>
-  <string name="mb_blinkcard_help_screen_msg1">מספר הכרטיס הוא בדרך כלל באורך 16 ספרות, אם כי הוא יכול להיות באורך של בין 12 ל-19 ספרות. זה צריך להיות מודפס או מוטבע עם מספרים בולטים על פני הכרטיס. זה יכול להיות בחלק הקדמי או האחורי של הכרטיס שלך.</string>
-  <string name="mb_blinkcard_help_screen_msg2">יש להקפיד שלא לכסות חלקים מהמסמך באצבע, כולל השורות התחתונות.כמו כן, יש לשים לב להשתקפויות הולוגרמה העוברות על שדות הכרטיסים.</string>
-  <string name="mb_blinkcard_help_screen_msg3">הימנע מאור ישיר חזק מכיוון שהוא משתקף מהכרטיס ועלול להפוך חלקים מהכרטיס לבלתי קריאים. אם אינך יכול לקרוא את הנתונים בכרטיס, הם גם לא יהיו גלויים גם למצלמה.</string>
-  <string name="mb_blinkcard_help_screen_msg4">נסה לשמור על יציבות הטלפון והכרטיס בזמן הסריקה. הזזתם עלולה לטשטש את התמונה ולהפוך את הנתונים בכרטיס לבלתי קריאים.</string>
-  <string name="mb_blinkcard_help_screen_title1">היכן מספר הכרטיס?</string>
-  <string name="mb_blinkcard_help_screen_title2">כל השדות צריכים להיות גלויים</string>
-  <string name="mb_blinkcard_help_screen_title3">התרחק מאור חזק</string>
-  <string name="mb_blinkcard_help_screen_title4">הישאר יציב בזמן הסריקה</string>
-  <string name="mb_blinkcard_keep_card_parallel">על הכרטיס להיות במקביל לטלפון</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">מספר הכרטיס הוא בדרך כלל באורך 16 ספרות. זה צריך להיות מודפס או מוטבע עם מספרים בולטים על פני הכרטיס. יש לוודא שהתאורה טובה וכל הפרטים גלויים.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">תחילה סרוק את מספר הכרטיס</string>
-  <string name="mb_blinkcard_other_side_instructions">סרוק את הצד השני של הכרטיס</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">לא ניתן לקרוא את הכרטיס. נא לנסות שוב.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">לנסות שוב</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">הסריקה נכשלה</string>
-  <string name="mb_blinkcard_scanning_wrong_side">הפוך את הכרטיס</string>
+    <string name="mb_blinkcard_blur_detected">החזיקו את הכרטיס ואת הטלפון ללא תזוזה</string>
+    <string name="mb_blinkcard_card_not_fully_visible">שמור על הכרטיס גלוי לחלוטין</string>
+    <string name="mb_blinkcard_first_side_instructions">סרוק את מספר הכרטיס</string>
+    <string name="mb_blinkcard_flashlight_warning_message">היזהרו מפני סנוור הפנס.\nהזיזו בעדינות את הכרטיס שלכם בכדי להימנע מהדבר.</string>
+    <string name="mb_blinkcard_help_screen_msg1">מספר הכרטיס הוא בדרך כלל באורך 16 ספרות, אם כי הוא יכול להיות באורך של בין 12 ל-19 ספרות. זה צריך להיות מודפס או מוטבע עם מספרים בולטים על פני הכרטיס. זה יכול להיות בחלק הקדמי או האחורי של הכרטיס שלך.</string>
+    <string name="mb_blinkcard_help_screen_msg2">יש להקפיד שלא לכסות חלקים מהמסמך באצבע, כולל השורות התחתונות.כמו כן, יש לשים לב להשתקפויות הולוגרמה העוברות על שדות הכרטיסים.</string>
+    <string name="mb_blinkcard_help_screen_msg3">הימנע מאור ישיר חזק מכיוון שהוא משתקף מהכרטיס ועלול להפוך חלקים מהכרטיס לבלתי קריאים. אם אינך יכול לקרוא את הנתונים בכרטיס, הם גם לא יהיו גלויים גם למצלמה.</string>
+    <string name="mb_blinkcard_help_screen_msg4">נסה לשמור על יציבות הטלפון והכרטיס בזמן הסריקה. הזזתם עלולה לטשטש את התמונה ולהפוך את הנתונים בכרטיס לבלתי קריאים.</string>
+    <string name="mb_blinkcard_help_screen_title1">היכן מספר הכרטיס?</string>
+    <string name="mb_blinkcard_help_screen_title2">כל השדות צריכים להיות גלויים</string>
+    <string name="mb_blinkcard_help_screen_title3">התרחק מאור חזק</string>
+    <string name="mb_blinkcard_help_screen_title4">הישאר יציב בזמן הסריקה</string>
+    <string name="mb_blinkcard_keep_card_parallel">החזיקו את הכרטיס במקביל לטלפון</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">מספר הכרטיס הוא בדרך כלל באורך 16 ספרות. זה צריך להיות מודפס או מוטבע עם מספרים בולטים על פני הכרטיס. יש לוודא שהתאורה טובה וכל הפרטים גלויים.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">תחילה סרוק את מספר הכרטיס</string>
+    <string name="mb_blinkcard_other_side_instructions">סרוק את הצד השני של הכרטיס</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">ודאו שהכרטיס מואר היטב, גלוי במלואו וללא השתקפויות.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">לנסות שוב</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">לא ניתן לקרוא את הכרטיס</string>
+    <string name="mb_blinkcard_scanning_wrong_side">הפוך את הכרטיס</string>
 </resources>

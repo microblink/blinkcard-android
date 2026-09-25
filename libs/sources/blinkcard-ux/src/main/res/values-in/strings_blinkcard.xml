@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">Pastikan kartu dan ponsel tidak goyang</string>
-  <string name="mb_blinkcard_card_not_fully_visible">Kartu harus terlihat sepenuhnya</string>
-  <string name="mb_blinkcard_first_side_instructions">Pindai nomor kartu</string>
-  <string name="mb_blinkcard_flashlight_warning_message">Awas lampu kilat silau.\nGerakkan kartu Anda dengan perlahan untuk menghindarinya.</string>
-  <string name="mb_blinkcard_help_screen_msg1">Nomor kartu biasanya berupa angka 16 digit, meski mungkin antara 12 dan 19 digit. Nomor itu mestinya dicetak atau diembos dengan angka timbul di kartu. Pastikan kartu cukup terang dan semua detail terlihat.</string>
-  <string name="mb_blinkcard_help_screen_msg2">Pastikan bagian kartu tidak tertutup jari, termasuk garis bawah. Perhatikan juga pantulan hologram yang melewati bidang kartu.</string>
-  <string name="mb_blinkcard_help_screen_msg3">Hindari cahaya silau yang langsung karena memantul dari kartu dan akibatnya bagian kartu tidak terbaca. Jika Anda tidak dapat membaca data pada kartu, data juga tidak akan terlihat oleh kamera.</string>
-  <string name="mb_blinkcard_help_screen_msg4">Usahakan ponsel dan kartu tetap diam saat memindai. Menggerakkan ponsel dapat mengaburkan gambar dan membuat data di kartu tidak dapat dibaca.</string>
-  <string name="mb_blinkcard_help_screen_title1">Di mana letak nomor kartu?</string>
-  <string name="mb_blinkcard_help_screen_title2">Pastikan semua bagian terlihat</string>
-  <string name="mb_blinkcard_help_screen_title3">Waspadai cahaya tajam</string>
-  <string name="mb_blinkcard_help_screen_title4">Pastikan dokumen tidak bergerak saat pemindaian</string>
-  <string name="mb_blinkcard_keep_card_parallel">Jaga kartu tetap sejajar dengan ponsel</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">Nomor kartu biasanya berupa angka 16 digit. Nomor itu mestinya dicetak atau diembos dengan angka timbul di kartu. Pastikan kartu cukup terang dan semua detail terlihat.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">Pindai nomor kartu terlebih dahulu</string>
-  <string name="mb_blinkcard_other_side_instructions">Pindai sisi lain kartu</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">Kartu tidak dapat terbaca. Coba lagi.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Coba Lagi</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">Pemindaian gagal</string>
-  <string name="mb_blinkcard_scanning_wrong_side">Balik kartu</string>
+    <string name="mb_blinkcard_blur_detected">Pastikan kartu dan ponsel tetap diam</string>
+    <string name="mb_blinkcard_card_not_fully_visible">Kartu harus terlihat sepenuhnya</string>
+    <string name="mb_blinkcard_first_side_instructions">Pindai nomor kartu</string>
+    <string name="mb_blinkcard_flashlight_warning_message">Awas lampu kilat silau.\nGerakkan kartu Anda dengan perlahan untuk menghindarinya.</string>
+    <string name="mb_blinkcard_help_screen_msg1">Nomor kartu biasanya berupa angka 16 digit, meski mungkin antara 12 dan 19 digit. Nomor itu mestinya dicetak atau diembos dengan angka timbul di kartu. Pastikan kartu cukup terang dan semua detail terlihat.</string>
+    <string name="mb_blinkcard_help_screen_msg2">Pastikan bagian kartu tidak tertutup jari, termasuk garis bawah. Perhatikan juga pantulan hologram yang melewati bidang kartu.</string>
+    <string name="mb_blinkcard_help_screen_msg3">Hindari cahaya silau yang langsung karena memantul dari kartu dan akibatnya bagian kartu tidak terbaca. Jika Anda tidak dapat membaca data pada kartu, data juga tidak akan terlihat oleh kamera.</string>
+    <string name="mb_blinkcard_help_screen_msg4">Usahakan ponsel dan kartu tetap diam saat memindai. Menggerakkan ponsel dapat mengaburkan gambar dan membuat data di kartu tidak dapat dibaca.</string>
+    <string name="mb_blinkcard_help_screen_title1">Di mana letak nomor kartu?</string>
+    <string name="mb_blinkcard_help_screen_title2">Pastikan semua bagian terlihat</string>
+    <string name="mb_blinkcard_help_screen_title3">Waspadai cahaya tajam</string>
+    <string name="mb_blinkcard_help_screen_title4">Pastikan dokumen tidak bergerak saat pemindaian</string>
+    <string name="mb_blinkcard_keep_card_parallel">Pastikan kartu sejajar dengan ponsel</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">Nomor kartu biasanya berupa angka 16 digit. Nomor itu mestinya dicetak atau diembos dengan angka timbul di kartu. Pastikan kartu cukup terang dan semua detail terlihat.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">Pindai nomor kartu terlebih dahulu</string>
+    <string name="mb_blinkcard_other_side_instructions">Pindai sisi lain kartu</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Pastikan kartu mendapat pencahayaan yang baik, terlihat sepenuhnya, dan bebas dari pantulan cahaya.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Coba Lagi</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">Tidak dapat membaca kartu</string>
+    <string name="mb_blinkcard_scanning_wrong_side">Balik kartu</string>
 </resources>

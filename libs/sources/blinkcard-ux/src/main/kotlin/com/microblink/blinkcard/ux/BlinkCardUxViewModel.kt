@@ -22,6 +22,7 @@ import com.microblink.blinkcard.core.utils.sendPingletsIfAllowed
 import com.microblink.blinkcard.ux.camera.CameraHardwareInfoHelper
 import com.microblink.blinkcard.ux.camera.CameraInputDetails
 import com.microblink.blinkcard.ux.camera.CameraViewModel
+import com.microblink.blinkcard.ux.camera.TimeoutCause
 import com.microblink.blinkcard.ux.components.needHelpTooltipDefaultTimeToAppearMs
 import com.microblink.blinkcard.ux.components.uiCountingWindowDurationMs
 import com.microblink.blinkcard.ux.scanning.BlinkCardAnalyzer
@@ -34,6 +35,7 @@ import com.microblink.blinkcard.ux.state.CardAnimationState
 import com.microblink.blinkcard.ux.state.CommonStatusMessage
 import com.microblink.blinkcard.ux.state.ErrorState
 import com.microblink.blinkcard.ux.state.HapticFeedbackState
+import com.microblink.blinkcard.ux.state.ScanSoundState
 import com.microblink.blinkcard.ux.state.MbTorchState
 import com.microblink.blinkcard.ux.state.ProcessingState
 import com.microblink.blinkcard.ux.state.ReticleState
@@ -70,8 +72,26 @@ internal class BlinkCardUxViewModel(
     private var imageAnalyzer: BlinkCardAnalyzer? = null
 
     private var firstImageTimestamp: Long? = null
+    /**
+     * Monotonic timestamp from which inactivity is measured. It is cleared whenever the scanning
+     * makes progress, so the inactivity timeout starts again on the next UX event.
+     *
+     * Progress means either a change of the processing state or status message, or a UX event
+     * reporting that the card is being located and processed. The latter matters because this UI
+     * implementation does not surface a distinct state while the card is located, so relying on UI
+     * state changes alone would time out a scan that is actually advancing.
+     */
+    private var inactivityTimeoutStartTimestamp: Long? = null
+
+    private var stepTimeoutDurationBeforePause: Long? = null
+
     private val stepTimeoutDuration: Duration? =
         if (uxSettings.stepTimeoutDuration == Duration.ZERO) null else uxSettings.stepTimeoutDuration
+    private val inactivityTimeoutDuration: Duration? =
+        if (uxSettings.inactivityTimeoutDuration == Duration.ZERO) null else uxSettings.inactivityTimeoutDuration
+
+    private var isStateTimeoutActive: Boolean = true
+    private var isAnalysisPaused: Boolean = false
 
     private val _uiState = MutableStateFlow(BlinkCardUiState())
     val uiState: StateFlow<BlinkCardUiState> = _uiState.asStateFlow()
@@ -83,27 +103,23 @@ internal class BlinkCardUxViewModel(
     private val statusCounter: StatusMessageCounter = StatusMessageCounter()
     private val appearanceCounter: StatusMessageCounter = StatusMessageCounter()
 
-    private var isCountingActive: Boolean = true
-
     private var currentScreenOrientation: ScreenOrientation? = null
 
     private var lastTrackedErrorType: UxEvent.ErrorMessageType? = null
 
     private var cameraHardwareInfoReported = false
 
-    val helpTooltipTimeToDisplayInMs =
-        if (stepTimeoutDuration == null) {
-            needHelpTooltipDefaultTimeToAppearMs
-        } else {
-            uxSettings.stepTimeoutDuration.inWholeMilliseconds / 2
-        }
-
     private val helpTooltipTimer =
-        object : CountDownTimer(helpTooltipTimeToDisplayInMs, helpTooltipTimeToDisplayInMs) {
+        object : CountDownTimer(
+            needHelpTooltipDefaultTimeToAppearMs,
+            needHelpTooltipDefaultTimeToAppearMs
+        ) {
             override fun onTick(millisUntilFinished: Long) {
             }
 
             override fun onFinish() {
+                // the scanning is paused while a dialog is displayed, so no tooltip is shown then
+                if (!isStateTimeoutActive) return
                 UxPingletTracker.UxEvent.trackSimpleEvent(
                     UxPingletTracker.UxEvent.SimpleUxEventType.HelpTooltipDisplayed,
                     getSessionNumber()
@@ -130,9 +146,13 @@ internal class BlinkCardUxViewModel(
                     UxPingletTracker.UxEvent.trackAlertDisplayedEvent(
                         alertType = when (error) {
                             ErrorReason.ErrorInvalidLicense -> UxEvent.AlertType.INVALIDLICENSEKEY
-                            ErrorReason.ErrorTimeoutExpired -> UxEvent.AlertType.STEPTIMEOUT
+                            ErrorReason.ErrorStepTimeoutExpired -> UxEvent.AlertType.STEPTIMEOUT
+                            ErrorReason.ErrorInactivityTimeoutExpired -> UxEvent.AlertType.INACTIVITYTIMEOUT
                             ErrorReason.ErrorNetworkError -> UxEvent.AlertType.NETWORKERROR
                             ErrorReason.ErrorDocumentClassFiltered -> UxEvent.AlertType.DOCUMENTCLASSNOTALLOWED
+                            // TODO: add new AlertTypes
+                            ErrorReason.ErrorSettingsValidationFailed -> UxEvent.AlertType.NETWORKERROR
+                            ErrorReason.ErrorGetResultFailed -> UxEvent.AlertType.NETWORKERROR
 
                         },
                         sessionNumber = getSessionNumber()
@@ -153,17 +173,33 @@ internal class BlinkCardUxViewModel(
                     var newStatusMessage: StatusMessage? = null
                     var newProcessingState: ProcessingState? = null
                     var newCurrentSide: UiScanningSide? = null
+                    var scanningProgressed = false
                     stepTimeoutDuration?.let {
-                        if (firstImageTimestamp == null && isCountingActive) {
+                        if (firstImageTimestamp == null) {
                             firstImageTimestamp = System.nanoTime()
                         }
-                        if (isCountingActive) {
-                            firstImageTimestamp?.let { timestamp ->
+                        firstImageTimestamp?.let { timestamp ->
+                            val currentDuration =
+                                (System.nanoTime() - timestamp).toDuration(DurationUnit.NANOSECONDS)
+                            if (currentDuration > stepTimeoutDuration) {
+                                imageAnalyzer?.timeoutAnalysis(TimeoutCause.Step)
+                                firstImageTimestamp = null
+                                inactivityTimeoutStartTimestamp = null
+                            }
+                        }
+                    }
+                    inactivityTimeoutDuration?.let {
+                        if (isStateTimeoutActive) {
+                            if (inactivityTimeoutStartTimestamp == null) {
+                                inactivityTimeoutStartTimestamp = System.nanoTime()
+                            }
+                            inactivityTimeoutStartTimestamp?.let { timestamp ->
                                 val currentDuration =
                                     (System.nanoTime() - timestamp).toDuration(DurationUnit.NANOSECONDS)
-                                if (currentDuration > stepTimeoutDuration) {
-                                    imageAnalyzer?.timeoutAnalysis()
+                                if (currentDuration > inactivityTimeoutDuration) {
+                                    imageAnalyzer?.timeoutAnalysis(TimeoutCause.Inactivity)
                                     firstImageTimestamp = null
+                                    inactivityTimeoutStartTimestamp = null
                                 }
                             }
                         }
@@ -171,6 +207,7 @@ internal class BlinkCardUxViewModel(
                     for (event in events) {
                         when (event) {
                             is BlinkCardScanningUxEvent.ScanningDone -> {
+                                firstImageTimestamp = null
                                 lifecyclePauseAnalysis()
                                 newStatusMessage = CommonStatusMessage.Empty
                                 newProcessingState = ProcessingState.SuccessAnimation(false)
@@ -190,6 +227,9 @@ internal class BlinkCardUxViewModel(
                                 // newProcessingState = ProcessingState.Processing
                                 // Not used in this UI implementation.
                                 // Can be used for processing state.
+                                // The card is located and being processed, so the scanning is
+                                // advancing even though the UI state stays the same.
+                                scanningProgressed = true
                             }
 
                             is BlinkCardScanningUxEvent.BlurDetected -> {
@@ -228,6 +268,7 @@ internal class BlinkCardUxViewModel(
                                     // TODO: support for portrait animations
                                     newProcessingState = ProcessingState.SuccessAnimation(true)
                                     newStatusMessage = CommonStatusMessage.Empty
+                                    firstImageTimestamp = null
                                     lifecyclePauseAnalysis()
                                 }
                             }
@@ -240,11 +281,19 @@ internal class BlinkCardUxViewModel(
                         }
                     }
 
+                    val processingStateBeforeUpdate = _uiState.value.processingState
+                    val statusMessageBeforeUpdate = _uiState.value.statusMessage
                     updateUiState(
                         newProcessingState,
                         newStatusMessage,
                         newCurrentSide
                     )
+                    if (scanningProgressed ||
+                        processingStateBeforeUpdate != _uiState.value.processingState ||
+                        statusMessageBeforeUpdate != _uiState.value.statusMessage
+                    ) {
+                        inactivityTimeoutStartTimestamp = null
+                    }
                 }
             }
         )
@@ -267,11 +316,11 @@ internal class BlinkCardUxViewModel(
     ) {
         newProcessingState?.let {
             if (newProcessingState is ProcessingState.SuccessAnimation) {
-                isCountingActive = false
+                isStateTimeoutActive = false
                 runBlocking {
                     waitForMinimumStateDuration(newProcessingState)
                 }
-            } else if (isCountingActive || shouldStartCounting(uiState.value.processingState)) {
+            } else if (isStateTimeoutActive || shouldStartCounting(uiState.value.processingState)) {
                 newStatusMessage?.let {
                     statusCounter.increment(it)
                 }
@@ -302,6 +351,10 @@ internal class BlinkCardUxViewModel(
                                 }
                             }
 
+                            else -> null
+                        }
+                        val newScanSoundState = when (selectedProcessingState) {
+                            is ProcessingState.SuccessAnimation -> ScanSoundState.PlayScanBeep
                             else -> null
                         }
                         selectedStatusMessage?.let {
@@ -339,6 +392,8 @@ internal class BlinkCardUxViewModel(
                                     statusMessage = selectedStatusMessage,
                                     hapticFeedbackState = newHapticFeedbackState
                                         ?: it.hapticFeedbackState,
+                                    scanSoundState = newScanSoundState
+                                        ?: it.scanSoundState,
                                     currentSide = newCurrentSide ?: it.currentSide
                                 )
                             }
@@ -401,23 +456,35 @@ internal class BlinkCardUxViewModel(
     }
 
     override fun analyzeImage(image: ImageProxy) {
-        image.use {
-            imageAnalyzer?.analyze(it)
-        }
+        imageAnalyzer?.analyze(image)
     }
 
     fun lifecyclePauseAnalysis() {
+        if (!isAnalysisPaused) {
+            stepTimeoutDurationBeforePause =
+                firstImageTimestamp?.let { System.nanoTime() - it }
+            isAnalysisPaused = true
+        }
         imageAnalyzer?.pauseAnalysis()
-        firstImageTimestamp = null
+        inactivityTimeoutStartTimestamp = null
         helpTooltipTimer.cancel()
         statusCounter.reset()
-        isCountingActive = false
+        isStateTimeoutActive = false
     }
 
     fun lifecycleResumeAnalysis() {
         if (!_uiState.value.onboardingDialogDisplayed && !_uiState.value.helpDisplayed && _uiState.value.errorState == ErrorState.NoError) {
             imageAnalyzer?.resumeAnalysis()
             helpTooltipTimer.start()
+            if (isAnalysisPaused) {
+                stepTimeoutDurationBeforePause?.let { elapsedDuration ->
+                    firstImageTimestamp = System.nanoTime() - elapsedDuration
+                }
+                stepTimeoutDurationBeforePause = null
+                isAnalysisPaused = false
+            }
+            inactivityTimeoutStartTimestamp = null
+            isStateTimeoutActive = true
         }
     }
 
@@ -455,8 +522,7 @@ internal class BlinkCardUxViewModel(
 
     fun shouldStartCounting(currentState: ProcessingState): Boolean {
         if ((System.nanoTime().nanoseconds - uiStateStartTime + countingWindowDuration) >= currentState.duration) {
-            isCountingActive =
-                true
+            isStateTimeoutActive = true
             return true
         } else {
             return false
@@ -508,10 +574,11 @@ internal class BlinkCardUxViewModel(
     }
 
     fun changeHelpTooltipVisibility(show: Boolean) {
+        if (show && !isStateTimeoutActive) return
         if (_uiState.value.helpButtonDisplayed) {
             if (show) {
                 helpTooltipTimer.cancel()
-            } else {
+            } else if (isStateTimeoutActive) {
                 helpTooltipTimer.start()
             }
             _uiState.update {
@@ -563,6 +630,11 @@ internal class BlinkCardUxViewModel(
 
     fun onRetryTimeout() {
         helpTooltipTimer.cancel()
+        firstImageTimestamp = null
+        stepTimeoutDurationBeforePause = null
+        inactivityTimeoutStartTimestamp = null
+        isAnalysisPaused = false
+        isStateTimeoutActive = true
         _uiState.update {
             it.copy(
                 errorState = ErrorState.NoError,
@@ -572,7 +644,9 @@ internal class BlinkCardUxViewModel(
             )
         }
         updateStateStartTime()
-        imageAnalyzer?.restartAnalysis()
+        viewModelScope.launch {
+            imageAnalyzer?.restartAnalysis()
+        }
         helpTooltipTimer.start()
     }
 
@@ -580,6 +654,14 @@ internal class BlinkCardUxViewModel(
         _uiState.update {
             it.copy(
                 hapticFeedbackState = HapticFeedbackState.VibrationOff
+            )
+        }
+    }
+
+    fun onScanSoundCompleted() {
+        _uiState.update {
+            it.copy(
+                scanSoundState = ScanSoundState.SoundOff
             )
         }
     }
@@ -608,20 +690,26 @@ internal class BlinkCardUxViewModel(
     }
 
     fun onCameraInputInfoAvailable(context: Context, cameraInputDetails: CameraInputDetails) {
-        UxPingletTracker.CameraInfo.trackCameraInputInfo(
-            cameraInputDetails,
-            getSessionNumber()
-        )
-        if (!cameraHardwareInfoReported) {
-            cameraHardwareInfoReported = true
-            viewModelScope.launch {
-                withContext(Dispatchers.IO) {
-                    val cameraDetailsList = CameraHardwareInfoHelper.getCameraHardwareInfo(context)
-                    UxPingletTracker.CameraInfo.trackCameraHardwareInfo(cameraDetailsList)
+        getSessionNumber().takeIf { it > 0 }
+            ?.let { sessionNumber ->
+                UxPingletTracker.CameraInfo.trackCameraInputInfo(
+                    cameraInputDetails,
+                    sessionNumber
+                )
+                if (!cameraHardwareInfoReported) {
+                    cameraHardwareInfoReported = true
+                    viewModelScope.launch {
+                        withContext(Dispatchers.IO) {
+                            val cameraDetailsList =
+                                CameraHardwareInfoHelper.getCameraHardwareInfo(context)
+                            UxPingletTracker.CameraInfo.trackCameraHardwareInfo(
+                                cameraDetailsList,
+                                sessionNumber
+                            )
+                        }
+                    }
                 }
             }
-        }
-
     }
 
     fun getSessionNumber(): Int = imageAnalyzer?.getSessionNumber() ?: 0
@@ -629,6 +717,7 @@ internal class BlinkCardUxViewModel(
     override fun onCleared() {
         super.onCleared()
         BlinkCardSdk.sendPingletsIfAllowed(PingSendTriggerPoint.CameraScreenClosed)
+        firstImageTimestamp = null
         lifecyclePauseAnalysis()
         imageAnalyzer?.cancel()
         imageAnalyzer?.close()

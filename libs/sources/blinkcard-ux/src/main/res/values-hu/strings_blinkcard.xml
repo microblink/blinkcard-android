@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">Tartsa mozdulatlanul a kártyát és a telefont</string>
-  <string name="mb_blinkcard_card_not_fully_visible">A kártya teljes egészében legyen látható</string>
-  <string name="mb_blinkcard_first_side_instructions">Szkennelje be a kártyaszámot</string>
-  <string name="mb_blinkcard_flashlight_warning_message">Figyeljen oda a vaku fényének visszaverődésére.\nFinoman mozgassa a kártyáját, hogy elkerülje.</string>
-  <string name="mb_blinkcard_help_screen_msg1">A kártyaszám általában 16 számjegyből áll, ugyanakkor 12–19 számjegyből álló kártyaszám is előfordul. A szám nyomtatva vagy kiemelkedő, dombornyomott formában látható a kártyán. A kártya elülső vagy hátsó oldalán található.</string>
-  <string name="mb_blinkcard_help_screen_msg2">Ügyeljen arra, hogy ne takarja le az ujjával a kártya részeit (az alsó sorokat is beleértve). Ügyeljen továbbá a hologramokra is, amelyek visszatükröződnek a kártya mezőin.</string>
-  <string name="mb_blinkcard_help_screen_msg3">Kerülje a közvetlen, erős fényt, mivel visszaverődik a kártyáról, és ennek hatására a kártya egyes részei olvashatatlanná válhatnak. Ha nem tudja leolvasni a kártyán lévő adatokat, akkor a kamera számára sem lesznek láthatók.</string>
-  <string name="mb_blinkcard_help_screen_msg4">A szkennelés során próbálja mozdulatlanul tartani a telefont és a kártyát. Mozgás hatására a kép elmosódhat, a kártyán lévő adatok pedig olvashatatlanná válhatnak.</string>
-  <string name="mb_blinkcard_help_screen_title1">Hol található a kártyaszám?</string>
-  <string name="mb_blinkcard_help_screen_title2">Az összes mező legyen teljes egészében látható</string>
-  <string name="mb_blinkcard_help_screen_title3">Ügyeljen az erős fényre</string>
-  <string name="mb_blinkcard_help_screen_title4">Maradjon mozdulatlan a szkennelés során</string>
-  <string name="mb_blinkcard_keep_card_parallel">Tartsa a kártyát a telefonnal párhuzamosan</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">A kártyaszám általában 16 számjegyből áll. A szám nyomtatva vagy kiemelkedő, dombornyomott formában látható a kártyán. Ügyeljen a kártya megfelelő megvilágítására, és hogy minden adat jól látható legyen.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">Először a kártyaszámot szkennelje be</string>
-  <string name="mb_blinkcard_other_side_instructions">Olvassa be a kártya másik oldalát</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">Nem sikerült a kártya olvasása. Kérjük, próbálja újra.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Próbálja újra</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">Sikertelen szkennelés</string>
-  <string name="mb_blinkcard_scanning_wrong_side">Fordítsa meg a kártyát</string>
+    <string name="mb_blinkcard_blur_detected">Tartsa mozdulatlanul a kártyát és a telefont</string>
+    <string name="mb_blinkcard_card_not_fully_visible">A kártya teljes egészében legyen látható</string>
+    <string name="mb_blinkcard_first_side_instructions">Szkennelje be a kártyaszámot</string>
+    <string name="mb_blinkcard_flashlight_warning_message">Figyeljen oda a vaku fényének visszaverődésére.\nFinoman mozgassa a kártyáját, hogy elkerülje.</string>
+    <string name="mb_blinkcard_help_screen_msg1">A kártyaszám általában 16 számjegyből áll, ugyanakkor 12–19 számjegyből álló kártyaszám is előfordul. A szám nyomtatva vagy kiemelkedő, dombornyomott formában látható a kártyán. A kártya elülső vagy hátsó oldalán található.</string>
+    <string name="mb_blinkcard_help_screen_msg2">Ügyeljen arra, hogy ne takarja le az ujjával a kártya részeit (az alsó sorokat is beleértve). Ügyeljen továbbá a hologramokra is, amelyek visszatükröződnek a kártya mezőin.</string>
+    <string name="mb_blinkcard_help_screen_msg3">Kerülje a közvetlen, erős fényt, mivel visszaverődik a kártyáról, és ennek hatására a kártya egyes részei olvashatatlanná válhatnak. Ha nem tudja leolvasni a kártyán lévő adatokat, akkor a kamera számára sem lesznek láthatók.</string>
+    <string name="mb_blinkcard_help_screen_msg4">A szkennelés során próbálja mozdulatlanul tartani a telefont és a kártyát. Mozgás hatására a kép elmosódhat, a kártyán lévő adatok pedig olvashatatlanná válhatnak.</string>
+    <string name="mb_blinkcard_help_screen_title1">Hol található a kártyaszám?</string>
+    <string name="mb_blinkcard_help_screen_title2">Az összes mező legyen teljes egészében látható</string>
+    <string name="mb_blinkcard_help_screen_title3">Ügyeljen az erős fényre</string>
+    <string name="mb_blinkcard_help_screen_title4">Maradjon mozdulatlan a szkennelés során</string>
+    <string name="mb_blinkcard_keep_card_parallel">Tartsa a kártyát párhuzamosan a telefonnal</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">A kártyaszám általában 16 számjegyből áll. A szám nyomtatva vagy kiemelkedő, dombornyomott formában látható a kártyán. Ügyeljen a kártya megfelelő megvilágítására, és hogy minden adat jól látható legyen.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">Először a kártyaszámot szkennelje be</string>
+    <string name="mb_blinkcard_other_side_instructions">Olvassa be a kártya másik oldalát</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Győződjön meg arról, hogy a kártya jól megvilágított, teljesen látható és tükröződésmentes.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Próbálja újra</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">A kártya nem olvasható be</string>
+    <string name="mb_blinkcard_scanning_wrong_side">Fordítsa meg a kártyát</string>
 </resources>

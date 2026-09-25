@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">Držite kartico in telefon pri miru</string>
-  <string name="mb_blinkcard_card_not_fully_visible">Kartica naj bo povsem vidna</string>
-  <string name="mb_blinkcard_first_side_instructions">Skenirajte številko kartice</string>
-  <string name="mb_blinkcard_flashlight_warning_message">Pazite na bleščanje bliskavice.\nKartico rahlo premaknite, da se mu izognete.</string>
-  <string name="mb_blinkcard_help_screen_msg1">Številka kartice je običajno 16-mestna, vendar je lahko sestavljena iz 12 do 19 številk. Natisnjena ali vtisnjena mora biti z dvignjenimi številkami na celotni kartici. Lahko je na sprednji ali zadnji strani kartice.</string>
-  <string name="mb_blinkcard_help_screen_msg2">Prepričajte se, da s prstom ne prekrivate delov kartice, vključno s spodnjimi vrsticami. Pazite tudi na hologramske odseve, ki segajo čez polja kartic.</string>
-  <string name="mb_blinkcard_help_screen_msg3">Izogibajte se neposredni močni svetlobi, ker se ta odbija od kartice in lahko povzroči, da delov kartice ni mogoče prebrati. Če podatkov na kartici ne morete prebrati, jih tudi fotoaparat ne bo videl.</string>
-  <string name="mb_blinkcard_help_screen_msg4">Med skeniranjem poskusite držati telefon in kartico pri miru. Gibanje obeh lahko zamegli sliko in onemogoči branje podatkov na kartici.</string>
-  <string name="mb_blinkcard_help_screen_title1">Kje je številka kartice?</string>
-  <string name="mb_blinkcard_help_screen_title2">Vidna morajo biti vsa polja</string>
-  <string name="mb_blinkcard_help_screen_title3">Svetloba ne sme biti premočna</string>
-  <string name="mb_blinkcard_help_screen_title4">Držite pri miru med optičnim branjem</string>
-  <string name="mb_blinkcard_keep_card_parallel">Kartico držite vzporedno s telefonom</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">Številka kartice je običajno 16-mestna. Natisnjena ali vtisnjena mora biti z dvignjenimi številkami po celotni kartici. Prepričajte se, da je kartica dobro osvetljena in da so vidne vse podrobnosti.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">Najprej skenirajte številko kartice</string>
-  <string name="mb_blinkcard_other_side_instructions">Optično preberite drugo stran kartice</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">Kartice ni bilo mogoče prebrati. Poskusite znova.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Poskusi znova</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">Optično branje ni uspelo</string>
-  <string name="mb_blinkcard_scanning_wrong_side">Obrnite kartico</string>
+    <string name="mb_blinkcard_blur_detected">Kartico in telefon držite pri miru</string>
+    <string name="mb_blinkcard_card_not_fully_visible">Kartica naj bo povsem vidna</string>
+    <string name="mb_blinkcard_first_side_instructions">Skenirajte številko kartice</string>
+    <string name="mb_blinkcard_flashlight_warning_message">Pazite na bleščanje bliskavice.\nKartico rahlo premaknite, da se mu izognete.</string>
+    <string name="mb_blinkcard_help_screen_msg1">Številka kartice je običajno 16-mestna, vendar je lahko sestavljena iz 12 do 19 številk. Natisnjena ali vtisnjena mora biti z dvignjenimi številkami na celotni kartici. Lahko je na sprednji ali zadnji strani kartice.</string>
+    <string name="mb_blinkcard_help_screen_msg2">Prepričajte se, da s prstom ne prekrivate delov kartice, vključno s spodnjimi vrsticami. Pazite tudi na hologramske odseve, ki segajo čez polja kartic.</string>
+    <string name="mb_blinkcard_help_screen_msg3">Izogibajte se neposredni močni svetlobi, ker se ta odbija od kartice in lahko povzroči, da delov kartice ni mogoče prebrati. Če podatkov na kartici ne morete prebrati, jih tudi fotoaparat ne bo videl.</string>
+    <string name="mb_blinkcard_help_screen_msg4">Med skeniranjem poskusite držati telefon in kartico pri miru. Gibanje obeh lahko zamegli sliko in onemogoči branje podatkov na kartici.</string>
+    <string name="mb_blinkcard_help_screen_title1">Kje je številka kartice?</string>
+    <string name="mb_blinkcard_help_screen_title2">Vidna morajo biti vsa polja</string>
+    <string name="mb_blinkcard_help_screen_title3">Svetloba ne sme biti premočna</string>
+    <string name="mb_blinkcard_help_screen_title4">Držite pri miru med optičnim branjem</string>
+    <string name="mb_blinkcard_keep_card_parallel">Kartico držite vzporedno s telefonom</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">Številka kartice je običajno 16-mestna. Natisnjena ali vtisnjena mora biti z dvignjenimi številkami po celotni kartici. Prepričajte se, da je kartica dobro osvetljena in da so vidne vse podrobnosti.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">Najprej skenirajte številko kartice</string>
+    <string name="mb_blinkcard_other_side_instructions">Optično preberite drugo stran kartice</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Poskrbite, da je kartica dobro osvetljena, v celoti vidna in brez odsevov.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Poskusi znova</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">Kartice ni mogoče prebrati</string>
+    <string name="mb_blinkcard_scanning_wrong_side">Obrnite kartico</string>
 </resources>

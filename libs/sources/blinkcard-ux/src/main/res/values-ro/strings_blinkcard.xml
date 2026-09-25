@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">Mențineți cardul și telefonul nemișcate</string>
-  <string name="mb_blinkcard_card_not_fully_visible">Țineți cardul astfel încât să fie vizibil complet</string>
-  <string name="mb_blinkcard_first_side_instructions">Scanare număr card</string>
-  <string name="mb_blinkcard_flashlight_warning_message">Fiți atent la strălucirea cauzată de lumina blițului.\nMutați-vă ușor cardul pentru a o evita.</string>
-  <string name="mb_blinkcard_help_screen_msg1">Numărul cardului conține de regulă 16 cifre, deși unele pot avea între 12 și 19 cifre. În principiu, acesta este inscripționat sau reliefat pe card. Se poate afla pe partea din față sau partea verso a cardului.</string>
-  <string name="mb_blinkcard_help_screen_msg2">Asigurați-vă că nu ați acoperit cu degetul porțiuni de pe card, nici rândurile de jos. Evitați și reflexiile holografice care se suprapun pe secțiunile din card.</string>
-  <string name="mb_blinkcard_help_screen_msg3">Evitați lumina puternică directă, deoarece se va reflecta din card și poate face imposibilă citirea anumitor porțiuni din acesta. Dacă nu puteți citi datele de pe card, ele nu vor fi vizibile nici pe cameră.</string>
-  <string name="mb_blinkcard_help_screen_msg4">Încercați să mențineți telefonul și cardul imobile în timpul scanării. Mișcările pot compromite claritatea imaginii și pot face imposibilă citirea datelor de pe card.</string>
-  <string name="mb_blinkcard_help_screen_title1">Unde se află numărul cardului?</string>
-  <string name="mb_blinkcard_help_screen_title2">Asigurați vizibilitatea tuturor secțiunilor</string>
-  <string name="mb_blinkcard_help_screen_title3">Feriți-vă de lumina puternică</string>
-  <string name="mb_blinkcard_help_screen_title4">Nu vă mișcați în timpul scanării</string>
-  <string name="mb_blinkcard_keep_card_parallel">Țineți cardul paralel cu telefonul</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">Numărul cardului conține de regulă 16 cifre. În principiu, acesta este inscripționat sau reliefat pe card. Asigurați-vă că este bine iluminat cardul și că toate detaliile sunt vizibile.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">Scanați numărul cardului mai întâi</string>
-  <string name="mb_blinkcard_other_side_instructions">Scanează cealaltă parte a cardului</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">Cardul nu poate fi citit. Vă rugăm să încercați din nou.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Reîncercare</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">Scanare nereușită</string>
-  <string name="mb_blinkcard_scanning_wrong_side">Întoarceți cardul</string>
+    <string name="mb_blinkcard_blur_detected">Țineți cardul și telefonul nemișcate</string>
+    <string name="mb_blinkcard_card_not_fully_visible">Țineți cardul astfel încât să fie vizibil complet</string>
+    <string name="mb_blinkcard_first_side_instructions">Scanare număr card</string>
+    <string name="mb_blinkcard_flashlight_warning_message">Fiți atent la strălucirea cauzată de lumina blițului.\nMutați-vă ușor cardul pentru a o evita.</string>
+    <string name="mb_blinkcard_help_screen_msg1">Numărul cardului conține de regulă 16 cifre, deși unele pot avea între 12 și 19 cifre. În principiu, acesta este inscripționat sau reliefat pe card. Se poate afla pe partea din față sau partea verso a cardului.</string>
+    <string name="mb_blinkcard_help_screen_msg2">Asigurați-vă că nu ați acoperit cu degetul porțiuni de pe card, nici rândurile de jos. Evitați și reflexiile holografice care se suprapun pe secțiunile din card.</string>
+    <string name="mb_blinkcard_help_screen_msg3">Evitați lumina puternică directă, deoarece se va reflecta din card și poate face imposibilă citirea anumitor porțiuni din acesta. Dacă nu puteți citi datele de pe card, ele nu vor fi vizibile nici pe cameră.</string>
+    <string name="mb_blinkcard_help_screen_msg4">Încercați să mențineți telefonul și cardul imobile în timpul scanării. Mișcările pot compromite claritatea imaginii și pot face imposibilă citirea datelor de pe card.</string>
+    <string name="mb_blinkcard_help_screen_title1">Unde se află numărul cardului?</string>
+    <string name="mb_blinkcard_help_screen_title2">Asigurați vizibilitatea tuturor secțiunilor</string>
+    <string name="mb_blinkcard_help_screen_title3">Feriți-vă de lumina puternică</string>
+    <string name="mb_blinkcard_help_screen_title4">Nu vă mișcați în timpul scanării</string>
+    <string name="mb_blinkcard_keep_card_parallel">Țineți cardul paralel cu telefonul</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">Numărul cardului conține de regulă 16 cifre. În principiu, acesta este inscripționat sau reliefat pe card. Asigurați-vă că este bine iluminat cardul și că toate detaliile sunt vizibile.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">Scanați numărul cardului mai întâi</string>
+    <string name="mb_blinkcard_other_side_instructions">Scanează cealaltă parte a cardului</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Asigurați-vă că cardul este bine iluminat, complet vizibil și fără reflexii.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Reîncercare</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">Cardul nu a putut fi citit</string>
+    <string name="mb_blinkcard_scanning_wrong_side">Întoarceți cardul</string>
 </resources>

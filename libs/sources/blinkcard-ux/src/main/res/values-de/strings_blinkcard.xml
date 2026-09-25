@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">Karte und Telefon ruhig halten</string>
-  <string name="mb_blinkcard_card_not_fully_visible">Achten Sie darauf, dass die Karte vollständig sichtbar bleibt</string>
-  <string name="mb_blinkcard_first_side_instructions">Scannen Sie die Kartennummer</string>
-  <string name="mb_blinkcard_flashlight_warning_message">Achten Sie auf die Blendung durch eine Taschenlampe.\nBewegen Sie Ihre Karte vorsichtig umher, um dies zu vermeiden.</string>
-  <string name="mb_blinkcard_help_screen_msg1">Die Kartennummer besteht normalerweise aus 16 Ziffern, kann aber auch zwischen 12 und 19 Ziffern umfassen. Die Nummer sollte entweder aufgedruckt oder in erhabenen Ziffern auf der Karte eingeprägt sein. Sie kann sich auf der Vorder- oder Rückseite Ihrer Karte befinden.</string>
-  <string name="mb_blinkcard_help_screen_msg2">Gehen Sie auf Nummer sicher, indem Sie Teile der Karte nicht mit dem Finger verdecken, insbesondere nicht die unteren Zeilen. Vermeiden Sie außerdem Spiegelungen von Hologrammen, die über die Felder der Karte hinausgehen.</string>
-  <string name="mb_blinkcard_help_screen_msg3">Meiden Sie direktes, grelles Licht, da dieses von der Karte reflektiert wird und so Teile der Karte unkenntlich machen kann. Wenn Sie keine Daten auf der Karte lesen können, sind diese auch für die Kamera nicht sichtbar.</string>
-  <string name="mb_blinkcard_help_screen_msg4">Versuchen Sie, das Telefon und die Karte während des Scanvorgangs ruhig zu halten. Jede Bewegung kann das Bild unscharf und die Daten auf der Karte unlesbar machen.</string>
-  <string name="mb_blinkcard_help_screen_title1">Wo finde ich die Kartennummer?</string>
-  <string name="mb_blinkcard_help_screen_title2">Machen Sie alle Felder sichtbar</string>
-  <string name="mb_blinkcard_help_screen_title3">Achten Sie auf grelles Licht</string>
-  <string name="mb_blinkcard_help_screen_title4">Halten Sie während des Scanvorgangs still</string>
-  <string name="mb_blinkcard_keep_card_parallel">Halten Sie die Karte parallel zum Telefon</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">Die Kartennummer besteht in der Regel aus einer 16-stelligen Zahl. Die Nummer sollte entweder aufgedruckt oder in erhabenen Ziffern auf der Karte eingeprägt sein. Versichern Sie sich, dass die Karte gut beleuchtet ist und alle Details sichtbar sind.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">Scannen Sie zuerst die Kartennummer</string>
-  <string name="mb_blinkcard_other_side_instructions">Scannen Sie die andere Seite der Karte</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">Die Karte kann nicht gelesen werden. Bitte versuchen Sie es erneut.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Wiederholen</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">Scan nicht erfolgreich</string>
-  <string name="mb_blinkcard_scanning_wrong_side">Drehen Sie die Karte um</string>
+    <string name="mb_blinkcard_blur_detected">Halten Sie die Karte und das Telefon still</string>
+    <string name="mb_blinkcard_card_not_fully_visible">Achten Sie darauf, dass die Karte vollständig sichtbar bleibt</string>
+    <string name="mb_blinkcard_first_side_instructions">Scannen Sie die Kartennummer</string>
+    <string name="mb_blinkcard_flashlight_warning_message">Achten Sie auf die Blendung durch eine Taschenlampe.\nBewegen Sie Ihre Karte vorsichtig umher, um dies zu vermeiden.</string>
+    <string name="mb_blinkcard_help_screen_msg1">Die Kartennummer besteht normalerweise aus 16 Ziffern, kann aber auch zwischen 12 und 19 Ziffern umfassen. Die Nummer sollte entweder aufgedruckt oder in erhabenen Ziffern auf der Karte eingeprägt sein. Sie kann sich auf der Vorder- oder Rückseite Ihrer Karte befinden.</string>
+    <string name="mb_blinkcard_help_screen_msg2">Gehen Sie auf Nummer sicher, indem Sie Teile der Karte nicht mit dem Finger verdecken, insbesondere nicht die unteren Zeilen. Vermeiden Sie außerdem Spiegelungen von Hologrammen, die über die Felder der Karte hinausgehen.</string>
+    <string name="mb_blinkcard_help_screen_msg3">Meiden Sie direktes, grelles Licht, da dieses von der Karte reflektiert wird und so Teile der Karte unkenntlich machen kann. Wenn Sie keine Daten auf der Karte lesen können, sind diese auch für die Kamera nicht sichtbar.</string>
+    <string name="mb_blinkcard_help_screen_msg4">Versuchen Sie, das Telefon und die Karte während des Scanvorgangs ruhig zu halten. Jede Bewegung kann das Bild unscharf und die Daten auf der Karte unlesbar machen.</string>
+    <string name="mb_blinkcard_help_screen_title1">Wo finde ich die Kartennummer?</string>
+    <string name="mb_blinkcard_help_screen_title2">Machen Sie alle Felder sichtbar</string>
+    <string name="mb_blinkcard_help_screen_title3">Achten Sie auf grelles Licht</string>
+    <string name="mb_blinkcard_help_screen_title4">Halten Sie während des Scanvorgangs still</string>
+    <string name="mb_blinkcard_keep_card_parallel">Halten Sie die Karte parallel zum Telefon</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">Die Kartennummer besteht in der Regel aus einer 16-stelligen Zahl. Die Nummer sollte entweder aufgedruckt oder in erhabenen Ziffern auf der Karte eingeprägt sein. Versichern Sie sich, dass die Karte gut beleuchtet ist und alle Details sichtbar sind.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">Scannen Sie zuerst die Kartennummer</string>
+    <string name="mb_blinkcard_other_side_instructions">Scannen Sie die andere Seite der Karte</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Stellen Sie sicher, dass die Karte gut beleuchtet, vollständig sichtbar und frei von Reflexionen ist.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Wiederholen</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">Karte konnte nicht gelesen werden</string>
+    <string name="mb_blinkcard_scanning_wrong_side">Drehen Sie die Karte um</string>
 </resources>

@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">保持卡片與手機靜止不動</string>
-  <string name="mb_blinkcard_card_not_fully_visible">保持卡片完整可見</string>
-  <string name="mb_blinkcard_first_side_instructions">掃描卡號</string>
-  <string name="mb_blinkcard_flashlight_warning_message">請注意閃光燈眩光。\n慢慢移動您的銀行卡以避免眩光。</string>
-  <string name="mb_blinkcard_help_screen_msg1">卡號通常是 16 位數字，也可能是 12 到 19 位數字。應該在卡片上以凸起數字印刷或雕刻。數字可能在卡面的正面或背面。</string>
-  <string name="mb_blinkcard_help_screen_msg2">確保您的手指沒有蓋到卡片的某些內容，包括底線。此外，請注意卡片欄位的全息圖反射。</string>
-  <string name="mb_blinkcard_help_screen_msg3">避免直接刺眼的光線，因為光線會反射卡片，並且使卡片的某些內容無法讀取。如果您無法讀取卡片的內容，則相機也無法看清。</string>
-  <string name="mb_blinkcard_help_screen_msg4">掃描時盡量保持手機及卡片穩定。任何移動都會使圖像模糊並造成卡片的內容無法讀取。</string>
-  <string name="mb_blinkcard_help_screen_title1">卡號在哪裡？</string>
-  <string name="mb_blinkcard_help_screen_title2">讓所有欄位都清楚可見</string>
-  <string name="mb_blinkcard_help_screen_title3">注意刺眼的光線</string>
-  <string name="mb_blinkcard_help_screen_title4">掃描時保持靜止</string>
-  <string name="mb_blinkcard_keep_card_parallel">將卡片與手機保持平行</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">卡號通常為 16 位數字。應該在卡片上以凸起數字印刷或雕刻。確保卡片光線充足並且所有內容都很清楚。</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">先掃描卡號</string>
-  <string name="mb_blinkcard_other_side_instructions">請掃描卡片的另一面</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">無法讀取卡片，請再試一次。</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">重試</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">掃描成功</string>
-  <string name="mb_blinkcard_scanning_wrong_side">將銀行卡翻面</string>
+    <string name="mb_blinkcard_blur_detected">請保持卡片和手機靜止不動</string>
+    <string name="mb_blinkcard_card_not_fully_visible">保持卡片完整可見</string>
+    <string name="mb_blinkcard_first_side_instructions">掃描卡號</string>
+    <string name="mb_blinkcard_flashlight_warning_message">請注意閃光燈眩光。\n慢慢移動您的銀行卡以避免眩光。</string>
+    <string name="mb_blinkcard_help_screen_msg1">卡號通常是 16 位數字，也可能是 12 到 19 位數字。應該在卡片上以凸起數字印刷或雕刻。數字可能在卡面的正面或背面。</string>
+    <string name="mb_blinkcard_help_screen_msg2">確保您的手指沒有蓋到卡片的某些內容，包括底線。此外，請注意卡片欄位的全息圖反射。</string>
+    <string name="mb_blinkcard_help_screen_msg3">避免直接刺眼的光線，因為光線會反射卡片，並且使卡片的某些內容無法讀取。如果您無法讀取卡片的內容，則相機也無法看清。</string>
+    <string name="mb_blinkcard_help_screen_msg4">掃描時盡量保持手機及卡片穩定。任何移動都會使圖像模糊並造成卡片的內容無法讀取。</string>
+    <string name="mb_blinkcard_help_screen_title1">卡號在哪裡？</string>
+    <string name="mb_blinkcard_help_screen_title2">讓所有欄位都清楚可見</string>
+    <string name="mb_blinkcard_help_screen_title3">注意刺眼的光線</string>
+    <string name="mb_blinkcard_help_screen_title4">掃描時保持靜止</string>
+    <string name="mb_blinkcard_keep_card_parallel">請讓卡片與手機保持平行</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">卡號通常為 16 位數字。應該在卡片上以凸起數字印刷或雕刻。確保卡片光線充足並且所有內容都很清楚。</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">先掃描卡號</string>
+    <string name="mb_blinkcard_other_side_instructions">請掃描卡片的另一面</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">請確認卡片有充足光線、完整可見且沒有反光。</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">重試</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">無法讀取卡片</string>
+    <string name="mb_blinkcard_scanning_wrong_side">將銀行卡翻面</string>
 </resources>

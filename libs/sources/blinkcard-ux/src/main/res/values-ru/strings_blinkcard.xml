@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">Держите карту и телефон неподвижно</string>
-  <string name="mb_blinkcard_card_not_fully_visible">Держите карту так, чтобы все ее данные были видны</string>
-  <string name="mb_blinkcard_first_side_instructions">Отсканируйте номер карты</string>
-  <string name="mb_blinkcard_flashlight_warning_message">Остерегайтесь бликов от фонарика.\nАккуратно перемещайте карту, чтобы избежать столкновения.</string>
-  <string name="mb_blinkcard_help_screen_msg1">Номер карты обычно состоит из 16 цифр, хотя может содержать от 12 до 19 цифр. Он должен быть напечатан или выбит рельефными цифрами по всей карте. Он может быть на лицевой или оборотной стороне карты.</string>
-  <string name="mb_blinkcard_help_screen_msg2">Убедитесь, что вы не закрываете пальцем какие-либо части карты, включая нижние линии. Также обратите внимание на голографические отражения, которые могут попадать на поля карты.</string>
-  <string name="mb_blinkcard_help_screen_msg3">Избегайте прямого яркого света, так как он отражается от карты и может сделать некоторые её части нечитаемыми. Если вы не можете прочитать данные на карте, они не будут видны и камере.</string>
-  <string name="mb_blinkcard_help_screen_msg4">Старайтесь держать телефон и карту неподвижно во время сканирования. Любое движение может размыть изображение и сделать данные на карте нечитаемыми.</string>
-  <string name="mb_blinkcard_help_screen_title1">Где находится номер карты?</string>
-  <string name="mb_blinkcard_help_screen_title2">Следите за тем, чтобы все поля были видны</string>
-  <string name="mb_blinkcard_help_screen_title3">Избегайте яркой засветки</string>
-  <string name="mb_blinkcard_help_screen_title4">Не двигайтесь в процессе сканирования</string>
-  <string name="mb_blinkcard_keep_card_parallel">Держите карту параллельно телефону</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">Номер карты обычно состоит из 16 цифр. Он должен быть напечатан или выдавлен рельефными цифрами по всей карте. Убедитесь, что карта хорошо освещена и все детали видны.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">Сначала отсканируйте номер карты</string>
-  <string name="mb_blinkcard_other_side_instructions">Отсканируйте другую сторону карты</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">Не удается прочитать карту. Попробуйте еще раз.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Попробовать еще</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">Не удалось отсканировать документ</string>
-  <string name="mb_blinkcard_scanning_wrong_side">Переверните карту</string>
+    <string name="mb_blinkcard_blur_detected">Держите карту и телефон неподвижно</string>
+    <string name="mb_blinkcard_card_not_fully_visible">Держите карту так, чтобы все ее данные были видны</string>
+    <string name="mb_blinkcard_first_side_instructions">Отсканируйте номер карты</string>
+    <string name="mb_blinkcard_flashlight_warning_message">Остерегайтесь бликов от фонарика.\nАккуратно перемещайте карту, чтобы избежать столкновения.</string>
+    <string name="mb_blinkcard_help_screen_msg1">Номер карты обычно состоит из 16 цифр, хотя может содержать от 12 до 19 цифр. Он должен быть напечатан или выбит рельефными цифрами по всей карте. Он может быть на лицевой или оборотной стороне карты.</string>
+    <string name="mb_blinkcard_help_screen_msg2">Убедитесь, что вы не закрываете пальцем какие-либо части карты, включая нижние линии. Также обратите внимание на голографические отражения, которые могут попадать на поля карты.</string>
+    <string name="mb_blinkcard_help_screen_msg3">Избегайте прямого яркого света, так как он отражается от карты и может сделать некоторые её части нечитаемыми. Если вы не можете прочитать данные на карте, они не будут видны и камере.</string>
+    <string name="mb_blinkcard_help_screen_msg4">Старайтесь держать телефон и карту неподвижно во время сканирования. Любое движение может размыть изображение и сделать данные на карте нечитаемыми.</string>
+    <string name="mb_blinkcard_help_screen_title1">Где находится номер карты?</string>
+    <string name="mb_blinkcard_help_screen_title2">Следите за тем, чтобы все поля были видны</string>
+    <string name="mb_blinkcard_help_screen_title3">Избегайте яркой засветки</string>
+    <string name="mb_blinkcard_help_screen_title4">Не двигайтесь в процессе сканирования</string>
+    <string name="mb_blinkcard_keep_card_parallel">Держите карту параллельно телефону</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">Номер карты обычно состоит из 16 цифр. Он должен быть напечатан или выдавлен рельефными цифрами по всей карте. Убедитесь, что карта хорошо освещена и все детали видны.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">Сначала отсканируйте номер карты</string>
+    <string name="mb_blinkcard_other_side_instructions">Отсканируйте другую сторону карты</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Убедитесь, что карта хорошо освещена, полностью видна и на ней нет бликов.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Попробовать еще</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">Не удалось считать карту</string>
+    <string name="mb_blinkcard_scanning_wrong_side">Переверните карту</string>
 </resources>

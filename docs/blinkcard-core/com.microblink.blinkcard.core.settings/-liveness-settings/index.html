@@ -1,42 +1,39 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>LivenessSettings</title>
-<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
-    <script>document.documentElement.classList.replace("no-js","js");</script>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
     <script>const storage = localStorage.getItem("dokka-dark-mode")
-    if (storage == null) {
+      if (storage == null) {
         const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
         if (osDarkSchemePreferred === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
         }
-    } else {
+      } else {
         const savedDarkMode = JSON.parse(storage)
-        if(savedDarkMode === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
         }
-    }
+      }
     </script>
-<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
 <script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
 <link href="../../../styles/style.css" rel="Stylesheet">
 <link href="../../../styles/main.css" rel="Stylesheet">
 <link href="../../../styles/prism.css" rel="Stylesheet">
 <link href="../../../styles/logo-styles.css" rel="Stylesheet">
-<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
 <link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
-<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/safe-local-storage_blocking.js"></script>
 <script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
 <script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
 <script type="text/javascript" src="../../../scripts/main.js" defer></script>
 <script type="text/javascript" src="../../../scripts/prism.js" async></script>
-<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script>
-<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script></head>
 <body>
-    <div class="root">
-    <nav class="navigation theme-dark" id="navigation-wrapper">
-<a class="library-name--link" href="../../../index.html">
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../../index.html" tabindex="1">
                     BlinkCard
             </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
         </button>
@@ -44,74 +41,76 @@
         <div class="library-version" id="library-version">
         </div>
         <div class="navigation-controls">
-        <div class="filter-section filter-section_loading" id="filter-section">
-                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":blinkcard-core:dokkaHtmlPartial/release">androidJvm</button>
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":blinkcard-core/productionRelease">productionRelease</button>
             <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
                 <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
-                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
-                    <div class="dropdown--header"><span>Platform filter</span>
-                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
                             <i class="ui-kit-icon ui-kit-icon_cross"></i>
                         </button>
                     </div>
                         <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
                             <label class="checkbox">
-                                <input type="checkbox" class="checkbox--input" id=":blinkcard-core:dokkaHtmlPartial/release" data-filter=":blinkcard-core:dokkaHtmlPartial/release">
+                                <input type="checkbox" class="checkbox--input" id=":blinkcard-core/productionRelease" data-filter=":blinkcard-core/productionRelease">
                                 <span class="checkbox--icon"></span>
-                                androidJvm
+                                productionRelease
                             </label>
                         </li>
                 </ul>
                 <div class="dropdown--overlay"></div>
             </div>
-        </div>
+        </ul>
             <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
             </button>
             <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
                 API
             </div>
         </div>
-    </nav>
-        <div id="container">
-            <div class="sidebar" id="leftColumn">
-                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
-                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox">
-                        <div class="dropdown--header">
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
                             <span>
                                     BlinkCard
                             </span>
-                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
-                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
-                            </button>
-                        </div>
-                        <div class="sidebar--inner" id="sideMenu"></div>
-                    </ul>
-                    <div class="dropdown--overlay"></div>
-                </div>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
             </div>
-            <div id="main">
-<div class="main-content" data-page-type="classlike" id="content" pageids="blinkcard-core::com.microblink.blinkcard.core.settings/LivenessSettings///PointingToDeclaration//1960586803">
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="blinkcard-core::com.microblink.blinkcard.core.settings/LivenessSettings///PointingToDeclaration//-1442400246">
   <div class="breadcrumbs"><a href="../../index.html">blinkcard-core</a><span class="delimiter">/</span><a href="../index.html">com.microblink.blinkcard.core.settings</a><span class="delimiter">/</span><span class="current">LivenessSettings</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Liveness</span><wbr><span><span>Settings</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-core:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">LivenessSettings</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/FloatRange.html"><span class="token annotation builtin">FloatRange</span></a><span class="token punctuation">(</span><span>from<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">0.0</span></span><span class="token punctuation">, </span></span><wbr><span>to<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">1.0</span></span></span><wbr><span class="token punctuation">)</span>&nbsp;</span><span class="token keyword">val </span>handToCardSizeRatio<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.15f</span><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/FloatRange.html"><span class="token annotation builtin">FloatRange</span></a><span class="token punctuation">(</span><span>from<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">0.0</span></span><span class="token punctuation">, </span></span><wbr><span>to<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">1.0</span></span></span><wbr><span class="token punctuation">)</span>&nbsp;</span><span class="token keyword">val </span>handCardOverlapThreshold<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.05f</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>enableCardHeldInHandCheck<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>screenCheckStrictnessLevel<span class="token operator">: </span><a href="../-strictness-level/index.html">StrictnessLevel</a><span class="token operator"> = </span>StrictnessLevel.Level5<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>photocopyCheckStrictnessLevel<span class="token operator">: </span><a href="../-strictness-level/index.html">StrictnessLevel</a><span class="token operator"> = </span>StrictnessLevel.Level5</span></span><span class="token punctuation">)</span> : <a href="https://developer.android.com/reference/kotlin/android/os/Parcelable.html">Parcelable</a></div><p class="paragraph">Configuration settings for liveness detection during card scanning.</p><p class="paragraph">This class defines various parameters that control the behavior of liveness detection, including thresholds for hand detection, screen and photocopy analysis, and options to skip processing certain frames based on liveness criteria.</p></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-core/productionRelease"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">LivenessSettings</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/FloatRange.html"><span class="token annotation builtin">FloatRange</span></a><span class="token punctuation">(</span><span>from<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">0.0</span></span><span class="token punctuation">, </span></span><wbr><span>to<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">1.0</span></span></span><wbr><span class="token punctuation">)</span>&nbsp;</span><span class="token keyword">val </span>handToCardSizeRatio<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.15f</span><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/FloatRange.html"><span class="token annotation builtin">FloatRange</span></a><span class="token punctuation">(</span><span>from<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">0.0</span></span><span class="token punctuation">, </span></span><wbr><span>to<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">1.0</span></span></span><wbr><span class="token punctuation">)</span>&nbsp;</span><span class="token keyword">val </span>handCardOverlapThreshold<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.05f</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>enableCardHeldInHandCheck<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>screenCheckStrictnessLevel<span class="token operator">: </span><a href="../-strictness-level/index.html">StrictnessLevel</a><span class="token operator"> = </span>StrictnessLevel.Level5<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>photocopyCheckStrictnessLevel<span class="token operator">: </span><a href="../-strictness-level/index.html">StrictnessLevel</a><span class="token operator"> = </span>StrictnessLevel.Level5</span></span><span class="token punctuation">)</span> : <a href="https://developer.android.com/reference/kotlin/android/os/Parcelable.html">Parcelable</a></div><p class="paragraph">Configuration settings for liveness detection during card scanning.</p><p class="paragraph">This class defines various parameters that control the behavior of liveness detection, including thresholds for hand detection, screen and photocopy analysis, and options to skip processing certain frames based on liveness criteria.</p></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
     <div class="tabs-section-body">
       <div data-togglable="CONSTRUCTOR">
-        <h2 class="">Constructors</h2>
-        <div class="table"><a data-name="-1012467973%2FConstructors%2F1960586803" anchor-label="LivenessSettings" id="-1012467973%2FConstructors%2F1960586803" data-filterable-set=":blinkcard-core:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":blinkcard-core:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-core:dokkaHtmlPartial/release">
+        <h2 class="tableheader">Constructors</h2>
+        <div class="table"><a data-name="-1012467973%2FConstructors%2F-1442400246" anchor-label="LivenessSettings" id="-1012467973%2FConstructors%2F-1442400246" data-filterable-set=":blinkcard-core/productionRelease"></a>
+          <div class="table-row table-row_content" data-togglable="CONSTRUCTOR" data-filterable-current=":blinkcard-core/productionRelease" data-filterable-set=":blinkcard-core/productionRelease">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-liveness-settings.html"><span>Liveness</span><wbr><span><span>Settings</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1012467973%2FConstructors%2F1960586803"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1012467973%2FConstructors%2F-1442400246"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-core:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/FloatRange.html"><span class="token annotation builtin">FloatRange</span></a><span class="token punctuation">(</span><span>from<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">0.0</span></span><span class="token punctuation">, </span></span><wbr><span>to<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">1.0</span></span></span><wbr><span class="token punctuation">)</span>&nbsp;</span>handToCardSizeRatio<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.15f</span><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/FloatRange.html"><span class="token annotation builtin">FloatRange</span></a><span class="token punctuation">(</span><span>from<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">0.0</span></span><span class="token punctuation">, </span></span><wbr><span>to<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">1.0</span></span></span><wbr><span class="token punctuation">)</span>&nbsp;</span>handCardOverlapThreshold<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.05f</span><span class="token punctuation">, </span></span><span class="parameter ">enableCardHeldInHandCheck<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">screenCheckStrictnessLevel<span class="token operator">: </span><a href="../-strictness-level/index.html">StrictnessLevel</a><span class="token operator"> = </span>StrictnessLevel.Level5<span class="token punctuation">, </span></span><span class="parameter ">photocopyCheckStrictnessLevel<span class="token operator">: </span><a href="../-strictness-level/index.html">StrictnessLevel</a><span class="token operator"> = </span>StrictnessLevel.Level5</span></span><span class="token punctuation">)</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-core/productionRelease"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/FloatRange.html"><span class="token annotation builtin">FloatRange</span></a><span class="token punctuation">(</span><span>from<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">0.0</span></span><span class="token punctuation">, </span></span><wbr><span>to<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">1.0</span></span></span><wbr><span class="token punctuation">)</span>&nbsp;</span>handToCardSizeRatio<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.15f</span><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/FloatRange.html"><span class="token annotation builtin">FloatRange</span></a><span class="token punctuation">(</span><span>from<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">0.0</span></span><span class="token punctuation">, </span></span><wbr><span>to<span class="token operator"> = </span><span class="breakable-word"><span class="token constant">1.0</span></span></span><wbr><span class="token punctuation">)</span>&nbsp;</span>handCardOverlapThreshold<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.05f</span><span class="token punctuation">, </span></span><span class="parameter ">enableCardHeldInHandCheck<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">screenCheckStrictnessLevel<span class="token operator">: </span><a href="../-strictness-level/index.html">StrictnessLevel</a><span class="token operator"> = </span>StrictnessLevel.Level5<span class="token punctuation">, </span></span><span class="parameter ">photocopyCheckStrictnessLevel<span class="token operator">: </span><a href="../-strictness-level/index.html">StrictnessLevel</a><span class="token operator"> = </span>StrictnessLevel.Level5</span></span><span class="token punctuation">)</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -119,78 +118,78 @@
         </div>
       </div>
       <div data-togglable="PROPERTY">
-        <h2 class="">Properties</h2>
-        <div class="table"><a data-name="-975911054%2FProperties%2F1960586803" anchor-label="enableCardHeldInHandCheck" id="-975911054%2FProperties%2F1960586803" data-filterable-set=":blinkcard-core:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":blinkcard-core:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-core:dokkaHtmlPartial/release">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="-975911054%2FProperties%2F-1442400246" anchor-label="enableCardHeldInHandCheck" id="-975911054%2FProperties%2F-1442400246" data-filterable-set=":blinkcard-core/productionRelease"></a>
+          <div class="table-row table-row_content" data-filterable-current=":blinkcard-core/productionRelease" data-filterable-set=":blinkcard-core/productionRelease">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="enable-card-held-in-hand-check.html"><span>enable</span><wbr><span>Card</span><wbr><span>Held</span><wbr><span>In</span><wbr><span>Hand</span><wbr><span><span>Check</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-975911054%2FProperties%2F1960586803"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-975911054%2FProperties%2F-1442400246"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-core:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="enable-card-held-in-hand-check.html">enableCardHeldInHandCheck</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></div><div class="brief "><p class="paragraph">Enables or disables the check for card held in hand. When <code class="lang-kotlin">true</code>, the liveness detection will include a check to verify that the card is being held in hand. Defaults to <code class="lang-kotlin">true</code>.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-core/productionRelease"><div class="symbol monospace"><span class="token keyword">val </span><a href="enable-card-held-in-hand-check.html">enableCardHeldInHandCheck</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Enables or disables the check for card held in hand. When <code class="lang-kotlin">true</code>, the liveness detection will include a check to verify that the card is being held in hand. Defaults to <code class="lang-kotlin">true</code>.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-1803305831%2FProperties%2F1960586803" anchor-label="handCardOverlapThreshold" id="-1803305831%2FProperties%2F1960586803" data-filterable-set=":blinkcard-core:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":blinkcard-core:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-core:dokkaHtmlPartial/release">
+<a data-name="-1803305831%2FProperties%2F-1442400246" anchor-label="handCardOverlapThreshold" id="-1803305831%2FProperties%2F-1442400246" data-filterable-set=":blinkcard-core/productionRelease"></a>
+          <div class="table-row table-row_content" data-filterable-current=":blinkcard-core/productionRelease" data-filterable-set=":blinkcard-core/productionRelease">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="hand-card-overlap-threshold.html"><span>hand</span><wbr><span>Card</span><wbr><span>Overlap</span><wbr><span><span>Threshold</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1803305831%2FProperties%2F1960586803"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1803305831%2FProperties%2F-1442400246"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-core:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="hand-card-overlap-threshold.html">handCardOverlapThreshold</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.05f</span></div><div class="brief "><p class="paragraph">Minimum overlap threshold between detected hand and card regions. This parameter is used to adjust heuristics that eliminate cases when the hand is present in the input but it is not holding the card. <code class="lang-kotlin">handCardOverlapThreshold</code> is the minimal ratio of hand pixels inside the frame surrounding the card and area of that frame. Only pixels inside that frame are used to ignore false-positive hand segmentations inside the card. Value must be in range \[0.0, 1.0\]. Defaults to 0.05.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-core/productionRelease"><div class="symbol monospace"><span class="token keyword">val </span><a href="hand-card-overlap-threshold.html">handCardOverlapThreshold</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a></div><div class="brief "><p class="paragraph">Minimum overlap threshold between detected hand and card regions. This parameter is used to adjust heuristics that eliminate cases when the hand is present in the input but it is not holding the card. <code class="lang-kotlin">handCardOverlapThreshold</code> is the minimal ratio of hand pixels inside the frame surrounding the card and area of that frame. Only pixels inside that frame are used to ignore false-positive hand segmentations inside the card. Value must be in range \[0.0, 1.0\]. Defaults to 0.05.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="1346696334%2FProperties%2F1960586803" anchor-label="handToCardSizeRatio" id="1346696334%2FProperties%2F1960586803" data-filterable-set=":blinkcard-core:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":blinkcard-core:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-core:dokkaHtmlPartial/release">
+<a data-name="1346696334%2FProperties%2F-1442400246" anchor-label="handToCardSizeRatio" id="1346696334%2FProperties%2F-1442400246" data-filterable-set=":blinkcard-core/productionRelease"></a>
+          <div class="table-row table-row_content" data-filterable-current=":blinkcard-core/productionRelease" data-filterable-set=":blinkcard-core/productionRelease">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="hand-to-card-size-ratio.html"><span>hand</span><wbr><span>To</span><wbr><span>Card</span><wbr><span>Size</span><wbr><span><span>Ratio</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1346696334%2FProperties%2F1960586803"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1346696334%2FProperties%2F-1442400246"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-core:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="hand-to-card-size-ratio.html">handToCardSizeRatio</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.15f</span></div><div class="brief "><p class="paragraph">Minimum hand-to-card size ratio for valid hand detection. This controls how large a hand must appear in the frame relative to the card to be considered valid. Lower values detect smaller/more distant hands. Hand scale is calculated as a ratio between area of hand mask and card mask. Value must be in range \[0.0, 1.0\]. Defaults to 0.15.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-core/productionRelease"><div class="symbol monospace"><span class="token keyword">val </span><a href="hand-to-card-size-ratio.html">handToCardSizeRatio</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a></div><div class="brief "><p class="paragraph">Minimum hand-to-card size ratio for valid hand detection. This controls how large a hand must appear in the frame relative to the card to be considered valid. Lower values detect smaller/more distant hands. Hand scale is calculated as a ratio between area of hand mask and card mask. Value must be in range \[0.0, 1.0\]. Defaults to 0.15.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-1892479237%2FProperties%2F1960586803" anchor-label="photocopyCheckStrictnessLevel" id="-1892479237%2FProperties%2F1960586803" data-filterable-set=":blinkcard-core:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":blinkcard-core:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-core:dokkaHtmlPartial/release">
+<a data-name="-1892479237%2FProperties%2F-1442400246" anchor-label="photocopyCheckStrictnessLevel" id="-1892479237%2FProperties%2F-1442400246" data-filterable-set=":blinkcard-core/productionRelease"></a>
+          <div class="table-row table-row_content" data-filterable-current=":blinkcard-core/productionRelease" data-filterable-set=":blinkcard-core/productionRelease">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="photocopy-check-strictness-level.html"><span>photocopy</span><wbr><span>Check</span><wbr><span>Strictness</span><wbr><span><span>Level</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1892479237%2FProperties%2F1960586803"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1892479237%2FProperties%2F-1442400246"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-core:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="photocopy-check-strictness-level.html">photocopyCheckStrictnessLevel</a><span class="token operator">: </span><a href="../-strictness-level/index.html">StrictnessLevel</a></div><div class="brief "><p class="paragraph">Sensitivity level for detecting frames where the presented card is a photocopy. Higher levels provide better security by being more strict in detecting photocopied cards, but may increase false positives. Defaults to <a href="../-strictness-level/-level5/index.html">StrictnessLevel.Level5</a>.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-core/productionRelease"><div class="symbol monospace"><span class="token keyword">val </span><a href="photocopy-check-strictness-level.html">photocopyCheckStrictnessLevel</a><span class="token operator">: </span><a href="../-strictness-level/index.html">StrictnessLevel</a></div><div class="brief "><p class="paragraph">Sensitivity level for detecting frames where the presented card is a photocopy. Higher levels provide better security by being more strict in detecting photocopied cards, but may increase false positives. Defaults to <a href="../-strictness-level/-level5/index.html">StrictnessLevel.Level5</a>.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="313842548%2FProperties%2F1960586803" anchor-label="screenCheckStrictnessLevel" id="313842548%2FProperties%2F1960586803" data-filterable-set=":blinkcard-core:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":blinkcard-core:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-core:dokkaHtmlPartial/release">
+<a data-name="313842548%2FProperties%2F-1442400246" anchor-label="screenCheckStrictnessLevel" id="313842548%2FProperties%2F-1442400246" data-filterable-set=":blinkcard-core/productionRelease"></a>
+          <div class="table-row table-row_content" data-filterable-current=":blinkcard-core/productionRelease" data-filterable-set=":blinkcard-core/productionRelease">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="screen-check-strictness-level.html"><span>screen</span><wbr><span>Check</span><wbr><span>Strictness</span><wbr><span><span>Level</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="313842548%2FProperties%2F1960586803"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="313842548%2FProperties%2F-1442400246"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-core:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="screen-check-strictness-level.html">screenCheckStrictnessLevel</a><span class="token operator">: </span><a href="../-strictness-level/index.html">StrictnessLevel</a></div><div class="brief "><p class="paragraph">Sensitivity level for detecting frames where the card is displayed on a screen. Higher levels provide better security by being more strict in detecting screen-displayed cards, but may increase false positives. Defaults to <a href="../-strictness-level/-level5/index.html">StrictnessLevel.Level5</a>.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-core/productionRelease"><div class="symbol monospace"><span class="token keyword">val </span><a href="screen-check-strictness-level.html">screenCheckStrictnessLevel</a><span class="token operator">: </span><a href="../-strictness-level/index.html">StrictnessLevel</a></div><div class="brief "><p class="paragraph">Sensitivity level for detecting frames where the card is displayed on a screen. Higher levels provide better security by being more strict in detecting screen-displayed cards, but may increase false positives. Defaults to <a href="../-strictness-level/-level5/index.html">StrictnessLevel.Level5</a>.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -198,33 +197,33 @@
         </div>
       </div>
       <div data-togglable="FUNCTION">
-        <h2 class="">Functions</h2>
-        <div class="table"><a data-name="-1578325224%2FFunctions%2F1960586803" anchor-label="describeContents" id="-1578325224%2FFunctions%2F1960586803" data-filterable-set=":blinkcard-core:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":blinkcard-core:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-core:dokkaHtmlPartial/release">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-1578325224%2FFunctions%2F-1442400246" anchor-label="describeContents" id="-1578325224%2FFunctions%2F-1442400246" data-filterable-set=":blinkcard-core/productionRelease"></a>
+          <div class="table-row table-row_content" data-filterable-current=":blinkcard-core/productionRelease" data-filterable-set=":blinkcard-core/productionRelease">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="../-scanning-settings/index.html#-1578325224%2FFunctions%2F1960586803"><span>describe</span><wbr><span><span>Contents</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1578325224%2FFunctions%2F1960586803"></span>
+                  <div><a href="../-scanning-settings/index.html#-1578325224%2FFunctions%2F-1442400246"><span>describe</span><wbr><span><span>Contents</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1578325224%2FFunctions%2F-1442400246"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-core:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../-scanning-settings/index.html#-1578325224%2FFunctions%2F1960586803"><span class="token function">describeContents</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-core/productionRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../-scanning-settings/index.html#-1578325224%2FFunctions%2F-1442400246"><span class="token function">describeContents</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-1754457655%2FFunctions%2F1960586803" anchor-label="writeToParcel" id="-1754457655%2FFunctions%2F1960586803" data-filterable-set=":blinkcard-core:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":blinkcard-core:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-core:dokkaHtmlPartial/release">
+<a data-name="-1754457655%2FFunctions%2F-1442400246" anchor-label="writeToParcel" id="-1754457655%2FFunctions%2F-1442400246" data-filterable-set=":blinkcard-core/productionRelease"></a>
+          <div class="table-row table-row_content" data-filterable-current=":blinkcard-core/productionRelease" data-filterable-set=":blinkcard-core/productionRelease">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="../-scanning-settings/index.html#-1754457655%2FFunctions%2F1960586803"><span>write</span><wbr><span>To</span><wbr><span><span>Parcel</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1754457655%2FFunctions%2F1960586803"></span>
+                  <div><a href="../-scanning-settings/index.html#-1754457655%2FFunctions%2F-1442400246"><span>write</span><wbr><span>To</span><wbr><span><span>Parcel</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1754457655%2FFunctions%2F-1442400246"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-core:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../-scanning-settings/index.html#-1754457655%2FFunctions%2F1960586803"><span class="token function">writeToParcel</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/os/Parcel.html">Parcel</a><span class="token punctuation">, </span></span><span class="parameter ">p1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-core/productionRelease"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="../-scanning-settings/index.html#-1754457655%2FFunctions%2F-1442400246"><span class="token function">writeToParcel</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/os/Parcel.html">Parcel</a><span class="token punctuation">, </span></span><span class="parameter ">p1<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -235,17 +234,21 @@
   </div>
 </div>
     <div class="footer">
-        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
-        <span>© 2026 Copyright</span>
-        <span class="pull-right">
-            <span>Generated by </span>
-            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
-                <span>dokka</span>
-            </a>
-        </span>
-    </div>
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
             </div>
         </div>
     </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

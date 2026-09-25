@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">Turiet karti un tālruni nekustīgu</string>
-  <string name="mb_blinkcard_card_not_fully_visible">Turiet karti tā, lai tā būtu pilnībā redzama</string>
-  <string name="mb_blinkcard_first_side_instructions">Noskenējiet kartes numuru</string>
-  <string name="mb_blinkcard_flashlight_warning_message">Uzmanieties no lukturīša atspīduma.\nViegli pārvietojiet karti, lai no tās izvairītos.</string>
-  <string name="mb_blinkcard_help_screen_msg1">Parasti kartes numuru veido 16 cipari, bet tas var būt arī 12–19 ciparus garš. Tam jābūt uzdrukātam vai reljefi iespiestam pār karti. Kartes numurs var būt gan tās priekšpusē, gan aizmugurē.</string>
-  <string name="mb_blinkcard_help_screen_msg2">Pārliecinieties, ka kādu kartes daļu, arī apakšējās līnijas, neaizsedzat ar pirkstu. Uzmanieties arī no kartes laukus šķērsojošās hologrammas atspulgiem.</string>
-  <string name="mb_blinkcard_help_screen_msg3">Izvairieties no tiešas spilgtas gaismas, jo tā atstarojas no kartes un var padarīt atsevišķas kartes daļas nesalasāmas. Ja nevarat salasīt datus uz kartes, tos neredzēs arī kamera.</string>
-  <string name="mb_blinkcard_help_screen_msg4">Skenēšanas laikā nekustiniet tālruni un karti. Pretējā gadījumā attēls var būt izplūdis, un kartes dati var kļūt nesalasāmi.</string>
-  <string name="mb_blinkcard_help_screen_title1">Kur atrast kartes numuru?</string>
-  <string name="mb_blinkcard_help_screen_title2">Paturēt visus laukus redzamus</string>
-  <string name="mb_blinkcard_help_screen_title3">Uzmanieties no spilgtas gaismas</string>
-  <string name="mb_blinkcard_help_screen_title4">Skenēšanas laikā turēt nekustīgu</string>
-  <string name="mb_blinkcard_keep_card_parallel">Turiet karti paralēli ekrānam</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">Parasti kartes numuru veido 16 cipari. Tam jābūt uzdrukātam vai reljefi iespiestam pār karti. Pārliecinieties, ka apgaismojums ir pietiekams un visa kartes informācija ir labi redzama.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">Vispirms noskenējiet kartes numuru</string>
-  <string name="mb_blinkcard_other_side_instructions">Noskenējiet kartes otru pusi</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">Nevar nolasīt karti. Lūdzu, mēģiniet vēlreiz.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Mēģināt no jauna</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">Skenēšana neizdevās</string>
-  <string name="mb_blinkcard_scanning_wrong_side">Pagrieziet kartes otru pusi</string>
+    <string name="mb_blinkcard_blur_detected">Turiet karti un tālruni nekustīgi</string>
+    <string name="mb_blinkcard_card_not_fully_visible">Turiet karti tā, lai tā būtu pilnībā redzama</string>
+    <string name="mb_blinkcard_first_side_instructions">Noskenējiet kartes numuru</string>
+    <string name="mb_blinkcard_flashlight_warning_message">Uzmanieties no lukturīša atspīduma.\nViegli pārvietojiet karti, lai no tās izvairītos.</string>
+    <string name="mb_blinkcard_help_screen_msg1">Parasti kartes numuru veido 16 cipari, bet tas var būt arī 12–19 ciparus garš. Tam jābūt uzdrukātam vai reljefi iespiestam pār karti. Kartes numurs var būt gan tās priekšpusē, gan aizmugurē.</string>
+    <string name="mb_blinkcard_help_screen_msg2">Pārliecinieties, ka kādu kartes daļu, arī apakšējās līnijas, neaizsedzat ar pirkstu. Uzmanieties arī no kartes laukus šķērsojošās hologrammas atspulgiem.</string>
+    <string name="mb_blinkcard_help_screen_msg3">Izvairieties no tiešas spilgtas gaismas, jo tā atstarojas no kartes un var padarīt atsevišķas kartes daļas nesalasāmas. Ja nevarat salasīt datus uz kartes, tos neredzēs arī kamera.</string>
+    <string name="mb_blinkcard_help_screen_msg4">Skenēšanas laikā nekustiniet tālruni un karti. Pretējā gadījumā attēls var būt izplūdis, un kartes dati var kļūt nesalasāmi.</string>
+    <string name="mb_blinkcard_help_screen_title1">Kur atrast kartes numuru?</string>
+    <string name="mb_blinkcard_help_screen_title2">Paturēt visus laukus redzamus</string>
+    <string name="mb_blinkcard_help_screen_title3">Uzmanieties no spilgtas gaismas</string>
+    <string name="mb_blinkcard_help_screen_title4">Skenēšanas laikā turēt nekustīgu</string>
+    <string name="mb_blinkcard_keep_card_parallel">Turiet karti paralēli tālrunim</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">Parasti kartes numuru veido 16 cipari. Tam jābūt uzdrukātam vai reljefi iespiestam pār karti. Pārliecinieties, ka apgaismojums ir pietiekams un visa kartes informācija ir labi redzama.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">Vispirms noskenējiet kartes numuru</string>
+    <string name="mb_blinkcard_other_side_instructions">Noskenējiet kartes otru pusi</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Pārliecinieties, vai karte ir labi apgaismota, pilnībā redzama un bez atspīdumiem.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Mēģināt no jauna</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">Neizdevās nolasīt karti</string>
+    <string name="mb_blinkcard_scanning_wrong_side">Pagrieziet kartes otru pusi</string>
 </resources>

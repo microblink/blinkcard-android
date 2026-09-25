@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">कार्ड र फोन नहल्लाइ राख्नुहोस्</string>
-  <string name="mb_blinkcard_card_not_fully_visible">कार्ड देखिनेगरी राख्नुहोस्</string>
-  <string name="mb_blinkcard_first_side_instructions">कार्ड नम्बर स्क्यान गर्नुहोस्</string>
-  <string name="mb_blinkcard_flashlight_warning_message">टर्चलाइटको चमकबाट सावधान रहनुहोस्।\nयसबाट बच्नको लागि आफ्नो कार्डलाई बिस्तारै घुमाउनुहोस्।</string>
-  <string name="mb_blinkcard_help_screen_msg1">कार्ड नम्बर सामान्यतया 16 अंकको भए पनि, यो 12 देखि 19 अंकको बीचमा पनि हुन सक्छ। यो नम्बर कार्डमा माथि उठेका अक्षरमा इम्बोस्ड गरिएको वा छापिएको हुन्छ र कार्डको अगाडि वा पछाडि जुनसुकै भागमा हुन सक्छ।</string>
-  <string name="mb_blinkcard_help_screen_msg2">औँलाले कार्डको तल्लो लाइनहरू सहितको कुनै पनि भाग नछोप्नुहोस्। साथै, कार्डका विवरणहरूमा पर्न सक्ने होलोग्रामको चमकबाट पनि जोगिनुहोस्।</string>
-  <string name="mb_blinkcard_help_screen_msg3">कार्डमा सीधै प्रकाश नपार्नुहोस्। चम्किलो प्रकाशले कार्डको विवरण पढ्न गाह्रो हुन्छ। तपाईंले पढ्न नसकेको कुनै पनि जानकारी क्यामेराले पनि चिन्न सक्दैन।</string>
-  <string name="mb_blinkcard_help_screen_msg4">कृपया स्क्यान गर्दा फोन र कार्ड दुवैलाई नहल्लाई एकै ठाउँमा राख्नुहोस्। यी दुईमध्ये कुनै पनि हल्लिदा फोटो धमिलो हुन सक्छ र कार्डको जानकारी पढ्न गाह्रो हुन्छ।</string>
-  <string name="mb_blinkcard_help_screen_title1">कार्ड नम्बर कहाँ छ?</string>
-  <string name="mb_blinkcard_help_screen_title2">फिल्डहरू देखिनेगरी राख्नुहोस्</string>
-  <string name="mb_blinkcard_help_screen_title3">तेजिलो प्रकाशबाट जोगिनुहोस्।</string>
-  <string name="mb_blinkcard_help_screen_title4">स्क्यान गर्दा नहल्लिनुहोस्</string>
-  <string name="mb_blinkcard_keep_card_parallel">कार्डलाई फोनको सिधा अगाडि बराबर हुने गरी राख्नुहोस्</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">कार्ड नम्बर सामान्यतया 16 अंकको हुन्छ। यो नम्बर कार्डमा माथि उठेका अक्षरमा इम्बोस्ड गरिएको वा छापिएको हुन्छ। कार्डलाई राम्ररी उज्यालोमा राख्नुहोस् र सबै विवरणहरू प्रष्ट देखाउनुहोस्।</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">सर्वप्रथम कार्ड नम्बर स्क्यान गर्नुहोस्</string>
-  <string name="mb_blinkcard_other_side_instructions">कार्डको अर्को भाग स्क्यान गर्नुहोस्</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">कार्ड पढ्न सकिएन। कृपया पुनः प्रयास गर्नुहोस्।</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">पुन: प्रयास गर्नुहोस्</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">स्क्यान हुन सकेन</string>
-  <string name="mb_blinkcard_scanning_wrong_side">कार्ड पल्टाउनुहोस्</string>
+    <string name="mb_blinkcard_blur_detected">कार्ड र फोन स्थिर राख्नुहोस्</string>
+    <string name="mb_blinkcard_card_not_fully_visible">कार्ड देखिनेगरी राख्नुहोस्</string>
+    <string name="mb_blinkcard_first_side_instructions">कार्ड नम्बर स्क्यान गर्नुहोस्</string>
+    <string name="mb_blinkcard_flashlight_warning_message">टर्चलाइटको चमकबाट सावधान रहनुहोस्।\nयसबाट बच्नको लागि आफ्नो कार्डलाई बिस्तारै घुमाउनुहोस्।</string>
+    <string name="mb_blinkcard_help_screen_msg1">कार्ड नम्बर सामान्यतया 16 अंकको भए पनि, यो 12 देखि 19 अंकको बीचमा पनि हुन सक्छ। यो नम्बर कार्डमा माथि उठेका अक्षरमा इम्बोस्ड गरिएको वा छापिएको हुन्छ र कार्डको अगाडि वा पछाडि जुनसुकै भागमा हुन सक्छ।</string>
+    <string name="mb_blinkcard_help_screen_msg2">औँलाले कार्डको तल्लो लाइनहरू सहितको कुनै पनि भाग नछोप्नुहोस्। साथै, कार्डका विवरणहरूमा पर्न सक्ने होलोग्रामको चमकबाट पनि जोगिनुहोस्।</string>
+    <string name="mb_blinkcard_help_screen_msg3">कार्डमा सीधै प्रकाश नपार्नुहोस्। चम्किलो प्रकाशले कार्डको विवरण पढ्न गाह्रो हुन्छ। तपाईंले पढ्न नसकेको कुनै पनि जानकारी क्यामेराले पनि चिन्न सक्दैन।</string>
+    <string name="mb_blinkcard_help_screen_msg4">कृपया स्क्यान गर्दा फोन र कार्ड दुवैलाई नहल्लाई एकै ठाउँमा राख्नुहोस्। यी दुईमध्ये कुनै पनि हल्लिदा फोटो धमिलो हुन सक्छ र कार्डको जानकारी पढ्न गाह्रो हुन्छ।</string>
+    <string name="mb_blinkcard_help_screen_title1">कार्ड नम्बर कहाँ छ?</string>
+    <string name="mb_blinkcard_help_screen_title2">फिल्डहरू देखिनेगरी राख्नुहोस्</string>
+    <string name="mb_blinkcard_help_screen_title3">तेजिलो प्रकाशबाट जोगिनुहोस्।</string>
+    <string name="mb_blinkcard_help_screen_title4">स्क्यान गर्दा नहल्लिनुहोस्</string>
+    <string name="mb_blinkcard_keep_card_parallel">कार्डलाई फोनसँग समानान्तर राख्नुहोस्</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">कार्ड नम्बर सामान्यतया 16 अंकको हुन्छ। यो नम्बर कार्डमा माथि उठेका अक्षरमा इम्बोस्ड गरिएको वा छापिएको हुन्छ। कार्डलाई राम्ररी उज्यालोमा राख्नुहोस् र सबै विवरणहरू प्रष्ट देखाउनुहोस्।</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">सर्वप्रथम कार्ड नम्बर स्क्यान गर्नुहोस्</string>
+    <string name="mb_blinkcard_other_side_instructions">कार्डको अर्को भाग स्क्यान गर्नुहोस्</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">कार्डमा पर्याप्त प्रकाश परेको, पूर्ण रूपमा देखिएको र चमक नभएको सुनिश्चित गर्नुहोस्।</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">पुन: प्रयास गर्नुहोस्</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">कार्ड पढ्न सकिएन</string>
+    <string name="mb_blinkcard_scanning_wrong_side">कार्ड पल्टाउनुहोस्</string>
 </resources>

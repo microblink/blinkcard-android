@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">කාඩ්පත සහ දුරකථනය නොසෙල්වන සේ තබා ගන්න</string>
-  <string name="mb_blinkcard_card_not_fully_visible">කාඩ්පත සම්පූර්ණයෙන් පෙනෙන පරිදි තබා ගන්න</string>
-  <string name="mb_blinkcard_first_side_instructions">කාඩ්පතේ අංකය ස්කෑන් කරන්න</string>
-  <string name="mb_blinkcard_flashlight_warning_message">ෆ්ලෑෂ් ලයිට් දිලිසීම ගැන විමසිල්ලෙන් සිටින්න.\nඑය වළක්වා ගැනීම සඳහා ඔබේ කාඩ්පත මෘදු ලෙස එහා මෙහා කරන්න.</string>
-  <string name="mb_blinkcard_help_screen_msg1">කාඩ්පත් අංකය සාමාන්‍යයෙන් ඉලක්කම් 16කින් යුත් අංකයක් වන නමුත් එහි ඉලක්කම් 12ත් 19ත් අතර ප්‍රමාණයක් තිබිය හැක. එය කාඩ්පත මත මුද්‍රණය කර ඇති හෝ පිටතට නෙරා ගිය ලෙස කැටයම් කළ අංකයකි. එය ඔබේ කාඩ්පතේ ඉදිරිපස හෝ පිටුපස තිබිය හැකි ය.</string>
-  <string name="mb_blinkcard_help_screen_msg2">ඔබේ ඇඟිල්ලකින් කාඩ්පතේ පහළ ඇති රේඛා ඇතුළු කොටස් ආවරණය නොවන බවට වග බලා ගන්න. එසේම කාඩ්පතේ කොටස් මත ඇතිවන හොලෝග්‍රෑම් පරාවර්තන පිළිබඳව ද අවධානයෙන් සිටින්න.</string>
-  <string name="mb_blinkcard_help_screen_msg3">ඍජු රළු ආලෝකය කාඩ්පතේ වැදී පරාවර්තනය වී කාඩ්පතේ ඇති කොටස් කියවීමට නොහැකි විය හැකි බැවින් එය වළක්වා ගන්න. ඔබට කාඩ්පතේ දත්ත කියවිය නොහැකි නම්, එය කැමරාවට ද දෘශ්‍යමාන නොවේ.</string>
-  <string name="mb_blinkcard_help_screen_msg4">ස්කෑන් කරන අතරතුර දුරකථනය සහ කාඩ්පත නොසෙල්වෙන සේ තබා ගන්න. මින් එකක් හෝ සෙලවීම රූපය අපැහැදිලි වී කාඩ්පතේ දත්ත කියවීමට නොහැකි වීමට හේතු විය හැක.</string>
-  <string name="mb_blinkcard_help_screen_title1">කාඩ්පත් අංකය ඇත්තේ කොතැන ද?</string>
-  <string name="mb_blinkcard_help_screen_title2">සියලු කොටස් හොඳින් පෙනෙන පරිදි තබා ගන්න</string>
-  <string name="mb_blinkcard_help_screen_title3">රළු ආලෝකය ගැන සැලකිලිමත් වන්න</string>
-  <string name="mb_blinkcard_help_screen_title4">ස්කෑන් කරන අතරතුර නොසෙල්වී සිටින්න</string>
-  <string name="mb_blinkcard_keep_card_parallel">කාඩ්පත දුරකථනයට සමාන්තරව තබා ගන්න</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">කාඩ්පත් අංකය සාමාන්‍යයෙන් ඉලක්කම් 16කින් යුත් අංකයකි. එය කාඩ්පත මත මුද්‍රණය කර ඇති හෝ පිටතට නෙරා ගිය ලෙස කැටයම් කළ අංකයකි. කාඩ්පතට හොඳින් ආලෝකය වැටී එහි සියලු විස්තර හොඳින් පෙනෙන බවට සහතික කර ගන්න.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">පළමුව කාඩ්පතේ අංකය ස්කෑන් කරන්න</string>
-  <string name="mb_blinkcard_other_side_instructions">කාඩ්පතේ ඉදිරි පැත්ත ස්කෑන් කරන්න</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">කාඩ්පත කියවිය නොහැක. කරුණාකර නැවත උත්සාහ කරන්න.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">නැවත උත්සාහ කරන්න</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">ස්කෑන් කිරීම අසාර්ථකයි</string>
-  <string name="mb_blinkcard_scanning_wrong_side">කාඩ්පත අනෙක් පිට හරවන්න</string>
+    <string name="mb_blinkcard_blur_detected">කාඩ්පත සහ දුරකථනය නිශ්චලව තබා ගන්න</string>
+    <string name="mb_blinkcard_card_not_fully_visible">කාඩ්පත සම්පූර්ණයෙන් පෙනෙන පරිදි තබා ගන්න</string>
+    <string name="mb_blinkcard_first_side_instructions">කාඩ්පතේ අංකය ස්කෑන් කරන්න</string>
+    <string name="mb_blinkcard_flashlight_warning_message">ෆ්ලෑෂ් ලයිට් දිලිසීම ගැන විමසිල්ලෙන් සිටින්න.\nඑය වළක්වා ගැනීම සඳහා ඔබේ කාඩ්පත මෘදු ලෙස එහා මෙහා කරන්න.</string>
+    <string name="mb_blinkcard_help_screen_msg1">කාඩ්පත් අංකය සාමාන්‍යයෙන් ඉලක්කම් 16කින් යුත් අංකයක් වන නමුත් එහි ඉලක්කම් 12ත් 19ත් අතර ප්‍රමාණයක් තිබිය හැක. එය කාඩ්පත මත මුද්‍රණය කර ඇති හෝ පිටතට නෙරා ගිය ලෙස කැටයම් කළ අංකයකි. එය ඔබේ කාඩ්පතේ ඉදිරිපස හෝ පිටුපස තිබිය හැකි ය.</string>
+    <string name="mb_blinkcard_help_screen_msg2">ඔබේ ඇඟිල්ලකින් කාඩ්පතේ පහළ ඇති රේඛා ඇතුළු කොටස් ආවරණය නොවන බවට වග බලා ගන්න. එසේම කාඩ්පතේ කොටස් මත ඇතිවන හොලෝග්‍රෑම් පරාවර්තන පිළිබඳව ද අවධානයෙන් සිටින්න.</string>
+    <string name="mb_blinkcard_help_screen_msg3">ඍජු රළු ආලෝකය කාඩ්පතේ වැදී පරාවර්තනය වී කාඩ්පතේ ඇති කොටස් කියවීමට නොහැකි විය හැකි බැවින් එය වළක්වා ගන්න. ඔබට කාඩ්පතේ දත්ත කියවිය නොහැකි නම්, එය කැමරාවට ද දෘශ්‍යමාන නොවේ.</string>
+    <string name="mb_blinkcard_help_screen_msg4">ස්කෑන් කරන අතරතුර දුරකථනය සහ කාඩ්පත නොසෙල්වෙන සේ තබා ගන්න. මින් එකක් හෝ සෙලවීම රූපය අපැහැදිලි වී කාඩ්පතේ දත්ත කියවීමට නොහැකි වීමට හේතු විය හැක.</string>
+    <string name="mb_blinkcard_help_screen_title1">කාඩ්පත් අංකය ඇත්තේ කොතැන ද?</string>
+    <string name="mb_blinkcard_help_screen_title2">සියලු කොටස් හොඳින් පෙනෙන පරිදි තබා ගන්න</string>
+    <string name="mb_blinkcard_help_screen_title3">රළු ආලෝකය ගැන සැලකිලිමත් වන්න</string>
+    <string name="mb_blinkcard_help_screen_title4">ස්කෑන් කරන අතරතුර නොසෙල්වී සිටින්න</string>
+    <string name="mb_blinkcard_keep_card_parallel">කාඩ්පත දුරකථනයට සමාන්තරව තබා ගන්න</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">කාඩ්පත් අංකය සාමාන්‍යයෙන් ඉලක්කම් 16කින් යුත් අංකයකි. එය කාඩ්පත මත මුද්‍රණය කර ඇති හෝ පිටතට නෙරා ගිය ලෙස කැටයම් කළ අංකයකි. කාඩ්පතට හොඳින් ආලෝකය වැටී එහි සියලු විස්තර හොඳින් පෙනෙන බවට සහතික කර ගන්න.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">පළමුව කාඩ්පතේ අංකය ස්කෑන් කරන්න</string>
+    <string name="mb_blinkcard_other_side_instructions">කාඩ්පතේ ඉදිරි පැත්ත ස්කෑන් කරන්න</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">කාඩ්පතට හොඳ ආලෝකයක් ඇති බවත්, එය සම්පූර්ණයෙන් පෙනෙන බවත්, දිලිසීමක් නොමැති බවත් තහවුරු කරන්න.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">නැවත උත්සාහ කරන්න</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">කාඩ්පත කියවිය නොහැක</string>
+    <string name="mb_blinkcard_scanning_wrong_side">කාඩ්පත අනෙක් පිට හරවන්න</string>
 </resources>
