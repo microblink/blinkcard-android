@@ -1,11 +1,10 @@
 plugins {
     alias(libs.plugins.android.library)
-    alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
 }
 
 android {
-    namespace = "com.microblink.blinkcard.sample"
+    namespace = "com.microblink.blinkcard.sample.common"
     compileSdk = 36
 
     defaultConfig {
@@ -28,8 +27,11 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    kotlinOptions {
-        jvmTarget = "17"
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
     }
 }
 
@@ -41,6 +43,8 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     implementation(libs.androidx.navigation.compose)
     api(libs.androidx.material3)
+    implementation(libs.androidx.material.icons.core)
+    api(libs.androidx.foundation.android)
     api(libs.blinkcard.core)
     api(libs.androidx.navigation.compose)
 }

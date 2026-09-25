@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">카드와 휴대전화를 움직이지 마세요</string>
-  <string name="mb_blinkcard_card_not_fully_visible">카드 전체가 보이도록 유지해 주세요</string>
-  <string name="mb_blinkcard_first_side_instructions">카드 번호를 스캔하세요</string>
-  <string name="mb_blinkcard_flashlight_warning_message">손전등 불빛에 주의하세요.\n카드를 살살 움직여서 부딪히지 않도록 하세요.</string>
-  <string name="mb_blinkcard_help_screen_msg1">카드 번호는 일반적으로 16자리 숫자이지만, 12자리에서 19자리 사이일 수도 있습니다. 카드에 인쇄되어 있거나, 양각으로 돌출된 숫자로 표시되어 있습니다. 카드의 앞면 또는 뒷면에 있을 수 있습니다.</string>
-  <string name="mb_blinkcard_help_screen_msg2">손가락으로 카드의 일부, 특히 아래쪽 라인을 가리지 않도록 주의하세요. 또한, 카드의 정보 영역 위로 겹치는 홀로그램 반사에도 주의하세요.</string>
-  <string name="mb_blinkcard_help_screen_msg3">카드에 직접 강한 빛이 닿지 않도록 하세요. 빛이 반사되어 카드의 일부 정보가 읽히지 않을 수 있습니다. 카드에 있는 데이터를 육안으로 읽을 수 없다면, 카메라 역시 인식하지 못합니다.</string>
-  <string name="mb_blinkcard_help_screen_msg4">스캔하는 동안 휴대전화와 카드를 움직이지 않고 가만히 두세요. 둘 중 하나라도 움직이면 이미지가 흐려져 카드의 데이터가 읽히지 않을 수 있습니다.</string>
-  <string name="mb_blinkcard_help_screen_title1">카드 번호는 어디에 있나요?</string>
-  <string name="mb_blinkcard_help_screen_title2">모든 칸들이 보이도록 유지하세요</string>
-  <string name="mb_blinkcard_help_screen_title3">강한 빛을 주의하세요</string>
-  <string name="mb_blinkcard_help_screen_title4">스캔하는 동안 움직이지 마세요</string>
-  <string name="mb_blinkcard_keep_card_parallel">카드를 휴대폰과 평행하게 유지하세요.</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">카드 번호는 일반적으로 16자리 숫자입니다. 카드에 인쇄되어 있거나, 양각으로 돌출된 숫자로 표시되어 있습니다. 카드가 잘 보이도록 조명을 밝게 하고, 모든 세부 정보가 보이는지 확인하세요.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">먼저 카드 번호를 스캔하세요</string>
-  <string name="mb_blinkcard_other_side_instructions">카드 반대쪽 면을 스캔하세요</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">카드를 인식할 수 없습니다. 다시 시도해 주세요.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">다시 시도</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">스캔 실패</string>
-  <string name="mb_blinkcard_scanning_wrong_side">카드를 뒤집으세요</string>
+    <string name="mb_blinkcard_blur_detected">카드와 휴대전화를 움직이지 마세요</string>
+    <string name="mb_blinkcard_card_not_fully_visible">카드 전체가 보이도록 유지해 주세요</string>
+    <string name="mb_blinkcard_first_side_instructions">카드 번호를 스캔하세요</string>
+    <string name="mb_blinkcard_flashlight_warning_message">손전등 불빛에 주의하세요.\n카드를 살살 움직여서 부딪히지 않도록 하세요.</string>
+    <string name="mb_blinkcard_help_screen_msg1">카드 번호는 일반적으로 16자리 숫자이지만, 12자리에서 19자리 사이일 수도 있습니다. 카드에 인쇄되어 있거나, 양각으로 돌출된 숫자로 표시되어 있습니다. 카드의 앞면 또는 뒷면에 있을 수 있습니다.</string>
+    <string name="mb_blinkcard_help_screen_msg2">손가락으로 카드의 일부, 특히 아래쪽 라인을 가리지 않도록 주의하세요. 또한, 카드의 정보 영역 위로 겹치는 홀로그램 반사에도 주의하세요.</string>
+    <string name="mb_blinkcard_help_screen_msg3">카드에 직접 강한 빛이 닿지 않도록 하세요. 빛이 반사되어 카드의 일부 정보가 읽히지 않을 수 있습니다. 카드에 있는 데이터를 육안으로 읽을 수 없다면, 카메라 역시 인식하지 못합니다.</string>
+    <string name="mb_blinkcard_help_screen_msg4">스캔하는 동안 휴대전화와 카드를 움직이지 않고 가만히 두세요. 둘 중 하나라도 움직이면 이미지가 흐려져 카드의 데이터가 읽히지 않을 수 있습니다.</string>
+    <string name="mb_blinkcard_help_screen_title1">카드 번호는 어디에 있나요?</string>
+    <string name="mb_blinkcard_help_screen_title2">모든 칸들이 보이도록 유지하세요</string>
+    <string name="mb_blinkcard_help_screen_title3">강한 빛을 주의하세요</string>
+    <string name="mb_blinkcard_help_screen_title4">스캔하는 동안 움직이지 마세요</string>
+    <string name="mb_blinkcard_keep_card_parallel">카드를 휴대전화와 평행하게 유지하세요</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">카드 번호는 일반적으로 16자리 숫자입니다. 카드에 인쇄되어 있거나, 양각으로 돌출된 숫자로 표시되어 있습니다. 카드가 잘 보이도록 조명을 밝게 하고, 모든 세부 정보가 보이는지 확인하세요.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">먼저 카드 번호를 스캔하세요</string>
+    <string name="mb_blinkcard_other_side_instructions">카드 반대쪽 면을 스캔하세요</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">카드에 빛이 충분히 비치고, 카드 전체가 보이며, 빛 반사가 없는지 확인하세요.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">다시 시도</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">카드를 읽을 수 없습니다</string>
+    <string name="mb_blinkcard_scanning_wrong_side">카드를 뒤집으세요</string>
 </resources>

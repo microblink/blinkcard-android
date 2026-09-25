@@ -1,5 +1,69 @@
 # Release notes
 
+## v3001.0.0
+
+### Breaking API changes
+- Renamed `DetectionLevel` to `SensitivityLevel`.
+- Renamed `ScanningSettings.tiltDetectionLevel` to `tiltSensitivityLevel`.
+- Renamed the BlinkCard anonymization API to redaction:
+  - `AnonymizationMode` → `RedactionMode`
+  - `AnonymizationSettings` → `RedactionSettings`
+  - `CardNumberAnonymizationSettings` → `CardNumberRedactionSettings`
+  - `ScanningSettings.anonymizationSettings` → `redactionSettings`
+- Removed `AnonymizationSettings.cardNumberPrefixAnonymizationMode`. The card-number prefix now follows `CardNumberRedactionSettings.mode`.
+- Renamed `CheckResult.NotPerformed` to `CheckResult.NotAvailable`, matching the name used by the scanning core. This affects every property typed `CheckResult`: `CardLivenessCheckResult.screenCheckResult`, `photocopyCheckResult` and `cardHeldInHandCheckResult`, and `BlinkCardScanningResult.overallCardLivenessResult`. The value and its meaning are unchanged — only the name differs.
+- `RequestTimeout` now uses `kotlin.time.Duration` instead of milliseconds:
+  - `connectionTimeoutMillis`, `writeTimeoutMillis` and `readTimeoutMillis` (`Int`) → `connectionTimeout`, `writeTimeout` and `readTimeout` (`Duration`)
+  - **`RequestTimeout.DEFAULT` changed from 10 to 30 seconds.** This affects `BlinkCardSdkSettings.resourceRequestTimeout`.
+- Moved `defaultResourceDownloadUrl` from `com.microblink.blinkcard.core.utils` to `ResourcesConfig.defaultResourceDownloadUrl` (`com.microblink.blinkcard.core.settings`).
+- Added `SdkInitError.SettingsValidationError`, reported when SDK settings fail validation. Exhaustive `when` expressions over `SdkInitError` need a new branch.
+- Reworked the onboarding and help dialog strings:
+  - Removed `SdkStrings.helpDialogsStrings`. Use `BlinkCardSdkStrings.blinkCardHelpDialogsStrings`.
+  - Removed `HelpDialogsStrings.BlinkCardDefault`. Use `BlinkCardSdkStrings.HelpDialogsDefaults`.
+  - `HelpDialogsStrings` is now a `data class`, and `HelpDialogsStrings.Empty` has been removed.
+  - `BlinkCardSdkStrings.Default` now uses the new BlinkCard-specific accessibility strings, `AccessibilityStrings.BlinkCard`.
+
+See the [transition guide](Transition_guide.md#blinkcard-v3000-to-v300100) for before-and-after examples.
+
+#### Custom UI integrations
+These changes only affect applications that build their own scanning UI on top of `blinkcard-ux` components:
+- `ImageAnalyzer.restartAnalysis()` is now a `suspend` function, and `ImageAnalyzer.timeoutAnalysis()` now takes a `TimeoutCause` (`Step` or `Inactivity`).
+- `ErrorReason.ErrorTimeoutExpired` was split into `ErrorStepTimeoutExpired` and `ErrorInactivityTimeoutExpired`. Added `ErrorSettingsValidationFailed` and `ErrorGetResultFailed`.
+- Added `BaseUiState.scanSoundState`, and new `allowScanSound` and `onScanSoundCompleted` parameters on `ScanningUx`.
+
+### Requirements and dependency updates
+- Applications must compile with **compileSdk 36** and use **Android Gradle Plugin 8.9.1** or newer.
+- The SDK now depends on Kotlin standard library **2.2.21** (was 2.1.20). Kotlin 2.1 or newer is required to compile against it.
+- `blinkcard-ux` now declares a dependency on **Jetpack Compose UI 1.11.2**. Applications on an older Compose UI version are upgraded to 1.11.2 automatically. Applications that force an older version (for example with `strictly`) are not supported and will crash when the scanning screen opens.
+- `blinkcard-core` now depends on **OkHttp 5.3.2** (was 4.12.0).
+- Other dependency updates: CameraX 1.6.1 (was 1.4.2), Material 3 1.4.0 (was 1.3.2), Activity Compose 1.13.0 (was 1.10.1), Lifecycle 2.10.0 (was 2.9.x), DataStore 1.2.1 (was 1.1.4).
+- Android API level **24** or newer is still required to run the SDK.
+
+### Security-focused redaction defaults
+- Card-number and CVV redaction now default to `RedactionMode.FullResult`.
+- Card-number redaction leaves four prefix and four suffix digits visible by default.
+- IBAN and cardholder-name redaction continue to default to `RedactionMode.None`.
+
+Applications that need the previous unredacted behavior must explicitly configure `RedactionMode.None`. Review this choice against your data-handling requirements before changing the new defaults.
+
+### BIN check
+- Added `CardAccountResult.binCheckResult`.
+- The result is `CheckResult.Pass`, `CheckResult.Fail`, or `CheckResult.NotAvailable`.
+- BIN check requires a license containing the `recognizer_blinkcard_allow_bin_check` right and is disabled by default for production licenses.
+
+### Scanning session timeouts and feedback
+- Added `BlinkCardUxSettings.inactivityTimeoutDuration`, which triggers a timeout when scanning makes no progress. It resets whenever scanning advances, either because the UI state changes (reticle type or message) or because the card is located and being processed. Defaults to 10 seconds.
+- `BlinkCardUxSettings.stepTimeoutDuration` now covers a single scanning step: it resets on side changes and pauses while the onboarding and help dialogs are shown. **Its default changed from 15 to 60 seconds.**
+- Both timeouts can be disabled by setting them to `Duration.ZERO`.
+- Added `BlinkCardUxSettings.allowScanSound` to toggle scan success sounds. Defaults to `true`.
+- Added a Java-friendly `BlinkCardUxSettings(int stepTimeoutDurationMs, int inactivityTimeoutDurationMs, boolean allowHapticFeedback, boolean allowScanSound)` constructor.
+- The "need help?" tooltip now appears after a fixed 10 seconds. Previously it appeared after half of `stepTimeoutDuration` (7.5 seconds by default).
+
+### Other improvements
+- Added `CameraSettings.desiredAspectRatio` (`DesiredAspectRatio.RATIO_16_9` by default, or `RATIO_4_3`) to choose the camera preview aspect ratio.
+- Initialization errors now follow the current native session error model, including the new `SdkInitError.SettingsValidationError`.
+- BlinkCard SDK initialization analytics now correctly report whether Ping and Baltazar proxy routing is enabled.
+
 ## v3000.0.1
 
 ### What's new

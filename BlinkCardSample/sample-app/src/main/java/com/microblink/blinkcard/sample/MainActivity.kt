@@ -87,6 +87,7 @@ class MainActivity : ComponentActivity() {
                                 route = Destination.Main,
                                 inclusive = false
                             )
+                            viewModel.onScanningCanceled()
                         }
                     )
                 }

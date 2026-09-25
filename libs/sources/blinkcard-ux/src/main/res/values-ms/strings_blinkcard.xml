@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">Pastikan kad dan telefon tidak bergerak</string>
-  <string name="mb_blinkcard_card_not_fully_visible">Pastikan kad jelas kelihatan</string>
-  <string name="mb_blinkcard_first_side_instructions">Imbas nombor kad</string>
-  <string name="mb_blinkcard_flashlight_warning_message">Berhati-hati dengan silau lampu suluh.\nGerakkan kad anda dengan perlahan di sekeliling untuk menjauhinya.</string>
-  <string name="mb_blinkcard_help_screen_msg1">Nombor kad biasanya mempunyai nombor 16 digit, walaupun ia mungkin mempunyai nombor antara 12 hingga 19 digit. Ia hendaklah sama ada dicetak atau dicetak timbul dengan nombor berganda di sepanjang kad. Nombor tersebut boleh berada di bahagian hadapan atau belakang kad anda.</string>
-  <string name="mb_blinkcard_help_screen_msg2">Pastikan anda tidak menutup sebahagian daripada kad dengan jari, termasuk baris bawah. Di samping itu, berhati-hati dengan pantulan hologram yang melintasi medan kad.</string>
-  <string name="mb_blinkcard_help_screen_msg3">Jauhi cahaya yang boleh menyilaukan mata kerana cahaya tersebut dipantulkan daripada kad dan boleh membuatkan sebahagian daripada kad tersebut tidak dapat dibaca. Jika anda tidak dapat membaca data dalam kad, data tersebut juga tidak akan kelihatan pada kamera.</string>
-  <string name="mb_blinkcard_help_screen_msg4">Cuba kekalkan kedudukan telefon dan kad semasa mengimbas. Menggerakkan kedua-duanya boleh mengaburkan imej dan menjadikan data dalam kad tidak dapat dibaca.</string>
-  <string name="mb_blinkcard_help_screen_title1">Di manakah nombor kad?</string>
-  <string name="mb_blinkcard_help_screen_title2">Pastikan semua medan kelihatan</string>
-  <string name="mb_blinkcard_help_screen_title3">Jaga-jaga dengan cahaya yang menyilaukan mata</string>
-  <string name="mb_blinkcard_help_screen_title4">Kekalkan kedudukan semasa mengimbas</string>
-  <string name="mb_blinkcard_keep_card_parallel">Pastikan kad selari dengan telefon</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">Nombor kad biasanya mempunyai nombor 16 digit. Ia hendaklah sama ada dicetak atau dicetak timbul dengan nombor berganda di sepanjang kad. Pastikan kad tersebut menerima pencahayaan yang cukup dan semua butiran dapat dilihat dengan jelas.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">Imbas nombor kad terlebih dahulu</string>
-  <string name="mb_blinkcard_other_side_instructions">Imbas bahagian kad yang sebelah lagi</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">Tidak dapat membaca kad. Sila cuba semula.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Cuba semula</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">Pengimbasan tidak berjaya</string>
-  <string name="mb_blinkcard_scanning_wrong_side">Balikkan kad</string>
+    <string name="mb_blinkcard_blur_detected">Pastikan kad dan telefon tidak bergerak</string>
+    <string name="mb_blinkcard_card_not_fully_visible">Pastikan kad jelas kelihatan</string>
+    <string name="mb_blinkcard_first_side_instructions">Imbas nombor kad</string>
+    <string name="mb_blinkcard_flashlight_warning_message">Berhati-hati dengan silau lampu suluh.\nGerakkan kad anda dengan perlahan di sekeliling untuk menjauhinya.</string>
+    <string name="mb_blinkcard_help_screen_msg1">Nombor kad biasanya mempunyai nombor 16 digit, walaupun ia mungkin mempunyai nombor antara 12 hingga 19 digit. Ia hendaklah sama ada dicetak atau dicetak timbul dengan nombor berganda di sepanjang kad. Nombor tersebut boleh berada di bahagian hadapan atau belakang kad anda.</string>
+    <string name="mb_blinkcard_help_screen_msg2">Pastikan anda tidak menutup sebahagian daripada kad dengan jari, termasuk baris bawah. Di samping itu, berhati-hati dengan pantulan hologram yang melintasi medan kad.</string>
+    <string name="mb_blinkcard_help_screen_msg3">Jauhi cahaya yang boleh menyilaukan mata kerana cahaya tersebut dipantulkan daripada kad dan boleh membuatkan sebahagian daripada kad tersebut tidak dapat dibaca. Jika anda tidak dapat membaca data dalam kad, data tersebut juga tidak akan kelihatan pada kamera.</string>
+    <string name="mb_blinkcard_help_screen_msg4">Cuba kekalkan kedudukan telefon dan kad semasa mengimbas. Menggerakkan kedua-duanya boleh mengaburkan imej dan menjadikan data dalam kad tidak dapat dibaca.</string>
+    <string name="mb_blinkcard_help_screen_title1">Di manakah nombor kad?</string>
+    <string name="mb_blinkcard_help_screen_title2">Pastikan semua medan kelihatan</string>
+    <string name="mb_blinkcard_help_screen_title3">Jaga-jaga dengan cahaya yang menyilaukan mata</string>
+    <string name="mb_blinkcard_help_screen_title4">Kekalkan kedudukan semasa mengimbas</string>
+    <string name="mb_blinkcard_keep_card_parallel">Pastikan kad selari dengan telefon</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">Nombor kad biasanya mempunyai nombor 16 digit. Ia hendaklah sama ada dicetak atau dicetak timbul dengan nombor berganda di sepanjang kad. Pastikan kad tersebut menerima pencahayaan yang cukup dan semua butiran dapat dilihat dengan jelas.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">Imbas nombor kad terlebih dahulu</string>
+    <string name="mb_blinkcard_other_side_instructions">Imbas bahagian kad yang sebelah lagi</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Pastikan kad diterangi dengan baik, kelihatan sepenuhnya dan bebas daripada silau.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Cuba semula</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">Tidak dapat membaca kad</string>
+    <string name="mb_blinkcard_scanning_wrong_side">Balikkan kad</string>
 </resources>

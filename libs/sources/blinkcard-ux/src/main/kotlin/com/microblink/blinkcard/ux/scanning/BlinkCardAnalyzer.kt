@@ -15,12 +15,15 @@ import com.microblink.blinkcard.core.session.BlinkCardScanningSession
 import com.microblink.blinkcard.core.session.BlinkCardSessionSettings
 import com.microblink.blinkcard.core.utils.MbLog
 import com.microblink.blinkcard.ux.camera.ImageAnalyzer
+import com.microblink.blinkcard.ux.camera.TimeoutCause
 import com.microblink.blinkcard.ux.utils.ErrorReason
+import com.microblink.blinkcard.ux.utils.UxPingletTracker
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers.Default
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.withContext
 
 private const val TAG = "BlinkCardAnalyzer"
 
@@ -48,55 +51,60 @@ class BlinkCardAnalyzer(
 
     private var session: BlinkCardScanningSession? =
         runBlocking { blinkCardSdk.createScanningSession(sessionSettings) }
+
+    @Volatile
     private var analysisPaused = false
     private val scanningUxTranslator = BlinkCardScanningUxTranslator()
 
     /**
-     * Analyzes an image from the camera.
+     * Analyzes a single camera frame.
      *
-     * This function is called for each frame captured by the camera. It sends the
+     * Called by CameraX for each frame delivered to the analyzer. It sends the
      * image to the BlinkCard SDK for processing and handles the results,
      * timeouts and cancellations.
      *
-     * Current implementation of the analyzer cancels the session if the timeout occurs.
-     * The timeout timer restarts every time the scanning is paused (onboarding dialog,
-     * help dialog, card flip animation). Default timeout value can be checked at
-     * [BlinkCardUxSettings.stepTimeoutDuration].
+     * This implementation closes the provided [ImageProxy] before returning. Custom
+     * analyzer implementations must also close the image after processing it.
      *
-     * @param image The [ImageProxy] containing the image to be analyzed.
+     * Timeout handling is driven by [BlinkCardUxSettings.stepTimeoutDuration] and
+     * [BlinkCardUxSettings.inactivityTimeoutDuration].
+     *
+     * @param image The camera frame to analyze.
      *
      */
     @OptIn(ExperimentalGetImage::class)
     override fun analyze(image: ImageProxy) {
-        if (analysisPaused) return
-        runBlocking {
-            val inputImage = InputImage.createFromCameraXImageProxy(image)
-            inputImage.use {
-                session?.let { session ->
-                    try {
-                        val sessionProcessResult = session.process(inputImage)
-                        if (session.isCanceled) {
-                            MbLog.w(TAG) { "processing has been canceled" }
-                        } else {
-                            sessionProcessResult.getOrNull()?.let { processResult ->
-                                val events = scanningUxTranslator.translate(
-                                    processResult,
-                                    inputImage,
-                                    sessionSettings.scanningSettings
-                                )
-                                uxEventHandler?.onUxEvents(events)
+        image.use {
+            if (analysisPaused) return
+            runBlocking {
+                val inputImage = InputImage.createFromCameraXImageProxy(image)
+                inputImage.use {
+                    session?.let { session ->
+                        try {
+                            val sessionProcessResult = session.process(inputImage)
+                            if (session.isCanceled) {
+                                MbLog.w(TAG) { "processing has been canceled" }
+                            } else {
+                                sessionProcessResult.getOrNull()?.let { processResult ->
+                                    val events = scanningUxTranslator.translate(
+                                        processResult,
+                                        inputImage,
+                                        sessionSettings.scanningSettings
+                                    )
+                                    uxEventHandler?.onUxEvents(events)
 
-                                if (processResult.resultCompleteness.isComplete()) {
-                                    val sessionResult = session.getResult()
-                                    pauseAnalysis()
-                                    scanningDoneHandler.onScanningFinished(sessionResult)
-                                } else {
-                                    MbLog.v(TAG) { "Neither complete nor timeout, continuing..." }
+                                    if (processResult.resultCompleteness.isComplete()) {
+                                        val sessionResult = session.getResult()
+                                        pauseAnalysis()
+                                        scanningDoneHandler.onScanningFinished(sessionResult)
+                                    } else {
+                                        MbLog.v(TAG) { "Neither complete nor timeout, continuing..." }
+                                    }
                                 }
                             }
+                        } catch (e: RemoteLicenseCheckException) {
+                            scanningDoneHandler.onError(ErrorReason.ErrorInvalidLicense)
                         }
-                    } catch (e: RemoteLicenseCheckException) {
-                        scanningDoneHandler.onError(ErrorReason.ErrorInvalidLicense)
                     }
                 }
             }
@@ -111,14 +119,32 @@ class BlinkCardAnalyzer(
         analysisPaused = false
     }
 
-    override fun timeoutAnalysis() {
-        MbLog.e(TAG) { "processing timeout occurred" }
-        analysisPaused = true
-        scanningDoneHandler.onError(ErrorReason.ErrorTimeoutExpired)
+    override fun timeoutAnalysis(cause: TimeoutCause) {
+        MbLog.e(TAG) { "processing timeout occurred: $cause" }
+
+        val timeoutEvent = when (cause) {
+            TimeoutCause.Step -> UxPingletTracker.UxEvent.SimpleUxEventType.StepTimeout
+            TimeoutCause.Inactivity -> UxPingletTracker.UxEvent.SimpleUxEventType.InactivityTimeout
+        }
+        getSessionNumber()?.let { sessionNumber ->
+            UxPingletTracker.UxEvent.trackSimpleEvent(timeoutEvent, sessionNumber)
+        }
+
+        onErrorAnalysis(
+            when (cause) {
+                TimeoutCause.Step -> ErrorReason.ErrorStepTimeoutExpired
+                TimeoutCause.Inactivity -> ErrorReason.ErrorInactivityTimeoutExpired
+            }
+        )
     }
 
     fun getSessionNumber(): Int? {
         return session?.sessionNumber
+    }
+
+    private fun onErrorAnalysis(errorReason: ErrorReason) {
+        pauseAnalysis()
+        scanningDoneHandler.onError(errorReason)
     }
 
     override fun cancel() {
@@ -126,11 +152,15 @@ class BlinkCardAnalyzer(
         scanningDoneHandler.onScanningCanceled()
     }
 
-    override fun restartAnalysis() {
-        CoroutineScope(Default).launch {
-            session?.restartSession()
+    override suspend fun restartAnalysis() {
+        analysisPaused = true
+        try {
+            withContext(Default) {
+                session?.restartSession()
+            }
+        } finally {
+            analysisPaused = false
         }
-        analysisPaused = false
     }
 
     override fun close() {

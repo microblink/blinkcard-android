@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">Κρατήστε την κάρτα και το τηλέφωνο ακίνητα</string>
-  <string name="mb_blinkcard_card_not_fully_visible">Κρατήστε την κάρτα έτσι ώστε να είναι πλήρως ορατή</string>
-  <string name="mb_blinkcard_first_side_instructions">Σαρώστε τον αριθμό κάρτας</string>
-  <string name="mb_blinkcard_flashlight_warning_message">Προσέξτε την αντανάκλαση από τον φακό.\nΚουνήστε απαλά την πιστωτική σας κάρτα για να την αποφύγετε.</string>
-  <string name="mb_blinkcard_help_screen_msg1">Ο αριθμός της κάρτας είναι συνήθως 16ψήφιος, παρότι ενδέχεται να περιλαμβάνει από 12 έως 19 ψηφία. Θα αναγράφεται ή θα είναι χαραγμένος με ανάγλυφους αριθμούς πάνω στην κάρτα. Μπορεί να αναγράφεται στην μπροστινή ή την πίσω όψη της.</string>
-  <string name="mb_blinkcard_help_screen_msg2">Βεβαιωθείτε ότι δεν καλύπτετε μέρη της κάρτας με το δάχτυλό σας, συμπεριλαμβανομένων των κάτω γραμμών. Επίσης, προσέξτε τις αντανακλάσεις ολογράμματος που καλύπτουν τα πεδία της κάρτας.</string>
-  <string name="mb_blinkcard_help_screen_msg3">Αποφύγετε το άμεσο, έντονο φως, επειδή αντανακλάται από την κάρτα και μπορεί να κάνει ορισμένα μέρη της δυσανάγνωστα. Εάν δεν μπορείτε να διαβάσετε δεδομένα στην κάρτα, δεν θα είναι ορατά ούτε στην κάμερα.</string>
-  <string name="mb_blinkcard_help_screen_msg4">Προσπαθήστε να κρατήσετε το τηλέφωνο και την κάρτα ακίνητα κατά τη σάρωση. Η μετακίνηση οποιουδήποτε από τα δύο μπορεί να θολώσει την εικόνα και να καταστήσει τα δεδομένα στην κάρτα δυσανάγνωστα.</string>
-  <string name="mb_blinkcard_help_screen_title1">Πού βρίσκεται ο αριθμός κάρτας;</string>
-  <string name="mb_blinkcard_help_screen_title2">Φροντίστε όλα τα πεδία να είναι ορατά</string>
-  <string name="mb_blinkcard_help_screen_title3">Προσέξτε το έντονο φως</string>
-  <string name="mb_blinkcard_help_screen_title4">Μείνετε ακίνητοι κατά τη σάρωση</string>
-  <string name="mb_blinkcard_keep_card_parallel">Κρατήστε την κάρτα παράλληλα με το τηλέφωνο</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">Ο αριθμός της κάρτας είναι συνήθως 16ψήφιος. Θα αναγράφεται ή θα είναι χαραγμένος με ανάγλυφους αριθμούς πάνω στην κάρτα. Βεβαιωθείτε ότι η κάρτα είναι καλά φωτισμένη και όλα τα στοιχεία της είναι ορατά.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">Σαρώστε πρώτα τον αριθμό κάρτας</string>
-  <string name="mb_blinkcard_other_side_instructions">Σαρώστε την άλλη πλευρά της κάρτας</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">Δεν είναι δυνατή η ανάγνωση της κάρτας. Δοκιμάστε ξανά.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Επανάληψη</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">Η σάρωση ήταν ανεπιτυχής.</string>
-  <string name="mb_blinkcard_scanning_wrong_side">Αντιστρέψτε την κάρτα</string>
+    <string name="mb_blinkcard_blur_detected">Κρατήστε την κάρτα και το τηλέφωνο ακίνητα</string>
+    <string name="mb_blinkcard_card_not_fully_visible">Κρατήστε την κάρτα έτσι ώστε να είναι πλήρως ορατή</string>
+    <string name="mb_blinkcard_first_side_instructions">Σαρώστε τον αριθμό κάρτας</string>
+    <string name="mb_blinkcard_flashlight_warning_message">Προσέξτε την αντανάκλαση από τον φακό.\nΚουνήστε απαλά την πιστωτική σας κάρτα για να την αποφύγετε.</string>
+    <string name="mb_blinkcard_help_screen_msg1">Ο αριθμός της κάρτας είναι συνήθως 16ψήφιος, παρότι ενδέχεται να περιλαμβάνει από 12 έως 19 ψηφία. Θα αναγράφεται ή θα είναι χαραγμένος με ανάγλυφους αριθμούς πάνω στην κάρτα. Μπορεί να αναγράφεται στην μπροστινή ή την πίσω όψη της.</string>
+    <string name="mb_blinkcard_help_screen_msg2">Βεβαιωθείτε ότι δεν καλύπτετε μέρη της κάρτας με το δάχτυλό σας, συμπεριλαμβανομένων των κάτω γραμμών. Επίσης, προσέξτε τις αντανακλάσεις ολογράμματος που καλύπτουν τα πεδία της κάρτας.</string>
+    <string name="mb_blinkcard_help_screen_msg3">Αποφύγετε το άμεσο, έντονο φως, επειδή αντανακλάται από την κάρτα και μπορεί να κάνει ορισμένα μέρη της δυσανάγνωστα. Εάν δεν μπορείτε να διαβάσετε δεδομένα στην κάρτα, δεν θα είναι ορατά ούτε στην κάμερα.</string>
+    <string name="mb_blinkcard_help_screen_msg4">Προσπαθήστε να κρατήσετε το τηλέφωνο και την κάρτα ακίνητα κατά τη σάρωση. Η μετακίνηση οποιουδήποτε από τα δύο μπορεί να θολώσει την εικόνα και να καταστήσει τα δεδομένα στην κάρτα δυσανάγνωστα.</string>
+    <string name="mb_blinkcard_help_screen_title1">Πού βρίσκεται ο αριθμός κάρτας;</string>
+    <string name="mb_blinkcard_help_screen_title2">Φροντίστε όλα τα πεδία να είναι ορατά</string>
+    <string name="mb_blinkcard_help_screen_title3">Προσέξτε το έντονο φως</string>
+    <string name="mb_blinkcard_help_screen_title4">Μείνετε ακίνητοι κατά τη σάρωση</string>
+    <string name="mb_blinkcard_keep_card_parallel">Κρατήστε την κάρτα παράλληλα με το τηλέφωνο</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">Ο αριθμός της κάρτας είναι συνήθως 16ψήφιος. Θα αναγράφεται ή θα είναι χαραγμένος με ανάγλυφους αριθμούς πάνω στην κάρτα. Βεβαιωθείτε ότι η κάρτα είναι καλά φωτισμένη και όλα τα στοιχεία της είναι ορατά.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">Σαρώστε πρώτα τον αριθμό κάρτας</string>
+    <string name="mb_blinkcard_other_side_instructions">Σαρώστε την άλλη πλευρά της κάρτας</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Βεβαιωθείτε ότι η κάρτα φωτίζεται καλά, είναι πλήρως ορατή και δεν έχει αντανακλάσεις.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Επανάληψη</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">Δεν ήταν δυνατή η ανάγνωση της κάρτας</string>
+    <string name="mb_blinkcard_scanning_wrong_side">Αντιστρέψτε την κάρτα</string>
 </resources>

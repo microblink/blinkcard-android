@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">Haldið korti og síma kyrru</string>
-  <string name="mb_blinkcard_card_not_fully_visible">Haldið kortinu fyllilega sýnilegu</string>
-  <string name="mb_blinkcard_first_side_instructions">Skannið kortanúmerið</string>
-  <string name="mb_blinkcard_flashlight_warning_message">Gætið að glampi frá vasaljósum.\nFærðu kortið varlega til að forðast það.</string>
-  <string name="mb_blinkcard_help_screen_msg1">Kortanúmer er venjulega 16 stafa númer, þó það geti verið á bilinu 12 til 19 stafir. Það ætti að vera annaðhvort prentað eða upphleypt með upphleyptum tölum á kortinu. Það getur verið á framhlið eða bakhlið kortsins þíns.</string>
-  <string name="mb_blinkcard_help_screen_msg2">Gangið úr skugga um að þú sért ekki að hylja hluta spjaldsins með fingri, þar með talið neðri línurnar. Verið líka á varðbergi gagnvart endurkasti frá heilmynd sem fer yfir reiti kortanna.</string>
-  <string name="mb_blinkcard_help_screen_msg3">Forðist beint, skarpt ljós því það endurkastast frá kortinu og getur gert hluta kortsins ólæsilegan. Ef þú getur ekki lesið gögn á kortinu, þá verða þau heldur ekki sýnileg myndavélinni.</string>
-  <string name="mb_blinkcard_help_screen_msg4">Reynið að halda símanum og kortinu kyrru meðan verið er að skanna. Ef annað hvort hreyfist getur myndin orðið óskýr og gögnin á kortinu orðið ólæsileg.</string>
-  <string name="mb_blinkcard_help_screen_title1">Hvar er kortanúmerið?</string>
-  <string name="mb_blinkcard_help_screen_title2">Haldið öllum reitum sýnilegum</string>
-  <string name="mb_blinkcard_help_screen_title3">Gætið að sterku ljósi</string>
-  <string name="mb_blinkcard_help_screen_title4">Verið kyrr á meðan skannað er</string>
-  <string name="mb_blinkcard_keep_card_parallel">Haldið korti samhliða við síma</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">Kortanúmer er venjulega 16 stafa tala. Það ætti annaðhvort að vera prentað eða upphleypt í upphækkuðum tölum þvert yfir kortið. Gangið úr skugga um að kortið sé vel upplýst og að allar upplýsingar séu sýnilegar.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">Skannið kortanúmerið fyrst</string>
-  <string name="mb_blinkcard_other_side_instructions">Skannið aðra hlið kortsins</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">Ekki tókst að lesa kortið. Reynið aftur.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Reynið aftur</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">Skönnun mistókst</string>
-  <string name="mb_blinkcard_scanning_wrong_side">Snúið kortinu við</string>
+    <string name="mb_blinkcard_blur_detected">Haltu kortinu og símanum kyrrum</string>
+    <string name="mb_blinkcard_card_not_fully_visible">Haldið kortinu fyllilega sýnilegu</string>
+    <string name="mb_blinkcard_first_side_instructions">Skannið kortanúmerið</string>
+    <string name="mb_blinkcard_flashlight_warning_message">Gætið að glampi frá vasaljósum.\nFærðu kortið varlega til að forðast það.</string>
+    <string name="mb_blinkcard_help_screen_msg1">Kortanúmer er venjulega 16 stafa númer, þó það geti verið á bilinu 12 til 19 stafir. Það ætti að vera annaðhvort prentað eða upphleypt með upphleyptum tölum á kortinu. Það getur verið á framhlið eða bakhlið kortsins þíns.</string>
+    <string name="mb_blinkcard_help_screen_msg2">Gangið úr skugga um að þú sért ekki að hylja hluta spjaldsins með fingri, þar með talið neðri línurnar. Verið líka á varðbergi gagnvart endurkasti frá heilmynd sem fer yfir reiti kortanna.</string>
+    <string name="mb_blinkcard_help_screen_msg3">Forðist beint, skarpt ljós því það endurkastast frá kortinu og getur gert hluta kortsins ólæsilegan. Ef þú getur ekki lesið gögn á kortinu, þá verða þau heldur ekki sýnileg myndavélinni.</string>
+    <string name="mb_blinkcard_help_screen_msg4">Reynið að halda símanum og kortinu kyrru meðan verið er að skanna. Ef annað hvort hreyfist getur myndin orðið óskýr og gögnin á kortinu orðið ólæsileg.</string>
+    <string name="mb_blinkcard_help_screen_title1">Hvar er kortanúmerið?</string>
+    <string name="mb_blinkcard_help_screen_title2">Haldið öllum reitum sýnilegum</string>
+    <string name="mb_blinkcard_help_screen_title3">Gætið að sterku ljósi</string>
+    <string name="mb_blinkcard_help_screen_title4">Verið kyrr á meðan skannað er</string>
+    <string name="mb_blinkcard_keep_card_parallel">Haltu kortinu samsíða símanum</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">Kortanúmer er venjulega 16 stafa tala. Það ætti annaðhvort að vera prentað eða upphleypt í upphækkuðum tölum þvert yfir kortið. Gangið úr skugga um að kortið sé vel upplýst og að allar upplýsingar séu sýnilegar.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">Skannið kortanúmerið fyrst</string>
+    <string name="mb_blinkcard_other_side_instructions">Skannið aðra hlið kortsins</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Gakktu úr skugga um að kortið sé vel upplýst, sjáist að fullu og sé glampalaust.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Reynið aftur</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">Ekki tókst að lesa kortið</string>
+    <string name="mb_blinkcard_scanning_wrong_side">Snúið kortinu við</string>
 </resources>

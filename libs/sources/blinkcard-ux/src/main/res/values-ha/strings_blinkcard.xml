@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">A daina motsa kati da waya</string>
-  <string name="mb_blinkcard_card_not_fully_visible">A daidaita yadda za a iya kallon katin baki ɗaya</string>
-  <string name="mb_blinkcard_first_side_instructions">A ɗauki hoton lambar katin</string>
-  <string name="mb_blinkcard_flashlight_warning_message">A duba idan akwai wurin da haske ya dusashe takardar.\nMatsar da katin ku a hankali don guje masa.</string>
-  <string name="mb_blinkcard_help_screen_msg1">Yawanci lambar kati takan kasance lambobi 16, duk da cewa za ta iya ƙunsar lambobi tsakanin 12 zuwa 19. Za su kasance ko dai waɗanda aka gurza da rubutun kwamfuta ko waɗanda aka zana da tsarin rubutu mai tudu a kan katin. Zai iya kasance a gaba ko a bayan katinku.</string>
-  <string name="mb_blinkcard_help_screen_msg2">A tabbatar da cewa ba a rufe wasu ɓangarorin katin ba da yatsa, ciki har da layukan da suke ƙasan katin. Bayan haka, a duba ko akwai layukan haske da suka hau kan ɓangarorin katin.</string>
-  <string name="mb_blinkcard_help_screen_msg3">Kada a yi amfani da haske mai ƙarfi domin zai yi dau a kan katin sannan zai sa ba za a iya karanta wasu ɓangarorin katin ba. Idan ba za ku iya karanta bayanan da suke kan katin ba, to kamara ma ba za ta iya ganin su ba.</string>
-  <string name="mb_blinkcard_help_screen_msg4">A daina motsa waya da kati yayin ɗaukar hoto. Motsa ɗaya daga cikinsu zai sa hoton ya yi dishi-dishi sannan zai sa ba za a iya karanta bayanan da suke kan katin ba.</string>
-  <string name="mb_blinkcard_help_screen_title1">A ina lambar katin take?</string>
-  <string name="mb_blinkcard_help_screen_title2">A daidaita yadda za a riƙa ganin dukkannin ɓangarori</string>
-  <string name="mb_blinkcard_help_screen_title3">A duba haske mai ƙarfi</string>
-  <string name="mb_blinkcard_help_screen_title4">Kada a motsa yayin ɗaukar hoto</string>
-  <string name="mb_blinkcard_keep_card_parallel">A sanya kati a saitin waya</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">Yawanci lambar kati takan kasance lambobi 16. Za su kasance ko dai waɗanda aka gurza da rubutun kwamfuta ko waɗanda aka zana da tsarin rubutu mai tudu a kan katin. A tabbatar da cewa an haska katin yadda ya kamata sannan ana kallon dukkannin bayanan da suke kai.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">A fara ɗaukar hoton lambar katin</string>
-  <string name="mb_blinkcard_other_side_instructions">A ɗauki hoton ɗaya ɓangaren katin</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">An kasa karanta katin. A sake gwadawa.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Sake gwadawa</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">An yi nasarar ɗaukar hoto</string>
-  <string name="mb_blinkcard_scanning_wrong_side">A juya bayan katin</string>
+    <string name="mb_blinkcard_blur_detected">Riƙe katin da wayar ba tare da motsi ba</string>
+    <string name="mb_blinkcard_card_not_fully_visible">A daidaita yadda za a iya kallon katin baki ɗaya</string>
+    <string name="mb_blinkcard_first_side_instructions">A ɗauki hoton lambar katin</string>
+    <string name="mb_blinkcard_flashlight_warning_message">A duba idan akwai wurin da haske ya dusashe takardar.\nMatsar da katin ku a hankali don guje masa.</string>
+    <string name="mb_blinkcard_help_screen_msg1">Yawanci lambar kati takan kasance lambobi 16, duk da cewa za ta iya ƙunsar lambobi tsakanin 12 zuwa 19. Za su kasance ko dai waɗanda aka gurza da rubutun kwamfuta ko waɗanda aka zana da tsarin rubutu mai tudu a kan katin. Zai iya kasance a gaba ko a bayan katinku.</string>
+    <string name="mb_blinkcard_help_screen_msg2">A tabbatar da cewa ba a rufe wasu ɓangarorin katin ba da yatsa, ciki har da layukan da suke ƙasan katin. Bayan haka, a duba ko akwai layukan haske da suka hau kan ɓangarorin katin.</string>
+    <string name="mb_blinkcard_help_screen_msg3">Kada a yi amfani da haske mai ƙarfi domin zai yi dau a kan katin sannan zai sa ba za a iya karanta wasu ɓangarorin katin ba. Idan ba za ku iya karanta bayanan da suke kan katin ba, to kamara ma ba za ta iya ganin su ba.</string>
+    <string name="mb_blinkcard_help_screen_msg4">A daina motsa waya da kati yayin ɗaukar hoto. Motsa ɗaya daga cikinsu zai sa hoton ya yi dishi-dishi sannan zai sa ba za a iya karanta bayanan da suke kan katin ba.</string>
+    <string name="mb_blinkcard_help_screen_title1">A ina lambar katin take?</string>
+    <string name="mb_blinkcard_help_screen_title2">A daidaita yadda za a riƙa ganin dukkannin ɓangarori</string>
+    <string name="mb_blinkcard_help_screen_title3">A duba haske mai ƙarfi</string>
+    <string name="mb_blinkcard_help_screen_title4">Kada a motsa yayin ɗaukar hoto</string>
+    <string name="mb_blinkcard_keep_card_parallel">Riƙe katin a layi ɗaya da wayar</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">Yawanci lambar kati takan kasance lambobi 16. Za su kasance ko dai waɗanda aka gurza da rubutun kwamfuta ko waɗanda aka zana da tsarin rubutu mai tudu a kan katin. A tabbatar da cewa an haska katin yadda ya kamata sannan ana kallon dukkannin bayanan da suke kai.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">A fara ɗaukar hoton lambar katin</string>
+    <string name="mb_blinkcard_other_side_instructions">A ɗauki hoton ɗaya ɓangaren katin</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Tabbatar cewa katin yana da isasshen haske, yana bayyane gaba ɗaya, kuma babu kyallin haske a kansa.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Sake gwadawa</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">Ba a iya karanta katin ba</string>
+    <string name="mb_blinkcard_scanning_wrong_side">A juya bayan katin</string>
 </resources>

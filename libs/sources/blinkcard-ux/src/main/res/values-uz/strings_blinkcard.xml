@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">Karta va telefonni qimirlatmang</string>
-  <string name="mb_blinkcard_card_not_fully_visible">Karta toʻliq koʻrinsin</string>
-  <string name="mb_blinkcard_first_side_instructions">Karta raqamini skanerlang</string>
-  <string name="mb_blinkcard_flashlight_warning_message">Chiroqning porlashiga e\'tibor bering.\nBunga yo\'l qo\'ymaslik uchun kartangizni muloyimlik bilan harakatlantiring.</string>
-  <string name="mb_blinkcard_help_screen_msg1">Karta raqami odatda 16 ta raqamdan iborat, ammo 12–19 ta raqamli boʻlishi ham mumkin. U kartada bosma yoki boʻrtma shaklda tushirilgan boʻlishi kerak. U kartaning old yoki orqa tomonida joylashgan boʻlishi mumkin.</string>
-  <string name="mb_blinkcard_help_screen_msg2">Barmogʻingiz kartaning ayrim qismlarini, jumladan, pastki qatorlarni berkitib qoʻymasin. Karta maydoni boʻylab oʻtadigan gologramma aks etishiga ham diqqat qarating.</string>
-  <string name="mb_blinkcard_help_screen_msg3">Yorqin yorugʻlik bevosita tushmasin, chunki u kartada aks etadi va kartaning ayrim qismlari tushunarsiz boʻlib qolishi mumkin. Karta maʼlumotlarini oʻqish imkoni boʻlmasa, ular kamerada ham koʻrinmaydi.</string>
-  <string name="mb_blinkcard_help_screen_msg4">Skanerlaganda telefon va kartani qimirlatmang. Ulardan istalgan birining qimirlashi rasm xira olinishiga va karta maʼlumotlari tushunarsiz chiqishiga sabab boʻlishi mumkin.</string>
-  <string name="mb_blinkcard_help_screen_title1">Karta raqami qayerda?</string>
-  <string name="mb_blinkcard_help_screen_title2">Barcha maydonlar koʻrinib tursin</string>
-  <string name="mb_blinkcard_help_screen_title3">Kuchli yorugʻlik tushmasin</string>
-  <string name="mb_blinkcard_help_screen_title4">Skanerlayotganda qimirlatmang</string>
-  <string name="mb_blinkcard_keep_card_parallel">Kartani telefonga baravar ushlang</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">Karta raqami odatda 16 ta raqamdan iborat. U kartada bosma yoki boʻrtma shaklda tushirilgan boʻlishi kerak. Skanerlaganda yorugʻlik yetarlicha boʻlsin va barcha tafsilotlari koʻrinsin.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">Avval karta raqamini skanerlang</string>
-  <string name="mb_blinkcard_other_side_instructions">Kartaning boshqa tomonini skanerlang</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">Kartani oʻqish imkonsiz. Qayta urining.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Qayta urining</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">Skanerlandi</string>
-  <string name="mb_blinkcard_scanning_wrong_side">Kartani boshqa tomoniga aylantiring</string>
+    <string name="mb_blinkcard_blur_detected">Kartani va telefonni qimirlatmang</string>
+    <string name="mb_blinkcard_card_not_fully_visible">Karta toʻliq koʻrinsin</string>
+    <string name="mb_blinkcard_first_side_instructions">Karta raqamini skanerlang</string>
+    <string name="mb_blinkcard_flashlight_warning_message">Chiroqning porlashiga e\'tibor bering.\nBunga yo\'l qo\'ymaslik uchun kartangizni muloyimlik bilan harakatlantiring.</string>
+    <string name="mb_blinkcard_help_screen_msg1">Karta raqami odatda 16 ta raqamdan iborat, ammo 12–19 ta raqamli boʻlishi ham mumkin. U kartada bosma yoki boʻrtma shaklda tushirilgan boʻlishi kerak. U kartaning old yoki orqa tomonida joylashgan boʻlishi mumkin.</string>
+    <string name="mb_blinkcard_help_screen_msg2">Barmogʻingiz kartaning ayrim qismlarini, jumladan, pastki qatorlarni berkitib qoʻymasin. Karta maydoni boʻylab oʻtadigan gologramma aks etishiga ham diqqat qarating.</string>
+    <string name="mb_blinkcard_help_screen_msg3">Yorqin yorugʻlik bevosita tushmasin, chunki u kartada aks etadi va kartaning ayrim qismlari tushunarsiz boʻlib qolishi mumkin. Karta maʼlumotlarini oʻqish imkoni boʻlmasa, ular kamerada ham koʻrinmaydi.</string>
+    <string name="mb_blinkcard_help_screen_msg4">Skanerlaganda telefon va kartani qimirlatmang. Ulardan istalgan birining qimirlashi rasm xira olinishiga va karta maʼlumotlari tushunarsiz chiqishiga sabab boʻlishi mumkin.</string>
+    <string name="mb_blinkcard_help_screen_title1">Karta raqami qayerda?</string>
+    <string name="mb_blinkcard_help_screen_title2">Barcha maydonlar koʻrinib tursin</string>
+    <string name="mb_blinkcard_help_screen_title3">Kuchli yorugʻlik tushmasin</string>
+    <string name="mb_blinkcard_help_screen_title4">Skanerlayotganda qimirlatmang</string>
+    <string name="mb_blinkcard_keep_card_parallel">Kartani telefonga parallel tuting</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">Karta raqami odatda 16 ta raqamdan iborat. U kartada bosma yoki boʻrtma shaklda tushirilgan boʻlishi kerak. Skanerlaganda yorugʻlik yetarlicha boʻlsin va barcha tafsilotlari koʻrinsin.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">Avval karta raqamini skanerlang</string>
+    <string name="mb_blinkcard_other_side_instructions">Kartaning boshqa tomonini skanerlang</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Karta yaxshi yoritilgan, to‘liq ko‘rinib turgan va yaltirashsiz ekaniga ishonch hosil qiling.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Qayta urining</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">Kartani o‘qib bo‘lmadi</string>
+    <string name="mb_blinkcard_scanning_wrong_side">Kartani boshqa tomoniga aylantiring</string>
 </resources>

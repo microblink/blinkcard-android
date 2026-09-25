@@ -172,6 +172,7 @@ fun BlinkCardCameraScanningScreen(
                     fillHelpScreensBlinkCard(),
                     fillErrorDialogsBlinkCard(viewModel::onRetryTimeout, onScanningCanceled),
                     uxSettings.allowHapticFeedback,
+                    allowScanSound = uxSettings.allowScanSound,
                     showProductionOverlay = !blinkCardSdk.getLicenseToken().licenseRights.allowRemoveProductionOverlay,
                     showDemoOverlay = !blinkCardSdk.getLicenseToken().licenseRights.allowRemoveDemoOverlay,
                     {
@@ -190,6 +191,7 @@ fun BlinkCardCameraScanningScreen(
                     viewModel::onFlipAnimationCompleted,
                     viewModel::onReticleSuccessAnimationCompleted,
                     viewModel::onHapticFeedbackCompleted,
+                    viewModel::onScanSoundCompleted,
                     viewModel::changeOnboardingDialogVisibility,
                     viewModel::onHelpScreensDisplayRequested,
                     viewModel::onHelpScreensCloseRequested,

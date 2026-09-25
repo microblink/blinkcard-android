@@ -9,7 +9,6 @@ import android.os.Parcelable
 import androidx.compose.runtime.Immutable
 import androidx.compose.runtime.staticCompositionLocalOf
 import com.microblink.blinkcard.ux.R
-import com.microblink.blinkcard.ux.theme.BlinkCardSdkStrings.Companion.Default
 import kotlinx.parcelize.Parcelize
 
 /**
@@ -37,44 +36,46 @@ data class BlinkCardSdkStrings(
     val blinkCardAccessibilityStrings: AccessibilityStrings
 ) : Parcelable, SdkStrings(
     blinkCardScanningStrings,
-    blinkCardHelpDialogsStrings,
     blinkCardAccessibilityStrings
 ) {
 
     companion object {
+        /**
+         * Default onboarding and help dialog strings.
+         *
+         * Can be used as a base when customizing [blinkCardHelpDialogsStrings].
+         */
+        @JvmStatic
+        val HelpDialogsDefaults = HelpDialogsStrings(
+            onboardingTitle = R.string.mb_blinkcard_onboarding_dialog_title,
+            onboardingMessage = R.string.mb_blinkcard_onboarding_dialog_message,
+            helpTitles = listOf(
+                R.string.mb_blinkcard_help_screen_title1,
+                R.string.mb_blinkcard_help_screen_title2,
+                R.string.mb_blinkcard_help_screen_title3,
+                R.string.mb_blinkcard_help_screen_title4
+            ),
+            helpMessages = listOf(
+                R.string.mb_blinkcard_help_screen_msg1,
+                R.string.mb_blinkcard_help_screen_msg2,
+                R.string.mb_blinkcard_help_screen_msg3,
+                R.string.mb_blinkcard_help_screen_msg4
+            )
+        )
+
         @JvmStatic
         val Default: BlinkCardSdkStrings =
             BlinkCardSdkStrings(
                 blinkCardScanningStrings = ScanningStrings.BlinkCardDefault,
-                blinkCardHelpDialogsStrings = HelpDialogsStrings.BlinkCardDefault,
-                blinkCardAccessibilityStrings = AccessibilityStrings.Default
+                blinkCardHelpDialogsStrings = HelpDialogsDefaults,
+                blinkCardAccessibilityStrings = AccessibilityStrings.BlinkCard
             )
     }
 
     init {
-        LocalBaseSdkStrings = staticCompositionLocalOf {
-            Default
-        }
+        LocalBaseSdkStrings = staticCompositionLocalOf { Default }
     }
 }
-
-val HelpDialogsStrings.Companion.BlinkCardDefault: HelpDialogsStrings
-    get() = HelpDialogsStrings(
-        onboardingTitle = R.string.mb_blinkcard_onboarding_dialog_title,
-        onboardingMessage = R.string.mb_blinkcard_onboarding_dialog_message,
-        helpTitles = listOf(
-            R.string.mb_blinkcard_help_screen_title1,
-            R.string.mb_blinkcard_help_screen_title2,
-            R.string.mb_blinkcard_help_screen_title3,
-            R.string.mb_blinkcard_help_screen_title4
-        ),
-        helpMessages = listOf(
-            R.string.mb_blinkcard_help_screen_msg1,
-            R.string.mb_blinkcard_help_screen_msg2,
-            R.string.mb_blinkcard_help_screen_msg3,
-            R.string.mb_blinkcard_help_screen_msg4
-        )
-    )
 
 val ScanningStrings.Companion.BlinkCardDefault: ScanningStrings
     get() = ScanningStrings(
@@ -88,6 +89,12 @@ val ScanningStrings.Companion.BlinkCardDefault: ScanningStrings
         instructionsMoveFarther = R.string.mb_blinkcard_move_farther,
         instructionsMoveCloser = R.string.mb_blinkcard_move_closer,
         snackbarFlashlightWarning = R.string.mb_blinkcard_flashlight_warning_message,
+    )
+
+val AccessibilityStrings.Companion.BlinkCard: AccessibilityStrings
+    get() = Default.copy(
+        scanCompleted = R.string.mb_blinkcard_accessibility_success_card_scanned,
+        firstSideScanned = R.string.mb_blinkcard_accessibility_success_card_number_side_scanned
     )
 
 var LocalBaseBlinkCardSdkStrings = staticCompositionLocalOf {

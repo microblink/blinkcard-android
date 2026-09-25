@@ -1,6 +1,253 @@
-# Transition Guide: BlinkCard v2 to BlinkCard v3000
+# BlinkCard migration guides
 
-This guide will help you migrate your application from BlinkCard v2 to the new BlinkID v3000 SDK. The new BlinkCard v3 provides a modernized approach to document scanning and extraction with improved architecture and Jetpack Compose support.
+## BlinkCard v3000 to v3001.0.0
+
+BlinkCard v3001.0.0 aligns the Android API with the latest native BlinkCard terminology and makes sensitive card data redacted by default.
+
+### Rename tilt detection to tilt sensitivity
+
+Replace `DetectionLevel` and `tiltDetectionLevel` with `SensitivityLevel` and `tiltSensitivityLevel`.
+
+#### v3000
+
+```kotlin
+import com.microblink.blinkcard.core.settings.DetectionLevel
+
+val scanningSettings = ScanningSettings(
+    tiltDetectionLevel = DetectionLevel.Mid
+)
+```
+
+#### v3001.0.0
+
+```kotlin
+import com.microblink.blinkcard.core.settings.SensitivityLevel
+
+val scanningSettings = ScanningSettings(
+    tiltSensitivityLevel = SensitivityLevel.Mid
+)
+```
+
+### Rename anonymization to redaction
+
+The following public APIs were renamed:
+
+| v3000 | v3001.0.0 |
+|---|---|
+| `AnonymizationMode` | `RedactionMode` |
+| `AnonymizationSettings` | `RedactionSettings` |
+| `CardNumberAnonymizationSettings` | `CardNumberRedactionSettings` |
+| `ScanningSettings.anonymizationSettings` | `ScanningSettings.redactionSettings` |
+| `CardNumberAnonymizationSettings.anonymizationMode` | `CardNumberRedactionSettings.mode` |
+| `cvvAnonymizationMode` | `cvvRedactionMode` |
+| `ibanAnonymizationMode` | `ibanRedactionMode` |
+| `cardholderNameAnonymizationMode` | `cardholderNameRedactionMode` |
+
+#### v3000
+
+```kotlin
+val scanningSettings = ScanningSettings(
+    anonymizationSettings = AnonymizationSettings(
+        cardNumberAnonymizationSettings = CardNumberAnonymizationSettings(
+            anonymizationMode = AnonymizationMode.ImageOnly,
+            prefixDigitsVisible = 4U,
+            suffixDigitsVisible = 4U
+        ),
+        cvvAnonymizationMode = AnonymizationMode.FullResult,
+        ibanAnonymizationMode = AnonymizationMode.None,
+        cardholderNameAnonymizationMode = AnonymizationMode.None
+    )
+)
+```
+
+#### v3001.0.0
+
+```kotlin
+val scanningSettings = ScanningSettings(
+    redactionSettings = RedactionSettings(
+        cardNumberRedactionSettings = CardNumberRedactionSettings(
+            mode = RedactionMode.ImageOnly,
+            prefixDigitsVisible = 4U,
+            suffixDigitsVisible = 4U
+        ),
+        cvvRedactionMode = RedactionMode.FullResult,
+        ibanRedactionMode = RedactionMode.None,
+        cardholderNameRedactionMode = RedactionMode.None
+    )
+)
+```
+
+### Remove the card-number-prefix redaction mode
+
+`AnonymizationSettings.cardNumberPrefixAnonymizationMode` has been removed without a direct replacement. The card-number prefix now follows `CardNumberRedactionSettings.mode`.
+
+Remove the old argument when constructing settings:
+
+```kotlin
+val redactionSettings = RedactionSettings(
+    cardNumberRedactionSettings = CardNumberRedactionSettings(
+        mode = RedactionMode.FullResult
+    )
+)
+```
+
+### Review the new redaction defaults
+
+BlinkCard now protects card numbers and CVVs by default:
+
+| Field | v3001.0.0 default |
+|---|---|
+| Card number | `RedactionMode.FullResult` |
+| CVV | `RedactionMode.FullResult` |
+| IBAN | `RedactionMode.None` |
+| Cardholder name | `RedactionMode.None` |
+| Visible card-number prefix digits | `4` |
+| Visible card-number suffix digits | `4` |
+
+If your application intentionally requires the previous unredacted behavior, configure it explicitly:
+
+```kotlin
+val scanningSettings = ScanningSettings(
+    redactionSettings = RedactionSettings(
+        cardNumberRedactionSettings = CardNumberRedactionSettings(
+            mode = RedactionMode.None
+        ),
+        cvvRedactionMode = RedactionMode.None
+    )
+)
+```
+
+Before disabling redaction, verify that storing or transmitting unredacted card data complies with your security and data-handling requirements.
+
+### Read the BIN-check result
+
+Each `CardAccountResult` now contains `binCheckResult`:
+
+```kotlin
+val account = scanningResult.cardAccounts.firstOrNull()
+
+when (account?.binCheckResult) {
+    CheckResult.Pass -> {
+        // The card-number prefix was found in the BIN database.
+    }
+    CheckResult.Fail -> {
+        // The card-number prefix was not found in the BIN database.
+    }
+    CheckResult.NotAvailable -> {
+        // BIN check was not performed, for example because the license does not enable it.
+    }
+    null -> {
+        // No card account was extracted.
+    }
+}
+```
+
+BIN check requires the `recognizer_blinkcard_allow_bin_check` license right and is disabled by default for production licenses.
+
+### Rename `CheckResult.NotPerformed` to `CheckResult.NotAvailable`
+
+The value and its meaning are unchanged, only the name differs. Update every reference, including exhaustive `when` expressions over card liveness results.
+
+#### v3000
+
+```kotlin
+when (scanningResult.overallCardLivenessResult) {
+    CheckResult.Pass -> { /* ... */ }
+    CheckResult.Fail -> { /* ... */ }
+    CheckResult.NotPerformed -> { /* ... */ }
+}
+```
+
+#### v3001.0.0
+
+```kotlin
+when (scanningResult.overallCardLivenessResult) {
+    CheckResult.Pass -> { /* ... */ }
+    CheckResult.Fail -> { /* ... */ }
+    CheckResult.NotAvailable -> { /* ... */ }
+}
+```
+
+### Update custom resource download timeouts
+
+`RequestTimeout` now takes `kotlin.time.Duration` values instead of milliseconds. `RequestTimeout.DEFAULT` changed from 10 to 30 seconds.
+
+#### v3000
+
+```kotlin
+val sdkSettings = BlinkCardSdkSettings(
+    licenseKey = "your-license-key",
+    resourceRequestTimeout = RequestTimeout(
+        connectionTimeoutMillis = 20000,
+        writeTimeoutMillis = 20000,
+        readTimeoutMillis = 20000
+    )
+)
+```
+
+#### v3001.0.0
+
+```kotlin
+import kotlin.time.Duration.Companion.seconds
+
+val sdkSettings = BlinkCardSdkSettings(
+    licenseKey = "your-license-key",
+    resourceRequestTimeout = RequestTimeout(
+        connectionTimeout = 20.seconds,
+        writeTimeout = 20.seconds,
+        readTimeout = 20.seconds
+    )
+)
+```
+
+If you use a custom download location, `defaultResourceDownloadUrl` is now available as `ResourcesConfig.defaultResourceDownloadUrl`.
+
+### Update custom help dialog strings
+
+`HelpDialogsStrings.BlinkCardDefault` was replaced by `BlinkCardSdkStrings.HelpDialogsDefaults`. `HelpDialogsStrings` is now a `data class`, so you can customize individual strings with `copy`.
+
+#### v3000
+
+```kotlin
+val strings = BlinkCardSdkStrings.Default.copy(
+    blinkCardHelpDialogsStrings = HelpDialogsStrings.BlinkCardDefault
+)
+```
+
+#### v3001.0.0
+
+```kotlin
+val strings = BlinkCardSdkStrings.Default.copy(
+    blinkCardHelpDialogsStrings = BlinkCardSdkStrings.HelpDialogsDefaults.copy(
+        onboardingTitle = R.string.your_onboarding_title
+    )
+)
+```
+
+`SdkStrings.helpDialogsStrings` has been removed. Read the help dialog strings from `BlinkCardSdkStrings.blinkCardHelpDialogsStrings` instead.
+
+### Handle the new initialization error
+
+`SdkInitError` has a new subtype, `SettingsValidationError`, reported when SDK settings fail validation. Add a branch for it to exhaustive `when` expressions:
+
+```kotlin
+when (val error = exception.reason) {
+    is SdkInitError.SettingsValidationError -> {
+        // Invalid SDK settings: error.description explains why.
+    }
+    // ... other SdkInitError subtypes
+}
+```
+
+### Review the updated dependency requirements
+
+BlinkCard v3001.0.0 requires compileSdk 36, Android Gradle Plugin 8.9.1 or newer, and Kotlin 2.1 or newer. `blinkcard-ux` depends on Jetpack Compose UI 1.11.2, and `blinkcard-core` depends on OkHttp 5.3.2. Applications on older versions of these libraries are upgraded automatically. Do not force older versions, because the SDK is compiled against these versions. See the [release notes](Release_notes.md) for the full list.
+
+---
+
+## BlinkCard v2 to BlinkCard v3000
+
+This guide will help you migrate your application from BlinkCard v2 to the new BlinkCard v3000 SDK. BlinkCard v3000 provides a modernized approach to card scanning and extraction with improved architecture and Jetpack Compose support.
 
 
 ## Key differences
@@ -11,7 +258,7 @@ This guide will help you migrate your application from BlinkCard v2 to the new B
 - **Modern Kotlin Features**: Written fully in Kotlin, the code is simple and easy to work with, while also supporting Java integration
 - **Jetpack Compose**: Jetpack Compose is the main driver for the UI through `blinkcard-ux` package
 - **Simplified Flow**: More straightforward API with clearer separation of concerns
-- **Updated minimum OS requirement**: BlinkID SDK now requires Android API level 24 (Android 7.0 Nougat) or newer. This update allows us to leverage modern development practices, improve stability, and streamline future updates.
+- **Updated minimum OS requirement**: BlinkCard SDK now requires Android API level 24 (Android 7.0 Nougat) or newer. This update allows us to leverage modern development practices, improve stability, and streamline future updates.
 
 ### 2. Integration methods
 
@@ -55,7 +302,7 @@ microblink-blinkcard = { module = "com.microblink:blinkcard", version.ref = "mic
 
 #### Add new dependencies:
 ```kotlin
-// for the base BlinkID SDK version, add
+// for the base BlinkCard SDK version, add
 implementation(com.microblink:blinkcard-core)
 
 // for the version that includes the scanning UX, add
@@ -337,8 +584,10 @@ val blinkCardUiSettings = UiSettings(
 )
 
 val blinkCardUxSettings = BlinkCardUxSettings(
-   stepTimeoutDurationMs = ... // default: [Duration] 15000.milliseconds,
-   allowHapticFeedback = ... // default: [Boolean] true
+   stepTimeoutDuration = ... // default: [Duration] 60000.milliseconds,
+   inactivityTimeoutDuration = ... // default: [Duration] 10000.milliseconds,
+   allowHapticFeedback = ... // default: [Boolean] true,
+   allowScanSound = ... // default: [Boolean] true
 )
 
 val blinkCardCameraSettings = data class CameraSettings(

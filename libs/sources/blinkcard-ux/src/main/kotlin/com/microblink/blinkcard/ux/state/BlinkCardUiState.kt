@@ -14,6 +14,7 @@ import com.microblink.blinkcard.ux.state.CardAnimationState
 import com.microblink.blinkcard.ux.state.CommonStatusMessage
 import com.microblink.blinkcard.ux.state.ErrorState
 import com.microblink.blinkcard.ux.state.HapticFeedbackState
+import com.microblink.blinkcard.ux.state.ScanSoundState
 import com.microblink.blinkcard.ux.state.MbTorchState
 import com.microblink.blinkcard.ux.state.ProcessingState
 import com.microblink.blinkcard.ux.state.ReticleState
@@ -34,6 +35,7 @@ data class BlinkCardUiState(
     override val helpTooltipDisplayed: Boolean = false,
     override val onboardingDialogDisplayed: Boolean = DefaultShowOnboardingDialog,
     override val errorState: ErrorState = ErrorState.NoError,
-    override val hapticFeedbackState: HapticFeedbackState = HapticFeedbackState.VibrationOff
+    override val hapticFeedbackState: HapticFeedbackState = HapticFeedbackState.VibrationOff,
+    override val scanSoundState: ScanSoundState = ScanSoundState.SoundOff
 ) : BaseUiState
 

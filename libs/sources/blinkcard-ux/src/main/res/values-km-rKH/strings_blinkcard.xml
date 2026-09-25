@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">រក្សាកាត និងទូរស័ព្ទឱ្យនៅដដែល</string>
-  <string name="mb_blinkcard_card_not_fully_visible">រក្សា​កាត​ឱ្យ​មើល​ឃើញ​យ៉ាង​ពេញលេញ</string>
-  <string name="mb_blinkcard_first_side_instructions">ស្កេនលេខកាត</string>
-  <string name="mb_blinkcard_flashlight_warning_message">ប្រយ័ត្នចំពោះពន្លឺពិលភ្លឺចែងចាំង។\nរំកិលកាតរបស់អ្នកថ្នមៗដើម្បីជៀសវាងវា។</string>
-  <string name="mb_blinkcard_help_screen_msg1">លេខកាតជាធម្មតាជាលេខ 16 ខ្ទង់ ទោះបីជាវាអាចមានចន្លោះពី 12 ទៅ 19 ខ្ទង់ក៏ដោយ។ វាគួរតែត្រូវបានបោះពុម្ព ឬក្រឡោតជាលេខដែលបានលើកឡើងនៅទូទាំងកាត។ វាអាចនៅខាងមុខ ឬខាងក្រោយកាតរបស់អ្នក។</string>
-  <string name="mb_blinkcard_help_screen_msg2">ត្រូវប្រាកដថាអ្នកមិនគ្របដណ្តប់ផ្នែកនៃកាតដោយប្រើម្រាមដៃ រួមទាំងបន្ទាត់ខាងក្រោម។ ដូចគ្នានេះផងដែរ, ប្រយ័ត្នសម្រាប់ការឆ្លុះបញ្ចាំង hologram ដែលឆ្លងកាត់វាលរបស់សន្លឹកបៀ។</string>
-  <string name="mb_blinkcard_help_screen_msg3">ជៀសវាងពន្លឺខ្លាំងដោយផ្ទាល់ ព្រោះវាឆ្លុះបញ្ចាំងពីកាត ហើយអាចធ្វើឱ្យផ្នែកខ្លះនៃកាតមិនអាចអានបាន។ ប្រសិនបើអ្នកមិនអាចអានទិន្នន័យនៅលើកាតបានទេ វាក៏មិនអាចមើលឃើញដោយកាមេរ៉ាដែរ។</string>
-  <string name="mb_blinkcard_help_screen_msg4">ព្យាយាមរក្សាទូរស័ព្ទ និងកាតឱ្យនៅស្ងៀមពេលកំពុងស្កេន។ ការផ្លាស់ទីទាំងពីរអាចធ្វើឱ្យរូបភាពព្រិល និងធ្វើឱ្យទិន្នន័យនៅលើកាតមិនអាចអានបាន។</string>
-  <string name="mb_blinkcard_help_screen_title1">តើលេខកាតនៅឯណា?</string>
-  <string name="mb_blinkcard_help_screen_title2">រក្សាវាលទាំងអស់ដែលអាចមើលឃើញ</string>
-  <string name="mb_blinkcard_help_screen_title3">ប្រយ័ត្នចំពោះពន្លឺខ្លាំង</string>
-  <string name="mb_blinkcard_help_screen_title4">រក្សាភាពស្ងៀមស្ងាត់ខណៈពេលកំពុងស្កេន</string>
-  <string name="mb_blinkcard_keep_card_parallel">រក្សាកាតស្របទៅនឹងទូរស័ព្ទ</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">លេខកាតជាធម្មតាជាលេខ 16 ខ្ទង់។ វាគួរតែត្រូវបានបោះពុម្ព ឬក្រឡោតជាលេខដែលបានលើកឡើងនៅទូទាំងកាត។ ត្រូវប្រាកដថាកាតមានពន្លឺល្អ ហើយព័ត៌មានលម្អិតទាំងអស់អាចមើលឃើញ។</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">ស្កេនលេខកាតជាមុនសិន</string>
-  <string name="mb_blinkcard_other_side_instructions">ស្កេនផ្នែកម្ខាងទៀតនៃកាត</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">មិនអាចអានកាតបានទេ។ សូមព្យាយាមម្តងទៀត។</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">ព្យាយាមម្តងទៀត</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">ស្កេនមិនជោគជ័យ</string>
-  <string name="mb_blinkcard_scanning_wrong_side">ត្រឡប់កាត</string>
+    <string name="mb_blinkcard_blur_detected">រក្សាកាត និងទូរសព្ទឲ្យនៅនឹង</string>
+    <string name="mb_blinkcard_card_not_fully_visible">រក្សា​កាត​ឱ្យ​មើល​ឃើញ​យ៉ាង​ពេញលេញ</string>
+    <string name="mb_blinkcard_first_side_instructions">ស្កេនលេខកាត</string>
+    <string name="mb_blinkcard_flashlight_warning_message">ប្រយ័ត្នចំពោះពន្លឺពិលភ្លឺចែងចាំង។\nរំកិលកាតរបស់អ្នកថ្នមៗដើម្បីជៀសវាងវា។</string>
+    <string name="mb_blinkcard_help_screen_msg1">លេខកាតជាធម្មតាជាលេខ 16 ខ្ទង់ ទោះបីជាវាអាចមានចន្លោះពី 12 ទៅ 19 ខ្ទង់ក៏ដោយ។ វាគួរតែត្រូវបានបោះពុម្ព ឬក្រឡោតជាលេខដែលបានលើកឡើងនៅទូទាំងកាត។ វាអាចនៅខាងមុខ ឬខាងក្រោយកាតរបស់អ្នក។</string>
+    <string name="mb_blinkcard_help_screen_msg2">ត្រូវប្រាកដថាអ្នកមិនគ្របដណ្តប់ផ្នែកនៃកាតដោយប្រើម្រាមដៃ រួមទាំងបន្ទាត់ខាងក្រោម។ ដូចគ្នានេះផងដែរ, ប្រយ័ត្នសម្រាប់ការឆ្លុះបញ្ចាំង hologram ដែលឆ្លងកាត់វាលរបស់សន្លឹកបៀ។</string>
+    <string name="mb_blinkcard_help_screen_msg3">ជៀសវាងពន្លឺខ្លាំងដោយផ្ទាល់ ព្រោះវាឆ្លុះបញ្ចាំងពីកាត ហើយអាចធ្វើឱ្យផ្នែកខ្លះនៃកាតមិនអាចអានបាន។ ប្រសិនបើអ្នកមិនអាចអានទិន្នន័យនៅលើកាតបានទេ វាក៏មិនអាចមើលឃើញដោយកាមេរ៉ាដែរ។</string>
+    <string name="mb_blinkcard_help_screen_msg4">ព្យាយាមរក្សាទូរស័ព្ទ និងកាតឱ្យនៅស្ងៀមពេលកំពុងស្កេន។ ការផ្លាស់ទីទាំងពីរអាចធ្វើឱ្យរូបភាពព្រិល និងធ្វើឱ្យទិន្នន័យនៅលើកាតមិនអាចអានបាន។</string>
+    <string name="mb_blinkcard_help_screen_title1">តើលេខកាតនៅឯណា?</string>
+    <string name="mb_blinkcard_help_screen_title2">រក្សាវាលទាំងអស់ដែលអាចមើលឃើញ</string>
+    <string name="mb_blinkcard_help_screen_title3">ប្រយ័ត្នចំពោះពន្លឺខ្លាំង</string>
+    <string name="mb_blinkcard_help_screen_title4">រក្សាភាពស្ងៀមស្ងាត់ខណៈពេលកំពុងស្កេន</string>
+    <string name="mb_blinkcard_keep_card_parallel">រក្សាកាតឲ្យស្របនឹងទូរសព្ទ</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">លេខកាតជាធម្មតាជាលេខ 16 ខ្ទង់។ វាគួរតែត្រូវបានបោះពុម្ព ឬក្រឡោតជាលេខដែលបានលើកឡើងនៅទូទាំងកាត។ ត្រូវប្រាកដថាកាតមានពន្លឺល្អ ហើយព័ត៌មានលម្អិតទាំងអស់អាចមើលឃើញ។</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">ស្កេនលេខកាតជាមុនសិន</string>
+    <string name="mb_blinkcard_other_side_instructions">ស្កេនផ្នែកម្ខាងទៀតនៃកាត</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">សូមប្រាកដថាកាតមានពន្លឺគ្រប់គ្រាន់ អាចមើលឃើញទាំងស្រុង និងគ្មានពន្លឺចាំង។</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">ព្យាយាមម្តងទៀត</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">មិនអាចអានកាតបានទេ</string>
+    <string name="mb_blinkcard_scanning_wrong_side">ត្រឡប់កាត</string>
 </resources>

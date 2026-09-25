@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">No muevas ni la tarjeta ni el teléfono</string>
-  <string name="mb_blinkcard_card_not_fully_visible">Mantenga la tarjeta completamente visible</string>
-  <string name="mb_blinkcard_first_side_instructions">Escanee el número de la tarjeta</string>
-  <string name="mb_blinkcard_flashlight_warning_message">Tenga cuidado con el resplandor de la linterna.\nMueva suavemente su tarjeta alrededor para evitarla.</string>
-  <string name="mb_blinkcard_help_screen_msg1">El número de la tarjeta suele tener 16 dígitos, aunque puede tener entre 12 y 19 dígitos. Debe estar impreso o grabado en relieve a lo largo de la tarjeta. Puede estar en el anverso o en el reverso de la tarjeta.</string>
-  <string name="mb_blinkcard_help_screen_msg2">Asegúrese de que no está cubriendo partes de la tarjeta con el dedo, incluidas las líneas inferiores. Además, tenga cuidado con los reflejos de los hologramas que sobrepasan los campos de la tarjeta.</string>
-  <string name="mb_blinkcard_help_screen_msg3">Evite la luz intensa directa porque se refleja en la tarjeta y puede hacer que algunas partes de la tarjeta sean ilegibles. Si no puede leer los datos de la tarjeta, tampoco serán visibles para la cámara.</string>
-  <string name="mb_blinkcard_help_screen_msg4">Intente mantener el teléfono y la tarjeta quietos mientras escanea. Mover cualquiera de los dos puede difuminar la imagen y hacer que los datos de la tarjeta sean ilegibles.</string>
-  <string name="mb_blinkcard_help_screen_title1">¿Dónde está el número de la tarjeta?</string>
-  <string name="mb_blinkcard_help_screen_title2">Mantenga todos los campos visibles</string>
-  <string name="mb_blinkcard_help_screen_title3">Cuidado con la luz intensa</string>
-  <string name="mb_blinkcard_help_screen_title4">No se mueva mientras escanea</string>
-  <string name="mb_blinkcard_keep_card_parallel">Mantenga la tarjeta paralela al teléfono</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">El número de la tarjeta suele tener 16 dígitos. Debe estar impreso o grabado en relieve a lo largo de la tarjeta. Asegúrese de que la tarjeta esté bien iluminada y de que todos los datos sean visibles.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">Primero escanee el número de la tarjeta</string>
-  <string name="mb_blinkcard_other_side_instructions">Escanee el otro lado de la tarjeta</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">No se ha podido leer la tarjeta. Inténtalo de nuevo.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Reintentar</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">Escaneo fallido</string>
-  <string name="mb_blinkcard_scanning_wrong_side">Dele la vuelta a la tarjeta</string>
+    <string name="mb_blinkcard_blur_detected">Mantén la tarjeta y el teléfono quietos</string>
+    <string name="mb_blinkcard_card_not_fully_visible">Mantenga la tarjeta completamente visible</string>
+    <string name="mb_blinkcard_first_side_instructions">Escanee el número de la tarjeta</string>
+    <string name="mb_blinkcard_flashlight_warning_message">Tenga cuidado con el resplandor de la linterna.\nMueva suavemente su tarjeta alrededor para evitarla.</string>
+    <string name="mb_blinkcard_help_screen_msg1">El número de la tarjeta suele tener 16 dígitos, aunque puede tener entre 12 y 19 dígitos. Debe estar impreso o grabado en relieve a lo largo de la tarjeta. Puede estar en el anverso o en el reverso de la tarjeta.</string>
+    <string name="mb_blinkcard_help_screen_msg2">Asegúrese de que no está cubriendo partes de la tarjeta con el dedo, incluidas las líneas inferiores. Además, tenga cuidado con los reflejos de los hologramas que sobrepasan los campos de la tarjeta.</string>
+    <string name="mb_blinkcard_help_screen_msg3">Evite la luz intensa directa porque se refleja en la tarjeta y puede hacer que algunas partes de la tarjeta sean ilegibles. Si no puede leer los datos de la tarjeta, tampoco serán visibles para la cámara.</string>
+    <string name="mb_blinkcard_help_screen_msg4">Intente mantener el teléfono y la tarjeta quietos mientras escanea. Mover cualquiera de los dos puede difuminar la imagen y hacer que los datos de la tarjeta sean ilegibles.</string>
+    <string name="mb_blinkcard_help_screen_title1">¿Dónde está el número de la tarjeta?</string>
+    <string name="mb_blinkcard_help_screen_title2">Mantenga todos los campos visibles</string>
+    <string name="mb_blinkcard_help_screen_title3">Cuidado con la luz intensa</string>
+    <string name="mb_blinkcard_help_screen_title4">No se mueva mientras escanea</string>
+    <string name="mb_blinkcard_keep_card_parallel">Mantén la tarjeta paralela al teléfono</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">El número de la tarjeta suele tener 16 dígitos. Debe estar impreso o grabado en relieve a lo largo de la tarjeta. Asegúrese de que la tarjeta esté bien iluminada y de que todos los datos sean visibles.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">Primero escanee el número de la tarjeta</string>
+    <string name="mb_blinkcard_other_side_instructions">Escanee el otro lado de la tarjeta</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Asegúrate de que la tarjeta esté bien iluminada, sea totalmente visible y no tenga reflejos.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Reintentar</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">No se puede leer la tarjeta</string>
+    <string name="mb_blinkcard_scanning_wrong_side">Dele la vuelta a la tarjeta</string>
 </resources>

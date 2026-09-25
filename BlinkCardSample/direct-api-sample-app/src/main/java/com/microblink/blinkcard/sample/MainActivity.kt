@@ -106,6 +106,8 @@ class MainActivity : ComponentActivity() {
                                         "Direct API scan failed. Add test images to assets/test-images.",
                                         Toast.LENGTH_LONG
                                     ).show()
+
+                                    viewModel.unloadSdk()
                                 }
                             }
                         }

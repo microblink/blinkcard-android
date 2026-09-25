@@ -11,6 +11,8 @@ The _BlinkCard_ Android SDK enables scanning of various credit and payment cards
 * [Quick Start](#quick-start)
     * [Quick start with the sample app](#quick-sample)
     * [SDK integration](#sdk-integration)
+    * [Scanning session result](#scanning-session-result)
+    * [Configuring tilt sensitivity and redaction](#configuring-tilt-sensitivity-and-redaction)
 * [Device requirements](#device-requirements)
     * [Android version](#android-version-req)
     * [Camera](#camera-req)
@@ -68,7 +70,7 @@ Add _BlinkCard_ as a dependency in module level `build.gradle(.kts)`:
 
 ```
 dependencies {
-    implementation("com.microblink:blinkcard-ux:3000.0.1")
+    implementation("com.microblink:blinkcard-ux:3001.0.0")
 }
 ```
 
@@ -147,15 +149,42 @@ data class CardAccountResult(
     val cardCategory: String?,
     val issuerName: String?,
     val issuerCountryCode: String?,
-    val issuerCountry: String?
+    val issuerCountry: String?,
+    val binCheckResult: CheckResult
 )
 ```
+
+`binCheckResult` reports whether the card-number prefix was found in the BIN database. Its value is `CheckResult.Pass`, `CheckResult.Fail`, or `CheckResult.NotAvailable`. BIN check requires a license containing the `recognizer_blinkcard_allow_bin_check` right and is disabled by default for production licenses.
+
+### Configuring tilt sensitivity and redaction
+
+Use `tiltSensitivityLevel` to configure card-tilt analysis. Sensitive card numbers and CVVs are fully redacted by default:
+
+```kotlin
+val scanningSettings = ScanningSettings(
+    tiltSensitivityLevel = SensitivityLevel.Mid,
+    redactionSettings = RedactionSettings(
+        cardNumberRedactionSettings = CardNumberRedactionSettings(
+            mode = RedactionMode.FullResult,
+            prefixDigitsVisible = 4U,
+            suffixDigitsVisible = 4U
+        ),
+        cvvRedactionMode = RedactionMode.FullResult,
+        ibanRedactionMode = RedactionMode.None,
+        cardholderNameRedactionMode = RedactionMode.None
+    )
+)
+```
+
+If you are upgrading from BlinkCard v3000.0.x, see the [transition guide](Transition_guide.md#blinkcard-v3000-to-v300100) for renamed and removed APIs.
 
 # <a name="device-requirements"></a> Device requirements
 
 ## <a name="android-version-req"></a> Android version
 
 _BlinkCard_ SDK requires Android API level **24** or newer.
+
+To integrate the SDK, your project must compile with **compileSdk 36**, use **Android Gradle Plugin 8.9.1** or newer, and use **Kotlin 2.1** or newer. `blinkcard-ux` depends on **Jetpack Compose UI 1.11.2**. If your app uses an older Compose version, Gradle upgrades it automatically, so don't force an older version.
 
 ## <a name="camera-req"></a> Camera
 
@@ -205,7 +234,7 @@ BlinkCardSdkSettings(
     resourceDownloadUrl = "download-path",
     // define path if you are not using a default one: "microblink/blinkcard"
     resourceLocalFolder = "path-within-app-assets",
-    // set custom timeout on resources download (10 seconds by default)
+    // set custom timeout on resources download (30 seconds by default)
     resourceRequestTimeout = RequestTimeout.DEFAULT,
     // set custom proxy URL (needs to be allowed by license)
     microblinkProxyUrl = null
@@ -255,8 +284,10 @@ BlinkCardCameraScanningScreen(
     blinkCardSdk = sdkInstance,
     /* UX settings options */
     uxSettings = BlinkCardUxSettings(
-        stepTimeoutDuration = <yourTimeoutDuration>,
+        stepTimeoutDuration = <yourStepTimeoutDuration>, // 60 seconds by default; Duration.ZERO disables it
+        inactivityTimeoutDuration = <yourInactivityTimeoutDuration>, // 10 seconds by default; Duration.ZERO disables it
         allowHapticFeedback = true, // or false
+        allowScanSound = true, // or false
     ),
     /* UI settings options */
     uiSettings = UiSettings(
@@ -297,7 +328,7 @@ Create your implementation of scanning ViewModel (which must be a subclass of ou
 ```kotlin
 class YourBlinkCardScanningUxViewModel(
     blinkCardSdkInstance: BlinkCardSdk,
-    sessionSettings: ScanningSessionSettings,
+    sessionSettings: BlinkCardSessionSettings,
     uxSettings: BlinkCardUxSettings
 ) : CameraViewModel() {
     
@@ -309,7 +340,7 @@ class YourBlinkCardScanningUxViewModel(
                 // TODO use scanning result
             }
 
-            override fun onScanningCancelled() {
+            override fun onScanningCanceled() {
                 // user cancelled the scanning
             }
             
@@ -355,10 +386,8 @@ class YourBlinkCardScanningUxViewModel(
     )
     
     override fun analyzeImage(image: ImageProxy) {
-        // image has to be closed after processing
-        image.use {
-            imageAnalyzer?.analyze(it)
-        }
+        // the analyzer closes the image after processing
+        imageAnalyzer.analyze(image)
     }
 
      override fun onCleared() {
@@ -532,7 +561,7 @@ Add _blinkcard-core_ library as a dependency in module level `build.gradle(.kts)
 
 ```
 dependencies {
-    implementation("com.microblink:blinkcard-core:3000.0.1")
+    implementation("com.microblink:blinkcard-core:3001.0.0")
 }
 ```
 
@@ -702,8 +731,8 @@ Here is the SDK size, calculated for supported ABIs:
 
 | ABI | Download size | Install size |
 | --- |:-------------:|:------------:|
-| armeabi-v7a |    3.04 MB    |   3.84 MB    |
-| arm64-v8a |    3.10 MB    |   4.29 MB    |
+| armeabi-v7a |    3.42 MB    |   4.26 MB    |
+| arm64-v8a |    3.54 MB    |   4.94 MB    |
 
 SDK size is calculated as application size increases when _BlinkCard_ SDK is added, with all its dependencies included.
 

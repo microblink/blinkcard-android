@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">Houd de kaart en de telefoon stil</string>
-  <string name="mb_blinkcard_card_not_fully_visible">Houd de kaart volledig zichtbaar</string>
-  <string name="mb_blinkcard_first_side_instructions">Scan het kaartnummer</string>
-  <string name="mb_blinkcard_flashlight_warning_message">Pas op voor schittering van de flitser.\nVerplaats uw kaart voorzichtig om dit te voorkomen.</string>
-  <string name="mb_blinkcard_help_screen_msg1">Het kaartnummer bestaat in de regel uit 16 cijfers, maar kan ook uit 12 tot 19 cijfers bestaan. Het nummer is ofwel gedrukt of in reliëf in verhoogde cijfers op de kaart aangebracht. Het nummer kan op de voor- of achterkant van uw kaart staan.</string>
-  <string name="mb_blinkcard_help_screen_msg2">Zorg ervoor dat u onderdelen van de kaart niet afdekt met een vinger, dus ook niet de onderste regels. Waak ook voor hologramreflecties op de kaartvelden.</string>
-  <string name="mb_blinkcard_help_screen_msg3">Vermijd direct fel licht, omdat dat vanaf de kaart weerspiegelt en delen van de kaart onleesbaar kan maken. Als u gegevens op de kaart niet kunt lezen, zijn ze voor de camera ook niet zichtbaar.</string>
-  <string name="mb_blinkcard_help_screen_msg4">Probeer de telefoon en de kaart tijdens het scannen stil te houden. Als u een van beide beweegt, kan de afbeelding wazig worden en kunnen gegevens op de kaart onleesbaar worden.</string>
-  <string name="mb_blinkcard_help_screen_title1">Waar staat het kaartnummer?</string>
-  <string name="mb_blinkcard_help_screen_title2">Zorg ervoor dat alle velden zichtbaar zijn</string>
-  <string name="mb_blinkcard_help_screen_title3">Pas op voor fel licht</string>
-  <string name="mb_blinkcard_help_screen_title4">Beweeg niet tijdens het scannen</string>
-  <string name="mb_blinkcard_keep_card_parallel">Kaart parallel aan telefoon houden</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">Het kaartnummer bestaat in de regel uit 16 cijfers. Het nummer is ofwel gedrukt of in reliëf in verhoogde cijfers op de kaart aangebracht. Zorg ervoor dat de kaart goed wordt verlicht en dat alle details zichtbaar zijn.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">Scan eerst het kaartnummer</string>
-  <string name="mb_blinkcard_other_side_instructions">Scan de andere kant van de kaart</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">Kon de kaart niet lezen. Probeer het opnieuw.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Probeer opnieuw</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">Scan niet gelukt</string>
-  <string name="mb_blinkcard_scanning_wrong_side">Draai de kaart om</string>
+    <string name="mb_blinkcard_blur_detected">Houd de kaart en telefoon stil</string>
+    <string name="mb_blinkcard_card_not_fully_visible">Houd de kaart volledig zichtbaar</string>
+    <string name="mb_blinkcard_first_side_instructions">Scan het kaartnummer</string>
+    <string name="mb_blinkcard_flashlight_warning_message">Pas op voor schittering van de flitser.\nVerplaats uw kaart voorzichtig om dit te voorkomen.</string>
+    <string name="mb_blinkcard_help_screen_msg1">Het kaartnummer bestaat in de regel uit 16 cijfers, maar kan ook uit 12 tot 19 cijfers bestaan. Het nummer is ofwel gedrukt of in reliëf in verhoogde cijfers op de kaart aangebracht. Het nummer kan op de voor- of achterkant van uw kaart staan.</string>
+    <string name="mb_blinkcard_help_screen_msg2">Zorg ervoor dat u onderdelen van de kaart niet afdekt met een vinger, dus ook niet de onderste regels. Waak ook voor hologramreflecties op de kaartvelden.</string>
+    <string name="mb_blinkcard_help_screen_msg3">Vermijd direct fel licht, omdat dat vanaf de kaart weerspiegelt en delen van de kaart onleesbaar kan maken. Als u gegevens op de kaart niet kunt lezen, zijn ze voor de camera ook niet zichtbaar.</string>
+    <string name="mb_blinkcard_help_screen_msg4">Probeer de telefoon en de kaart tijdens het scannen stil te houden. Als u een van beide beweegt, kan de afbeelding wazig worden en kunnen gegevens op de kaart onleesbaar worden.</string>
+    <string name="mb_blinkcard_help_screen_title1">Waar staat het kaartnummer?</string>
+    <string name="mb_blinkcard_help_screen_title2">Zorg ervoor dat alle velden zichtbaar zijn</string>
+    <string name="mb_blinkcard_help_screen_title3">Pas op voor fel licht</string>
+    <string name="mb_blinkcard_help_screen_title4">Beweeg niet tijdens het scannen</string>
+    <string name="mb_blinkcard_keep_card_parallel">Houd de kaart parallel aan de telefoon</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">Het kaartnummer bestaat in de regel uit 16 cijfers. Het nummer is ofwel gedrukt of in reliëf in verhoogde cijfers op de kaart aangebracht. Zorg ervoor dat de kaart goed wordt verlicht en dat alle details zichtbaar zijn.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">Scan eerst het kaartnummer</string>
+    <string name="mb_blinkcard_other_side_instructions">Scan de andere kant van de kaart</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Zorg dat de kaart goed verlicht, volledig zichtbaar en vrij van schittering is.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Probeer opnieuw</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">De kaart kan niet worden gelezen</string>
+    <string name="mb_blinkcard_scanning_wrong_side">Draai de kaart om</string>
 </resources>

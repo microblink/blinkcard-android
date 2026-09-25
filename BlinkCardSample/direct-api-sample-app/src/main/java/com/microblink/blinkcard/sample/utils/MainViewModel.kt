@@ -53,6 +53,7 @@ class MainViewModel : ViewModel() {
 
     fun onDirectApiResultAvailable(result: BlinkCardScanningResult) {
         BlinkCardResultHolder.blinkCardResult = result
+        // unload the SDK when not needed anymore to free up resources
         unloadSdk()
     }
 
@@ -61,15 +62,21 @@ class MainViewModel : ViewModel() {
         _mainState.update { MainState() }
     }
 
-    private fun unloadSdk() {
+    fun unloadSdk() {
         val sdkToClose = localSdk
         localSdk = null
         viewModelScope.launch(Dispatchers.IO) {
             try {
+                // don't delete cached resources
                 sdkToClose?.close()
             } catch (_: Exception) {
                 Log.w(TAG, "SDK is already closed")
             }
         }
+    }
+
+    override fun onCleared() {
+        super.onCleared()
+        unloadSdk()
     }
 }

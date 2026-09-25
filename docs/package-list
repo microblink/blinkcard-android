@@ -1,7 +1,6 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
-$dokka.location:com.microblink.blinkcard.core.ping.config/PingParameters///PointingToDeclaration/blinkcard-core/com.microblink.blinkcard.core.ping.config/[android-jvm]-ping-parameters/index.html
-$dokka.location:com.microblink.blinkcard.core.ping.config/PingParameters/MAX_STORAGE_SIZE_BYTES/#/PointingToDeclaration/blinkcard-core/com.microblink.blinkcard.core.ping.config/[android-jvm]-ping-parameters/-m-a-x_-s-t-o-r-a-g-e_-s-i-z-e_-b-y-t-e-s.html
+
 module:blinkcard-core
 com.microblink.blinkcard.core
 com.microblink.blinkcard.core.geometry
@@ -13,6 +12,7 @@ com.microblink.blinkcard.core.ping.config
 com.microblink.blinkcard.core.ping.pinglets
 com.microblink.blinkcard.core.ping.util
 com.microblink.blinkcard.core.resources
+com.microblink.blinkcard.core.resources.ota.model
 com.microblink.blinkcard.core.result
 com.microblink.blinkcard.core.result.enum
 com.microblink.blinkcard.core.session

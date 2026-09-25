@@ -80,6 +80,11 @@ class MainViewModel : ViewModel() {
 
     fun onScanningResultAvailable(result: BlinkCardScanningResult) {
         BlinkCardResultHolder.blinkCardResult = result
+        // unload the SDK when not needed anymore to free up resources
+        unloadSdk()
+    }
+
+    fun onScanningCanceled() {
         unloadSdk()
     }
 
@@ -93,10 +98,16 @@ class MainViewModel : ViewModel() {
         localSdk = null
         viewModelScope.launch(Dispatchers.IO) {
             try {
+                // don't delete cached resources
                 sdkToClose?.close()
             } catch (_: Exception) {
                 Log.w(TAG, "SDK is already closed")
             }
         }
+    }
+
+    override fun onCleared() {
+        super.onCleared()
+        unloadSdk()
     }
 }

@@ -1,42 +1,39 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>ScanningUxEvent</title>
-<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
-    <script>document.documentElement.classList.replace("no-js","js");</script>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
     <script>const storage = localStorage.getItem("dokka-dark-mode")
-    if (storage == null) {
+      if (storage == null) {
         const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
         if (osDarkSchemePreferred === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
         }
-    } else {
+      } else {
         const savedDarkMode = JSON.parse(storage)
-        if(savedDarkMode === true) {
-            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
         }
-    }
+      }
     </script>
-<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
 <script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
 <link href="../../../styles/style.css" rel="Stylesheet">
 <link href="../../../styles/main.css" rel="Stylesheet">
 <link href="../../../styles/prism.css" rel="Stylesheet">
 <link href="../../../styles/logo-styles.css" rel="Stylesheet">
-<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
 <link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
-<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/safe-local-storage_blocking.js"></script>
 <script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
 <script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
 <script type="text/javascript" src="../../../scripts/main.js" defer></script>
 <script type="text/javascript" src="../../../scripts/prism.js" async></script>
-<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script>
-<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script></head>
 <body>
-    <div class="root">
-    <nav class="navigation theme-dark" id="navigation-wrapper">
-<a class="library-name--link" href="../../../index.html">
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../../index.html" tabindex="1">
                     BlinkCard
             </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
         </button>
@@ -44,269 +41,316 @@
         <div class="library-version" id="library-version">
         </div>
         <div class="navigation-controls">
-        <div class="filter-section filter-section_loading" id="filter-section">
-                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":blinkcard-ux:dokkaHtmlPartial/release">androidJvm</button>
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":blinkcard-ux/productionRelease">productionRelease</button>
             <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
                 <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
-                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
-                    <div class="dropdown--header"><span>Platform filter</span>
-                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
                             <i class="ui-kit-icon ui-kit-icon_cross"></i>
                         </button>
                     </div>
                         <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
                             <label class="checkbox">
-                                <input type="checkbox" class="checkbox--input" id=":blinkcard-ux:dokkaHtmlPartial/release" data-filter=":blinkcard-ux:dokkaHtmlPartial/release">
+                                <input type="checkbox" class="checkbox--input" id=":blinkcard-ux/productionRelease" data-filter=":blinkcard-ux/productionRelease">
                                 <span class="checkbox--icon"></span>
-                                androidJvm
+                                productionRelease
                             </label>
                         </li>
                 </ul>
                 <div class="dropdown--overlay"></div>
             </div>
-        </div>
+        </ul>
             <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
             </button>
             <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
                 API
             </div>
         </div>
-    </nav>
-        <div id="container">
-            <div class="sidebar" id="leftColumn">
-                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
-                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox">
-                        <div class="dropdown--header">
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
                             <span>
                                     BlinkCard
                             </span>
-                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
-                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
-                            </button>
-                        </div>
-                        <div class="sidebar--inner" id="sideMenu"></div>
-                    </ul>
-                    <div class="dropdown--overlay"></div>
-                </div>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
             </div>
-            <div id="main">
-<div class="main-content" data-page-type="classlike" id="content" pageids="blinkcard-ux::com.microblink.blinkcard.ux/ScanningUxEvent///PointingToDeclaration//-631173585">
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="blinkcard-ux::com.microblink.blinkcard.ux/ScanningUxEvent///PointingToDeclaration//260806662">
   <div class="breadcrumbs"><a href="../../index.html">blinkcard-ux</a><span class="delimiter">/</span><a href="../index.html">com.microblink.blinkcard.ux</a><span class="delimiter">/</span><span class="current">ScanningUxEvent</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Scanning</span><wbr><span>Ux</span><wbr><span><span>Event</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">ScanningUxEvent</a></div><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-request-side/index.html">RequestSide</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-blur-detected/index.html">BlurDetected</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-glare-detected/index.html">GlareDetected</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-document-not-found/index.html">DocumentNotFound</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-scanning-wrong-side/index.html">ScanningWrongSide</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-document-located/index.html">DocumentLocated</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-document-too-far/index.html">DocumentTooFar</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-document-too-close/index.html">DocumentTooClose</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-document-not-fully-visible/index.html">DocumentNotFullyVisible</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-document-too-tilted/index.html">DocumentTooTilted</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-scanning-done/index.html">ScanningDone</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-face-image-not-found/index.html">FaceImageNotFound</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-document-too-bright/index.html">DocumentTooBright</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-document-too-dark/index.html">DocumentTooDark</a></div></span></div><div></div></div></div></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux/productionRelease"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">ScanningUxEvent</a></div><h4 class="tableheader">Inheritors</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-request-side/index.html">RequestSide</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-blur-detected/index.html">BlurDetected</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-glare-detected/index.html">GlareDetected</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-document-not-found/index.html">DocumentNotFound</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-scanning-wrong-side/index.html">ScanningWrongSide</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-document-located/index.html">DocumentLocated</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-document-too-far/index.html">DocumentTooFar</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-document-too-close/index.html">DocumentTooClose</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-document-not-fully-visible/index.html">DocumentNotFullyVisible</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-document-too-tilted/index.html">DocumentTooTilted</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-scanning-done/index.html">ScanningDone</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-face-image-not-found/index.html">FaceImageNotFound</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-document-too-bright/index.html">DocumentTooBright</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-document-too-dark/index.html">DocumentTooDark</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-unsupported-document/index.html">UnsupportedDocument</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-unparsable-barcode/index.html">UnparsableBarcode</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-barcode-not-detected/index.html">BarcodeNotDetected</a></div></span></div><div></div></div></div></div></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
     <div class="tabs-section-body">
       <div data-togglable="TYPE">
-        <h2 class="">Types</h2>
-        <div class="table"><a data-name="-1010493537%2FClasslikes%2F-631173585" anchor-label="BlurDetected" id="-1010493537%2FClasslikes%2F-631173585" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="-891839981%2FClasslikes%2F260806662" anchor-label="BarcodeNotDetected" id="-891839981%2FClasslikes%2F260806662" data-filterable-set=":blinkcard-ux/productionRelease"></a>
+          <div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-barcode-not-detected/index.html"><span>Barcode</span><wbr><span>Not</span><wbr><span><span>Detected</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-891839981%2FClasslikes%2F260806662"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux/productionRelease"><div class="symbol monospace"><span class="token keyword">object </span><a href="-barcode-not-detected/index.html">BarcodeNotDetected</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Barcode was not detected on the document, even though it is expected to be present.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1010493537%2FClasslikes%2F260806662" anchor-label="BlurDetected" id="-1010493537%2FClasslikes%2F260806662" data-filterable-set=":blinkcard-ux/productionRelease"></a>
+          <div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-blur-detected/index.html"><span>Blur</span><wbr><span><span>Detected</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1010493537%2FClasslikes%2F-631173585"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1010493537%2FClasslikes%2F260806662"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-blur-detected/index.html">BlurDetected</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Camera image is too blurry for accurate document capture.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux/productionRelease"><div class="symbol monospace"><span class="token keyword">object </span><a href="-blur-detected/index.html">BlurDetected</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Camera image is too blurry for accurate document capture.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-1080596573%2FClasslikes%2F-631173585" anchor-label="DocumentLocated" id="-1080596573%2FClasslikes%2F-631173585" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release">
+<a data-name="-1080596573%2FClasslikes%2F260806662" anchor-label="DocumentLocated" id="-1080596573%2FClasslikes%2F260806662" data-filterable-set=":blinkcard-ux/productionRelease"></a>
+          <div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-document-located/index.html"><span>Document</span><wbr><span><span>Located</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1080596573%2FClasslikes%2F-631173585"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1080596573%2FClasslikes%2F260806662"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-document-located/index.html">DocumentLocated</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">The document has been located</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux/productionRelease"><div class="symbol monospace"><span class="token keyword">object </span><a href="-document-located/index.html">DocumentLocated</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">The document has been located</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-614581090%2FClasslikes%2F-631173585" anchor-label="DocumentNotFound" id="-614581090%2FClasslikes%2F-631173585" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release">
+<a data-name="-614581090%2FClasslikes%2F260806662" anchor-label="DocumentNotFound" id="-614581090%2FClasslikes%2F260806662" data-filterable-set=":blinkcard-ux/productionRelease"></a>
+          <div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-document-not-found/index.html"><span>Document</span><wbr><span>Not</span><wbr><span><span>Found</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-614581090%2FClasslikes%2F-631173585"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-614581090%2FClasslikes%2F260806662"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-document-not-found/index.html">DocumentNotFound</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">No document has been located by the camera.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux/productionRelease"><div class="symbol monospace"><span class="token keyword">object </span><a href="-document-not-found/index.html">DocumentNotFound</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">No document has been located by the camera.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-1164813478%2FClasslikes%2F-631173585" anchor-label="DocumentNotFullyVisible" id="-1164813478%2FClasslikes%2F-631173585" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release">
+<a data-name="-1164813478%2FClasslikes%2F260806662" anchor-label="DocumentNotFullyVisible" id="-1164813478%2FClasslikes%2F260806662" data-filterable-set=":blinkcard-ux/productionRelease"></a>
+          <div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-document-not-fully-visible/index.html"><span>Document</span><wbr><span>Not</span><wbr><span>Fully</span><wbr><span><span>Visible</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1164813478%2FClasslikes%2F-631173585"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1164813478%2FClasslikes%2F260806662"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-document-not-fully-visible/index.html">DocumentNotFullyVisible</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Part of document is occluded or partially outside of the camera.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux/productionRelease"><div class="symbol monospace"><span class="token keyword">object </span><a href="-document-not-fully-visible/index.html">DocumentNotFullyVisible</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Part of document is occluded or partially outside of the camera.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="1634434055%2FClasslikes%2F-631173585" anchor-label="DocumentTooBright" id="1634434055%2FClasslikes%2F-631173585" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release">
+<a data-name="1634434055%2FClasslikes%2F260806662" anchor-label="DocumentTooBright" id="1634434055%2FClasslikes%2F260806662" data-filterable-set=":blinkcard-ux/productionRelease"></a>
+          <div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-document-too-bright/index.html"><span>Document</span><wbr><span>Too</span><wbr><span><span>Bright</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1634434055%2FClasslikes%2F-631173585"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1634434055%2FClasslikes%2F260806662"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-document-too-bright/index.html">DocumentTooBright</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Document lighting is too bright.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux/productionRelease"><div class="symbol monospace"><span class="token keyword">object </span><a href="-document-too-bright/index.html">DocumentTooBright</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Document lighting is too bright.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="1668515241%2FClasslikes%2F-631173585" anchor-label="DocumentTooClose" id="1668515241%2FClasslikes%2F-631173585" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release">
+<a data-name="1668515241%2FClasslikes%2F260806662" anchor-label="DocumentTooClose" id="1668515241%2FClasslikes%2F260806662" data-filterable-set=":blinkcard-ux/productionRelease"></a>
+          <div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-document-too-close/index.html"><span>Document</span><wbr><span>Too</span><wbr><span><span>Close</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1668515241%2FClasslikes%2F-631173585"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1668515241%2FClasslikes%2F260806662"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-document-too-close/index.html">DocumentTooClose</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Document is too close to the camera.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux/productionRelease"><div class="symbol monospace"><span class="token keyword">object </span><a href="-document-too-close/index.html">DocumentTooClose</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Document is too close to the camera.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="1907368715%2FClasslikes%2F-631173585" anchor-label="DocumentTooDark" id="1907368715%2FClasslikes%2F-631173585" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release">
+<a data-name="1907368715%2FClasslikes%2F260806662" anchor-label="DocumentTooDark" id="1907368715%2FClasslikes%2F260806662" data-filterable-set=":blinkcard-ux/productionRelease"></a>
+          <div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-document-too-dark/index.html"><span>Document</span><wbr><span>Too</span><wbr><span><span>Dark</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1907368715%2FClasslikes%2F-631173585"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1907368715%2FClasslikes%2F260806662"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-document-too-dark/index.html">DocumentTooDark</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Document lighting is too dark.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux/productionRelease"><div class="symbol monospace"><span class="token keyword">object </span><a href="-document-too-dark/index.html">DocumentTooDark</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Document lighting is too dark.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-1684249238%2FClasslikes%2F-631173585" anchor-label="DocumentTooFar" id="-1684249238%2FClasslikes%2F-631173585" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release">
+<a data-name="-1684249238%2FClasslikes%2F260806662" anchor-label="DocumentTooFar" id="-1684249238%2FClasslikes%2F260806662" data-filterable-set=":blinkcard-ux/productionRelease"></a>
+          <div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-document-too-far/index.html"><span>Document</span><wbr><span>Too</span><wbr><span><span>Far</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1684249238%2FClasslikes%2F-631173585"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1684249238%2FClasslikes%2F260806662"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-document-too-far/index.html">DocumentTooFar</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Document is too far from the camera.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux/productionRelease"><div class="symbol monospace"><span class="token keyword">object </span><a href="-document-too-far/index.html">DocumentTooFar</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Document is too far from the camera.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-1061408475%2FClasslikes%2F-631173585" anchor-label="DocumentTooTilted" id="-1061408475%2FClasslikes%2F-631173585" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release">
+<a data-name="-1061408475%2FClasslikes%2F260806662" anchor-label="DocumentTooTilted" id="-1061408475%2FClasslikes%2F260806662" data-filterable-set=":blinkcard-ux/productionRelease"></a>
+          <div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-document-too-tilted/index.html"><span>Document</span><wbr><span>Too</span><wbr><span><span>Tilted</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1061408475%2FClasslikes%2F-631173585"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1061408475%2FClasslikes%2F260806662"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-document-too-tilted/index.html">DocumentTooTilted</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Document is not parallel to the camera plane.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux/productionRelease"><div class="symbol monospace"><span class="token keyword">object </span><a href="-document-too-tilted/index.html">DocumentTooTilted</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Document is not parallel to the camera plane.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="679637069%2FClasslikes%2F-631173585" anchor-label="FaceImageNotFound" id="679637069%2FClasslikes%2F-631173585" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release">
+<a data-name="679637069%2FClasslikes%2F260806662" anchor-label="FaceImageNotFound" id="679637069%2FClasslikes%2F260806662" data-filterable-set=":blinkcard-ux/productionRelease"></a>
+          <div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-face-image-not-found/index.html"><span>Face</span><wbr><span>Image</span><wbr><span>Not</span><wbr><span><span>Found</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="679637069%2FClasslikes%2F-631173585"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="679637069%2FClasslikes%2F260806662"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-face-image-not-found/index.html">FaceImageNotFound</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Face image was not found on the document.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux/productionRelease"><div class="symbol monospace"><span class="token keyword">object </span><a href="-face-image-not-found/index.html">FaceImageNotFound</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Face image was not found on the document.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-441608727%2FClasslikes%2F-631173585" anchor-label="GlareDetected" id="-441608727%2FClasslikes%2F-631173585" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release">
+<a data-name="-441608727%2FClasslikes%2F260806662" anchor-label="GlareDetected" id="-441608727%2FClasslikes%2F260806662" data-filterable-set=":blinkcard-ux/productionRelease"></a>
+          <div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-glare-detected/index.html"><span>Glare</span><wbr><span><span>Detected</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-441608727%2FClasslikes%2F-631173585"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-441608727%2FClasslikes%2F260806662"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-glare-detected/index.html">GlareDetected</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Light reflection is interfering with document capture.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux/productionRelease"><div class="symbol monospace"><span class="token keyword">object </span><a href="-glare-detected/index.html">GlareDetected</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Light reflection is interfering with document capture.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="1467302964%2FClasslikes%2F-631173585" anchor-label="RequestSide" id="1467302964%2FClasslikes%2F-631173585" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release">
+<a data-name="1467302964%2FClasslikes%2F260806662" anchor-label="RequestSide" id="1467302964%2FClasslikes%2F260806662" data-filterable-set=":blinkcard-ux/productionRelease"></a>
+          <div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-request-side/index.html"><span>Request</span><wbr><span><span>Side</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1467302964%2FClasslikes%2F-631173585"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1467302964%2FClasslikes%2F260806662"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-request-side/index.html">RequestSide</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>side<span class="token operator">: </span><a href="../../com.microblink.blinkcard.ux.state/-ui-scanning-side/index.html">UiScanningSide</a></span></span><span class="token punctuation">)</span> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Request to scan a specific side of the document.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux/productionRelease"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-request-side/index.html">RequestSide</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>side<span class="token operator">: </span><a href="../../com.microblink.blinkcard.ux.state/-ui-scanning-side/index.html">UiScanningSide</a></span></span><span class="token punctuation">)</span> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Request to scan a specific side of the document.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-1723944171%2FClasslikes%2F-631173585" anchor-label="ScanningDone" id="-1723944171%2FClasslikes%2F-631173585" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release">
+<a data-name="-1723944171%2FClasslikes%2F260806662" anchor-label="ScanningDone" id="-1723944171%2FClasslikes%2F260806662" data-filterable-set=":blinkcard-ux/productionRelease"></a>
+          <div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-scanning-done/index.html"><span>Scanning</span><wbr><span><span>Done</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1723944171%2FClasslikes%2F-631173585"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1723944171%2FClasslikes%2F260806662"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-scanning-done/index.html">ScanningDone</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Scanning has been successfully completed.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux/productionRelease"><div class="symbol monospace"><span class="token keyword">object </span><a href="-scanning-done/index.html">ScanningDone</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Scanning has been successfully completed.</p></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-1748569177%2FClasslikes%2F-631173585" anchor-label="ScanningWrongSide" id="-1748569177%2FClasslikes%2F-631173585" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":blinkcard-ux:dokkaHtmlPartial/release" data-filterable-set=":blinkcard-ux:dokkaHtmlPartial/release">
+<a data-name="-1748569177%2FClasslikes%2F260806662" anchor-label="ScanningWrongSide" id="-1748569177%2FClasslikes%2F260806662" data-filterable-set=":blinkcard-ux/productionRelease"></a>
+          <div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-scanning-wrong-side/index.html"><span>Scanning</span><wbr><span>Wrong</span><wbr><span><span>Side</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1748569177%2FClasslikes%2F-631173585"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1748569177%2FClasslikes%2F260806662"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-scanning-wrong-side/index.html">ScanningWrongSide</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Indicates the wrong side of the document is being presented.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux/productionRelease"><div class="symbol monospace"><span class="token keyword">object </span><a href="-scanning-wrong-side/index.html">ScanningWrongSide</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Indicates the wrong side of the document is being presented.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-667428673%2FClasslikes%2F260806662" anchor-label="UnparsableBarcode" id="-667428673%2FClasslikes%2F260806662" data-filterable-set=":blinkcard-ux/productionRelease"></a>
+          <div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-unparsable-barcode/index.html"><span>Unparsable</span><wbr><span><span>Barcode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-667428673%2FClasslikes%2F260806662"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux/productionRelease"><div class="symbol monospace"><span class="token keyword">object </span><a href="-unparsable-barcode/index.html">UnparsableBarcode</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Barcode was detected but its content could not be parsed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-424535926%2FClasslikes%2F260806662" anchor-label="UnsupportedDocument" id="-424535926%2FClasslikes%2F260806662" data-filterable-set=":blinkcard-ux/productionRelease"></a>
+          <div class="table-row table-row_content" data-filterable-current=":blinkcard-ux/productionRelease" data-filterable-set=":blinkcard-ux/productionRelease">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-unsupported-document/index.html"><span>Unsupported</span><wbr><span><span>Document</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-424535926%2FClasslikes%2F260806662"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":blinkcard-ux/productionRelease"><div class="symbol monospace"><span class="token keyword">object </span><a href="-unsupported-document/index.html">UnsupportedDocument</a> : <a href="index.html">ScanningUxEvent</a></div><div class="brief "><p class="paragraph">Document is not supported.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -317,17 +361,21 @@
   </div>
 </div>
     <div class="footer">
-        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
-        <span>© 2026 Copyright</span>
-        <span class="pull-right">
-            <span>Generated by </span>
-            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
-                <span>dokka</span>
-            </a>
-        </span>
-    </div>
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
             </div>
         </div>
     </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

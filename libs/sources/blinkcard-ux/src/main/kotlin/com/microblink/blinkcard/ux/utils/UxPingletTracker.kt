@@ -58,8 +58,12 @@ object UxPingletTracker: PingletTracker() {
         /**
          * Tracks hardware capabilities of all available cameras on the device.
          * @param cameraDevicesDetails Complete camera hardware information for the device
+         * @param sessionNumber The session identifier for associating this event with a specific scanning session
          */
-        fun trackCameraHardwareInfo(cameraDevicesDetails: CameraDevicesDetails) {
+        fun trackCameraHardwareInfo(
+            cameraDevicesDetails: CameraDevicesDetails,
+            sessionNumber: Int
+        ) {
             addPingletToQueueIfManagerExists(
                 pinglet = CameraHardwareInfo(
                     availableCameras = cameraDevicesDetails.devicesDetails.map { cameraDetails ->
@@ -82,11 +86,9 @@ object UxPingletTracker: PingletTracker() {
                         )
                     },
                 ),
-                sessionNumber = SESSION_NUMBER
+                sessionNumber = sessionNumber
             )
         }
-
-        private const val SESSION_NUMBER = 0
     }
 
     /**
@@ -112,6 +114,7 @@ object UxPingletTracker: PingletTracker() {
                         SimpleUxEventType.HelpTooltipDisplayed -> com.microblink.blinkcard.core.ping.pinglets.UxEvent.EventType.HELPTOOLTIPDISPLAYED
                         SimpleUxEventType.HelpOpened -> com.microblink.blinkcard.core.ping.pinglets.UxEvent.EventType.HELPOPENED
                         SimpleUxEventType.StepTimeout -> com.microblink.blinkcard.core.ping.pinglets.UxEvent.EventType.STEPTIMEOUT
+                        SimpleUxEventType.InactivityTimeout -> com.microblink.blinkcard.core.ping.pinglets.UxEvent.EventType.INACTIVITYTIMEOUT
                         SimpleUxEventType.AppMovedToBackground -> com.microblink.blinkcard.core.ping.pinglets.UxEvent.EventType.APPMOVEDTOBACKGROUND
                     }
                 ),
@@ -178,6 +181,7 @@ object UxPingletTracker: PingletTracker() {
             HelpTooltipDisplayed,
             HelpOpened,
             StepTimeout,
+            InactivityTimeout,
             AppMovedToBackground
         }
 

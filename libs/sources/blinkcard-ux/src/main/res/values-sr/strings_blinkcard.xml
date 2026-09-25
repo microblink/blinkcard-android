@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">Držite mirno karticu i telefon</string>
-  <string name="mb_blinkcard_card_not_fully_visible">Vodite računa da cela kartica bude vidljiva</string>
-  <string name="mb_blinkcard_first_side_instructions">Skenirajte broj kartice</string>
-  <string name="mb_blinkcard_flashlight_warning_message">Pazite na odsjaj blica.\nNežno pomerajte svoju karticu da biste ga izbegli.</string>
-  <string name="mb_blinkcard_help_screen_msg1">Broj kartice je obično 16-cifreni broj, iako može imati između 12 i 19 cifara. Trebalo bi da bude odštampan ili utisnut podignutim brojevima preko kartice. Može biti na prednjoj ili zadnjoj strani kartice.</string>
-  <string name="mb_blinkcard_help_screen_msg2">Uverite se da ne prekrivate delove kartice prstom, uključujući donje redove. Takođe, pazite na hologramske refleksije koje prelaze preko polja kartice.</string>
-  <string name="mb_blinkcard_help_screen_msg3">Izbegavajte direktnu oštru svetlost jer se odbija od kartice i može učiniti delove kartice nečitljivim. Ako ne možete da pročitate podatke na kartici, neće biti vidljivi ni kameri.</string>
-  <string name="mb_blinkcard_help_screen_msg4">Pokušajte da telefon i kartica budu mirni tokom skeniranja. Pomeranje bilo koje od njih može zamutiti sliku i učiniti podatke na dokumentu nečitljivim.</string>
-  <string name="mb_blinkcard_help_screen_title1">Gde se nalazi broj kartice?</string>
-  <string name="mb_blinkcard_help_screen_title2">Neka sva polja budu vidljiva</string>
-  <string name="mb_blinkcard_help_screen_title3">Pazite na oštro svetlo</string>
-  <string name="mb_blinkcard_help_screen_title4">Ostanite mirni dok skenirate</string>
-  <string name="mb_blinkcard_keep_card_parallel">Држите картицу паралелно са телефоном</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">Broj kartice je obično 16-cifreni broj. Trebalo bi da bude odštampan ili utisnut podignutim brojevima preko kartice. Uverite se da je kartica dobro osvetljena i da su svi detalji vidljivi.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">Prvo skenirajte broj kartice</string>
-  <string name="mb_blinkcard_other_side_instructions">Skenirajte drugu stranu kartice</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">Nije moguće pročitati karticu. Pokušajte ponovo.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Pokušaj ponovo</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">Skeniranje neuspešno</string>
-  <string name="mb_blinkcard_scanning_wrong_side">Preokrenite karticu</string>
+    <string name="mb_blinkcard_blur_detected">Držite karticu i telefon mirno</string>
+    <string name="mb_blinkcard_card_not_fully_visible">Vodite računa da cela kartica bude vidljiva</string>
+    <string name="mb_blinkcard_first_side_instructions">Skenirajte broj kartice</string>
+    <string name="mb_blinkcard_flashlight_warning_message">Pazite na odsjaj blica.\nNežno pomerajte svoju karticu da biste ga izbegli.</string>
+    <string name="mb_blinkcard_help_screen_msg1">Broj kartice je obično 16-cifreni broj, iako može imati između 12 i 19 cifara. Trebalo bi da bude odštampan ili utisnut podignutim brojevima preko kartice. Može biti na prednjoj ili zadnjoj strani kartice.</string>
+    <string name="mb_blinkcard_help_screen_msg2">Uverite se da ne prekrivate delove kartice prstom, uključujući donje redove. Takođe, pazite na hologramske refleksije koje prelaze preko polja kartice.</string>
+    <string name="mb_blinkcard_help_screen_msg3">Izbegavajte direktnu oštru svetlost jer se odbija od kartice i može učiniti delove kartice nečitljivim. Ako ne možete da pročitate podatke na kartici, neće biti vidljivi ni kameri.</string>
+    <string name="mb_blinkcard_help_screen_msg4">Pokušajte da telefon i kartica budu mirni tokom skeniranja. Pomeranje bilo koje od njih može zamutiti sliku i učiniti podatke na dokumentu nečitljivim.</string>
+    <string name="mb_blinkcard_help_screen_title1">Gde se nalazi broj kartice?</string>
+    <string name="mb_blinkcard_help_screen_title2">Neka sva polja budu vidljiva</string>
+    <string name="mb_blinkcard_help_screen_title3">Pazite na oštro svetlo</string>
+    <string name="mb_blinkcard_help_screen_title4">Ostanite mirni dok skenirate</string>
+    <string name="mb_blinkcard_keep_card_parallel">Držite karticu paralelno s telefonom</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">Broj kartice je obično 16-cifreni broj. Trebalo bi da bude odštampan ili utisnut podignutim brojevima preko kartice. Uverite se da je kartica dobro osvetljena i da su svi detalji vidljivi.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">Prvo skenirajte broj kartice</string>
+    <string name="mb_blinkcard_other_side_instructions">Skenirajte drugu stranu kartice</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Proverite da li je kartica dobro osvetljena, potpuno vidljiva i bez odsjaja.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Pokušaj ponovo</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">Nije moguće očitati karticu</string>
+    <string name="mb_blinkcard_scanning_wrong_side">Preokrenite karticu</string>
 </resources>

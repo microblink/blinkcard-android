@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="mb_blinkcard_blur_detected">Panatilihing hindi gumagalaw ang card at telepono</string>
-  <string name="mb_blinkcard_card_not_fully_visible">Panatilihing ganap na nakikita ang card</string>
-  <string name="mb_blinkcard_first_side_instructions">I-scan ang numero ng card</string>
-  <string name="mb_blinkcard_flashlight_warning_message">Tingnan kung may flashlight glare.\nDahan-dahang galawin ang iyong card para maiwasan ito.</string>
-  <string name="mb_blinkcard_help_screen_msg1">Kadalasang 16 na digit ang numero ng card, bagama\'t maaari itong magkaroon ng 12 hanggang 19 digit. Dapat itong naka-print o naka-emboss sa mga nakataas na numero sa buong card. Puwede itong nasa unahan o likuran ng iyong card.</string>
-  <string name="mb_blinkcard_help_screen_msg2">Siguraduhing hindi natatakpan ng iyong daliri ang mga bahagi ng card, pati na ang mga linya sa ilalim. Gayon rin, tingnan kung may mga hologram reflection na tumatakip sa mga field ng mga card.</string>
-  <string name="mb_blinkcard_help_screen_msg3">Iwasan ang direktang nakakasilaw na ilaw dahil maaari itong mag-reflect sa card at hindi mababasa ang mga bahagi ng card. Kung mo mabasa ang data sa card, hindi rin ito makikita ng camera.</string>
-  <string name="mb_blinkcard_help_screen_msg4">Panatilihing hindi gumagalaw ang telepono at card habang nag-i-scan. Maaaring magpalabo sa larawan at hindi mababasa ang data sa card kapag nagalaw ito.</string>
-  <string name="mb_blinkcard_help_screen_title1">Saan makikita ang numero ng card?</string>
-  <string name="mb_blinkcard_help_screen_title2">Panatilihing nakikita ang lahat ng field</string>
-  <string name="mb_blinkcard_help_screen_title3">Tingnan kung may nakakasilaw na liwanag</string>
-  <string name="mb_blinkcard_help_screen_title4">Panatilihing hindi gumagalaw habang nag-i-scan</string>
-  <string name="mb_blinkcard_keep_card_parallel">Panatilihing nakatapat ang card sa telepono</string>
-  <string name="mb_blinkcard_onboarding_dialog_message">Kadalasang 16 na digit ang numero ng card. Dapat itong naka-print o naka-emboss sa mga nakataas na numero sa buong card. Siguraduhing sapat na naiilawan ang card na iyon at nakikita ang lahat ng detalye.</string>
-  <string name="mb_blinkcard_onboarding_dialog_title">I-scan muna ang numero ng card</string>
-  <string name="mb_blinkcard_other_side_instructions">I-scan ang kabilang panig ng card</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_message">Hindi mabasa ang card. Pakisubukan ulit.</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Subukan ulit</string>
-  <string name="mb_blinkcard_recognition_timeout_dialog_title">Hindi matagumpay ang pag-scan</string>
-  <string name="mb_blinkcard_scanning_wrong_side">Baligtarin ang card</string>
+    <string name="mb_blinkcard_blur_detected">Panatilihing hindi gumagalaw ang card at telepono</string>
+    <string name="mb_blinkcard_card_not_fully_visible">Panatilihing ganap na nakikita ang card</string>
+    <string name="mb_blinkcard_first_side_instructions">I-scan ang numero ng card</string>
+    <string name="mb_blinkcard_flashlight_warning_message">Tingnan kung may flashlight glare.\nDahan-dahang galawin ang iyong card para maiwasan ito.</string>
+    <string name="mb_blinkcard_help_screen_msg1">Kadalasang 16 na digit ang numero ng card, bagama\'t maaari itong magkaroon ng 12 hanggang 19 digit. Dapat itong naka-print o naka-emboss sa mga nakataas na numero sa buong card. Puwede itong nasa unahan o likuran ng iyong card.</string>
+    <string name="mb_blinkcard_help_screen_msg2">Siguraduhing hindi natatakpan ng iyong daliri ang mga bahagi ng card, pati na ang mga linya sa ilalim. Gayon rin, tingnan kung may mga hologram reflection na tumatakip sa mga field ng mga card.</string>
+    <string name="mb_blinkcard_help_screen_msg3">Iwasan ang direktang nakakasilaw na ilaw dahil maaari itong mag-reflect sa card at hindi mababasa ang mga bahagi ng card. Kung mo mabasa ang data sa card, hindi rin ito makikita ng camera.</string>
+    <string name="mb_blinkcard_help_screen_msg4">Panatilihing hindi gumagalaw ang telepono at card habang nag-i-scan. Maaaring magpalabo sa larawan at hindi mababasa ang data sa card kapag nagalaw ito.</string>
+    <string name="mb_blinkcard_help_screen_title1">Saan makikita ang numero ng card?</string>
+    <string name="mb_blinkcard_help_screen_title2">Panatilihing nakikita ang lahat ng field</string>
+    <string name="mb_blinkcard_help_screen_title3">Tingnan kung may nakakasilaw na liwanag</string>
+    <string name="mb_blinkcard_help_screen_title4">Panatilihing hindi gumagalaw habang nag-i-scan</string>
+    <string name="mb_blinkcard_keep_card_parallel">Panatilihing parallel ang card sa telepono</string>
+    <string name="mb_blinkcard_onboarding_dialog_message">Kadalasang 16 na digit ang numero ng card. Dapat itong naka-print o naka-emboss sa mga nakataas na numero sa buong card. Siguraduhing sapat na naiilawan ang card na iyon at nakikita ang lahat ng detalye.</string>
+    <string name="mb_blinkcard_onboarding_dialog_title">I-scan muna ang numero ng card</string>
+    <string name="mb_blinkcard_other_side_instructions">I-scan ang kabilang panig ng card</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_message">Tiyaking may sapat na liwanag, ganap na nakikita, at walang silaw ang card.</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_retry_button">Subukan ulit</string>
+    <string name="mb_blinkcard_recognition_timeout_dialog_title">Hindi mabasa ang card</string>
+    <string name="mb_blinkcard_scanning_wrong_side">Baligtarin ang card</string>
 </resources>
