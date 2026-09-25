@@ -184,6 +184,8 @@ If you are upgrading from BlinkCard v3000.0.x, see the [transition guide](Transi
 
 _BlinkCard_ SDK requires Android API level **24** or newer.
 
+To integrate the SDK, your project must compile with **compileSdk 36**, use **Android Gradle Plugin 8.9.1** or newer, and use **Kotlin 2.1** or newer. `blinkcard-ux` depends on **Jetpack Compose UI 1.11.2**. If your app uses an older Compose version, Gradle upgrades it automatically, so don't force an older version.
+
 ## <a name="camera-req"></a> Camera
 
 To perform successful scans, the camera preview resolution must be at least **1080p**. Note that the camera preview resolution is not the same as the video recording resolution.
@@ -232,7 +234,7 @@ BlinkCardSdkSettings(
     resourceDownloadUrl = "download-path",
     // define path if you are not using a default one: "microblink/blinkcard"
     resourceLocalFolder = "path-within-app-assets",
-    // set custom timeout on resources download (10 seconds by default)
+    // set custom timeout on resources download (30 seconds by default)
     resourceRequestTimeout = RequestTimeout.DEFAULT,
     // set custom proxy URL (needs to be allowed by license)
     microblinkProxyUrl = null
@@ -326,7 +328,7 @@ Create your implementation of scanning ViewModel (which must be a subclass of ou
 ```kotlin
 class YourBlinkCardScanningUxViewModel(
     blinkCardSdkInstance: BlinkCardSdk,
-    sessionSettings: ScanningSessionSettings,
+    sessionSettings: BlinkCardSessionSettings,
     uxSettings: BlinkCardUxSettings
 ) : CameraViewModel() {
     
@@ -338,7 +340,7 @@ class YourBlinkCardScanningUxViewModel(
                 // TODO use scanning result
             }
 
-            override fun onScanningCancelled() {
+            override fun onScanningCanceled() {
                 // user cancelled the scanning
             }
             
@@ -384,10 +386,8 @@ class YourBlinkCardScanningUxViewModel(
     )
     
     override fun analyzeImage(image: ImageProxy) {
-        // image has to be closed after processing
-        image.use {
-            imageAnalyzer?.analyze(it)
-        }
+        // the analyzer closes the image after processing
+        imageAnalyzer.analyze(image)
     }
 
      override fun onCleared() {

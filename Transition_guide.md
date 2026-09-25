@@ -144,6 +144,105 @@ when (account?.binCheckResult) {
 
 BIN check requires the `recognizer_blinkcard_allow_bin_check` license right and is disabled by default for production licenses.
 
+### Rename `CheckResult.NotPerformed` to `CheckResult.NotAvailable`
+
+The value and its meaning are unchanged, only the name differs. Update every reference, including exhaustive `when` expressions over card liveness results.
+
+#### v3000
+
+```kotlin
+when (scanningResult.overallCardLivenessResult) {
+    CheckResult.Pass -> { /* ... */ }
+    CheckResult.Fail -> { /* ... */ }
+    CheckResult.NotPerformed -> { /* ... */ }
+}
+```
+
+#### v3001.0.0
+
+```kotlin
+when (scanningResult.overallCardLivenessResult) {
+    CheckResult.Pass -> { /* ... */ }
+    CheckResult.Fail -> { /* ... */ }
+    CheckResult.NotAvailable -> { /* ... */ }
+}
+```
+
+### Update custom resource download timeouts
+
+`RequestTimeout` now takes `kotlin.time.Duration` values instead of milliseconds. `RequestTimeout.DEFAULT` changed from 10 to 30 seconds.
+
+#### v3000
+
+```kotlin
+val sdkSettings = BlinkCardSdkSettings(
+    licenseKey = "your-license-key",
+    resourceRequestTimeout = RequestTimeout(
+        connectionTimeoutMillis = 20000,
+        writeTimeoutMillis = 20000,
+        readTimeoutMillis = 20000
+    )
+)
+```
+
+#### v3001.0.0
+
+```kotlin
+import kotlin.time.Duration.Companion.seconds
+
+val sdkSettings = BlinkCardSdkSettings(
+    licenseKey = "your-license-key",
+    resourceRequestTimeout = RequestTimeout(
+        connectionTimeout = 20.seconds,
+        writeTimeout = 20.seconds,
+        readTimeout = 20.seconds
+    )
+)
+```
+
+If you use a custom download location, `defaultResourceDownloadUrl` is now available as `ResourcesConfig.defaultResourceDownloadUrl`.
+
+### Update custom help dialog strings
+
+`HelpDialogsStrings.BlinkCardDefault` was replaced by `BlinkCardSdkStrings.HelpDialogsDefaults`. `HelpDialogsStrings` is now a `data class`, so you can customize individual strings with `copy`.
+
+#### v3000
+
+```kotlin
+val strings = BlinkCardSdkStrings.Default.copy(
+    blinkCardHelpDialogsStrings = HelpDialogsStrings.BlinkCardDefault
+)
+```
+
+#### v3001.0.0
+
+```kotlin
+val strings = BlinkCardSdkStrings.Default.copy(
+    blinkCardHelpDialogsStrings = BlinkCardSdkStrings.HelpDialogsDefaults.copy(
+        onboardingTitle = R.string.your_onboarding_title
+    )
+)
+```
+
+`SdkStrings.helpDialogsStrings` has been removed. Read the help dialog strings from `BlinkCardSdkStrings.blinkCardHelpDialogsStrings` instead.
+
+### Handle the new initialization error
+
+`SdkInitError` has a new subtype, `SettingsValidationError`, reported when SDK settings fail validation. Add a branch for it to exhaustive `when` expressions:
+
+```kotlin
+when (val error = exception.reason) {
+    is SdkInitError.SettingsValidationError -> {
+        // Invalid SDK settings: error.description explains why.
+    }
+    // ... other SdkInitError subtypes
+}
+```
+
+### Review the updated dependency requirements
+
+BlinkCard v3001.0.0 requires compileSdk 36, Android Gradle Plugin 8.9.1 or newer, and Kotlin 2.1 or newer. `blinkcard-ux` depends on Jetpack Compose UI 1.11.2, and `blinkcard-core` depends on OkHttp 5.3.2. Applications on older versions of these libraries are upgraded automatically. Do not force older versions, because the SDK is compiled against these versions. See the [release notes](Release_notes.md) for the full list.
+
 ---
 
 ## BlinkCard v2 to BlinkCard v3000
